@@ -3,11 +3,11 @@ version: 5.1.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
-logo: /img/logo.svg
+logo: /img/expert.png
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: /img/favicon.svg
+    favicon: /img/expert.png
     # Web application manifests configuration
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
@@ -108,8 +108,13 @@ navbar:
         Home: /
         Archives: /archives
         Categories: /categories
+        Life: /categories/life
+        C/C++: /categories/cpp
+        Algorithm: /Algorithm
+        ML/DL: /categories/mldl
+        Tech Interview: /categories/interview
         Tags: /tags
-        About: /about
+        AboutMe: /about
     # Links to be shown on the right of the navigation bar
     links:
         Download on GitHub:
@@ -167,7 +172,7 @@ search:
 comment:
     type: disqus
     # Disqus shortname
-    shortname: ''
+    shortname: chuzcjoe
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
@@ -195,20 +200,20 @@ donates:
     -
         type: paypal
         # Paypal business ID or email address
-        business: ''
+        business: chuzcjoe@gmail.com
         # Currency code
         currency_code: USD
     # Wechat donate button configurations
     -
         type: wechat
         # Wechat qrcode image URL
-        qrcode: ''
+        qrcode: /img/wechat.jpg
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
 share:
     type: sharethis
     # URL to the ShareThis share plugin script
-    install_url: ''
+    install_url: https://chuzcjoe.github.io/
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
@@ -229,24 +234,24 @@ widgets:
         position: left
         type: profile
         # Author name
-        author: Your name
+        author: Joe Chu
         # Author title
-        author_title: Your title
+        author_title: Software Engineer
         # Author's current location
-        location: Your location
+        location: Fremont, CA
         # URL or path to the avatar image
-        avatar: 
+        avatar: /img/profile.jpeg
         # Whether show the rounded avatar image
         avatar_rounded: false
         # Email address for the Gravatar
         gravatar: 
         # URL or path for the follow button
-        follow_link: https://github.com/ppoffice
+        follow_link: https://github.com/chuzcjoe
         # Links to be shown on the bottom of the profile widget
         social_links:
             Github:
                 icon: fab fa-github
-                url: https://github.com/ppoffice
+                url: https://github.com/chuzcjoe
             Facebook:
                 icon: fab fa-facebook
                 url: https://facebook.com
@@ -274,7 +279,7 @@ widgets:
     -
         # Where should the widget be placed, left sidebar or right sidebar
         position: left
-        type: links
+        type:
         # Names and URLs of the sites
         links:
             Hexo: https://hexo.io
@@ -318,11 +323,11 @@ widgets:
     -
         # Where should the widget be placed, left sidebar or right sidebar
         position: left
-        type: adsense
+        type: 
         # AdSense client ID
-        client_id: ''
+        client_id:
         # AdSense AD unit ID
-        slot_id: ''
+        slot_id:
     # Follow.it email subscription widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar

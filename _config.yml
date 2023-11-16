@@ -64,4 +64,4 @@ deploy:
   type: git
   repo: git@github.com:chuzcjoe/chuzcjoe.github.io.git
   branch: master
-  message: update C++ cheat sheet
+  message: update

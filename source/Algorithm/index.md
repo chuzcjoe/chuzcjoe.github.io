@@ -25,7 +25,14 @@ Others:
 - Monotone Stack
 - Sweep Line
 
-**Queue**
+## Sort
+| ID | Name | Difficulty | solution |
+|----------|----------|----------|---------| 
+| 56 | Merge Intervals| <span style="color:orange">medium</span> | [click](/2023/11/10/lc56/) |
+| 27 | Remove Element | <span style="color:green">easy</span> | [click](/2023/11/10/lc27/) |
+| 179 | Largest Number | <span style="color:orange">medium</span> | [click](/2023/11/10/lc179/) | 
+
+## Queue
 | ID | Name | Difficulty | solution |
 |----------|----------|----------|---------| 
 | 225 | Implement Stack using Queues| <span style="color:green">easy</span> | [click](/2023/11/06/lc225/) | 

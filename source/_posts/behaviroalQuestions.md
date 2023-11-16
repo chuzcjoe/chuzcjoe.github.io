@@ -18,3 +18,5 @@ categories:
 - Why choose X company?
 - What is your biggest weakness?
 - What is your biggest strength?
+- Describe a time when you dealt with an ambiguous task and how you solved it.
+- Describe a time when you had different opinions with your manager.

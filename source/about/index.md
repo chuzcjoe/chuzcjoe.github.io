@@ -16,8 +16,7 @@ High Performance Computing, Mobile Computing, Computational Photography, Low-Lev
 • Optimized algorithms for mobile CPUs using C++ and ARM Neon intrinsics.
 • Optimized algorithms for mobile GPUs using OpenCL.
 • On-device deep neural networks deployment with neural inference engines such as SNPE, QNN, PPL and libTorch.
-• Compressed Generative AI model (stable diffusion) for mobile devices by implementing quantization and deployed it on
-Android devices featuring the Qualcomm 8550 SoC using QNN, resulting in a runtime of 12 seconds.
+• Compressed Generative AI model (stable diffusion) for mobile devices by implementing quantization and deployed it on Android devices featuring the Qualcomm 8550 SoC using QNN, resulting in a runtime of 12 seconds.
 • Developed customized application for camera sensor data acquisition and processing, enabling features like burst raw image capture with 3A control, multi-camera streaming and dual-camera fusion on the Android platform.
 
 

@@ -111,15 +111,17 @@ navbar:
         Life: /categories/life
         C/C++: /categories/cpp
         Algorithm: /Algorithm
-        ML/DL: /categories/mldl
+        ML/DL/Paper: /categories/mldl
+        Projects: /categories/project
         Tech Interview: /categories/interview
+        Misc: /categories/misc
         Tags: /tags
         AboutMe: /about
     # Links to be shown on the right of the navigation bar
     links:
         Download on GitHub:
             icon: fab fa-github
-            url: https://github.com/ppoffice/hexo-theme-icarus
+            url: https://github.com/chuzcjoe
 # Page footer configurations
 footer:
     # Copyright text
@@ -252,12 +254,12 @@ widgets:
             Github:
                 icon: fab fa-github
                 url: https://github.com/chuzcjoe
-            Facebook:
-                icon: fab fa-facebook
-                url: https://facebook.com
-            Twitter:
-                icon: fab fa-twitter
-                url: https://twitter.com
+            Linkedin:
+                icon: fab fa-linkedin
+                url: https://www.linkedin.com/in/joe-chu-1784b3179/
+            Scholar:
+                icon: fab fa-google
+                url: https://scholar.google.com/citations?user=OtkDTKjvIwIC&hl=en&oi=sra
             Dribbble:
                 icon: fab fa-dribbble
                 url: https://dribbble.com

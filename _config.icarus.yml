@@ -173,31 +173,17 @@ search:
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
     type: disqus
-    # Disqus shortname
-    shortname: chuzcjoe
+    shortname: chuzcjoe-github-io
+    # api_key: 7Myp7N0PVE3nODQvHUvRuZkuU1KNac8WsKdkgryplYPwCmM0CM0qQbxqtu2WK2j1
+    # api: https://disqus.skk.moe/disqus/
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
 donates:
-    # "Afdian.net" donate button configurations
-    -
-        type: afdian
-        # URL to the "Afdian.net" personal page
-        url: ''
     # Alipay donate button configurations
     -
         type: alipay
         # Alipay qrcode image URL
         qrcode: ''
-    # "Buy me a coffee" donate button configurations
-    -
-        type: buymeacoffee
-        # URL to the "Buy me a coffee" page
-        url: ''
-    # Patreon donate button configurations
-    -
-        type: patreon
-        # URL to the Patreon page
-        url: ''
     # Paypal donate button configurations
     -
         type: paypal

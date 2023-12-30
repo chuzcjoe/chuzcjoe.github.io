@@ -76,6 +76,55 @@ int main() {
 }
 ```
 
+You may hear of another terminology called `dynamic dispatch`. By declaring a method as virtual, the C++ compiler uses a vtable to define the name-to-implementation mapping for a given class as a set of member function pointers. However, one can use explicit scoping, rather than dynamic dispatch, to ensure a specific version of a function is called.
+
+```c++
+class Base {
+public:
+    Base() {
+        std::cout << "Base constructor called\n";
+    }
+    
+    virtual void foo() {
+        std::cout << "Base foo()\n";
+    }
+    
+    virtual ~Base() {
+        std::cout << "Base deconstructor called\n";
+    }
+};
+
+class Derived : public Base {
+public:
+    Derived() {
+        std::cout << "Derived constructor called\n";
+    }
+    
+    void foo() override {
+        std::cout << "Derived foo()\n";    
+    }
+    
+    ~Derived() {
+        std::cout << "Derived deconstructor called\n";
+    }
+};
+
+int main() {
+    Base* b = new Derived();
+    b->Base::foo();
+    delete b;
+}
+```
+
+```
+Base constructor called
+Derived constructor called
+Base foo()
+Derived deconstructor called
+Base deconstructor called
+```
+
+
 # Pure virtual function
 
 A pure virtual function is a function defined in base class but has no implementation. It requires its derived classes to implement their own versions of this function. A class containing pure virtual function(s) is called `abstract class`.

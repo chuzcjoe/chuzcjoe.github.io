@@ -1,5 +1,5 @@
 ---
-title: pacifica-state-beach
+title: Pacifica State Beach
 author: Joe Chu
 date: 2023-11-06 15:26:34
 tags: [life, beach]

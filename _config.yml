@@ -60,6 +60,7 @@ include: null
 exclude: null
 ignore: null
 theme: icarus
+plugins: hexo-math
 deploy:
   type: git
   repo: git@github.com:chuzcjoe/chuzcjoe.github.io.git

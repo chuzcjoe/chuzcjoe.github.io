@@ -9,6 +9,15 @@ categories:
 
 <!-- more -->
 
+The most common and popular technique to crack behavirol interviews is to use **STAR** method.
+
+- Situation: Set the scene and give the necessary details of your example.
+- Task: Describe what your responsibility was in that situation.
+- Action: Explain exactly what steps you took to address it.
+- Result: Share what outcomes your actions achieved.
+
+Here are some common questions during an interview:
+
 - Describe a time when you managed to deal with deadlines.
 - Describe a time when you handled disagreement/conflicts with your colleagues.
 - Describe a time when you worked with a difficult teammate.

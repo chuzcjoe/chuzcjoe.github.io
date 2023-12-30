@@ -23,6 +23,9 @@ categories:
 
 人太多了，逛到一半就“弃车”而逃，出发去Blackhawk Museum
 
+路过San Ramon，街道秋景还是很不错的
+<img src="Photo Nov 18 2023, 1 04 06 PM.jpg" width="800px" height="800px">
+
 入口
 <img src="Photo Nov 18 2023, 1 19 28 PM.jpg" width="800px" height="800px">
 <img src="Photo Nov 18 2023, 1 20 15 PM.jpg" width="800px" height="800px">
@@ -53,6 +56,9 @@ categories:
 <img src="Photo Nov 18 2023, 2 19 36 PM.jpg" width="800px" height="800px">
 <img src="Photo Nov 18 2023, 2 20 56 PM.jpg" width="800px" height="800px">
 <img src="Photo Nov 18 2023, 2 23 20 PM.jpg" width="800px" height="800px">
+
+2024龙年出生的宝宝象征意义很好， Lucas就是龙宝宝～
+<img src="Photo Nov 18 2023, 2 19 29 PM.jpg" width="800px" height="800px">
 
 自然馆，都是动物模型
 <img src="Photo Nov 18 2023, 2 32 54 PM.jpg" width="800px" height="800px">

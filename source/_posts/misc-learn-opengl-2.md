@@ -4,7 +4,7 @@ author: Joe Chu
 date: 2023-11-14 16:42:54
 tags: [opengl]
 categories:
-- misc
+- CGV
 ---
 
 Create window, handle user inputs

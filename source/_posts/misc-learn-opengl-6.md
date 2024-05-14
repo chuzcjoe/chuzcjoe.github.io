@@ -4,7 +4,7 @@ author: Joe Chu
 date: 2023-11-20 12:14:07
 tags: [opengl]
 categories:
-- misc
+- CGV
 ---
 
 Transformations

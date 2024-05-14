@@ -32,3 +32,12 @@ A Continuously Evolving Collection of Exceptional Learning Resources.
 **C++ design pattern**
 - book: https://gameprogrammingpatterns.com/contents.html
 - video: https://www.youtube.com/watch?v=ILgiCy6IXLw&list=PLvv0ScY6vfd9wBflF0f6ynlDQuaeKYzyc
+
+**Programming and Intro Data Structures**
+https://eecs280.org/
+
+**HDR tutorial(in Chinese)**
+https://juejin.cn/post/7205908717886865469
+
+**Fourier Analysis**
+https://www.youtube.com/playlist?list=PLMrJAkhIeNNT_Xh3Oy0Y4LTj0Oxo8GqsC

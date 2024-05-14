@@ -8,6 +8,14 @@ High Performance Computing, Mobile Computing, Computational Photography, Low-Lev
 
 <hr style="border:0.5px solid gray">
 
+**ByteDance(TikTok), (2023-12 to Present)**
+**Software Engineer**
+**San Jose, CA**
+
+• Developed TikTok's in-app camera stabilization feature and launched global A/B testing to select the best strategy that maximized user publishing gains.
+• Implemented in-app camera HDR capture based on the OpenGL ES rendering pipeline, handling HDR to SDR conversion and HDR color space transformation.
+• Upgraded TikTok's in-app camera to support high-definition (HD) image capture, replacing previewed frame screenshots with the system's native camera API for improved image quality.
+
 **SenseBrain, (2022-03 to 2023-11)**
 **Senior Software Engineer**
 **San Jose, CA**
@@ -45,7 +53,7 @@ training and inference.
 <hr style="border:0.5px solid gray">
 
 **Publication**
-[google scholar](https://scholar.google.com/citations?user=OtkDTKjvIwIC&hl=en&oi=sra)
+[google scholar](https://scholar.google.com/citations?user=DCwJ1qcAAAAJ&hl=en)
 
 <hr style="border:0.5px solid gray">
 

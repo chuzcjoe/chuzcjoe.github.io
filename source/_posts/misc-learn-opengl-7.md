@@ -4,7 +4,7 @@ author: Joe Chu
 date: 2023-11-21 10:58:32
 tags: [opengl]
 categories:
-- misc
+- CGV
 ---
 
 Coordinate Systems

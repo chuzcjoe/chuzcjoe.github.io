@@ -4,7 +4,7 @@ author: Joe Chu
 date: 2023-11-14 15:26:17
 tags: [opengl]
 categories:
-- misc
+- CGV
 ---
 
 Setting up OpenGL in Ubuntu (GLFW, GLAD)

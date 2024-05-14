@@ -4,7 +4,7 @@ author: Joe Chu
 date: 2023-11-17 11:26:14
 tags: [opengl]
 categories:
-- misc
+- CGV
 ---
 
 Shader

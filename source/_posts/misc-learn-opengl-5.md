@@ -4,7 +4,7 @@ author: Joe Chu
 date: 2023-11-19 20:04:33
 tags: [opengl]
 categories:
-- misc
+- CGV
 ---
 
 Texture

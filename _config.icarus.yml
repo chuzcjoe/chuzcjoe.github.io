@@ -110,10 +110,9 @@ navbar:
         Categories: /categories
         Life: /categories/life
         C/C++: /categories/cpp
-        Algorithm: /Algorithm
-        ML/DL/Paper: /categories/mldl
-        Projects: /categories/project
-        Tech Interview: /categories/interview
+        CG/CV: /categories/CGV
+        Interview: /categories/interview
+        Templates: /categories/templates
         Misc: /categories/misc
         Tags: /tags
         AboutMe: /about
@@ -224,7 +223,7 @@ widgets:
         # Author name
         author: Joe Chu
         # Author title
-        author_title: Software Engineer
+        author_title: I like to keep knowledge and memories visible and readable.
         # Author's current location
         location: Fremont, CA
         # URL or path to the avatar image

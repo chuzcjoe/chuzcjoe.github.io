@@ -4,7 +4,7 @@ author: Joe Chu
 date: 2023-11-15 14:39:36
 tags: [opengl]
 categories:
-- misc
+- CGV
 ---
 
 Draw a triangle.

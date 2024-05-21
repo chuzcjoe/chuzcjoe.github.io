@@ -145,6 +145,8 @@ To get the position of {% katex %} V_8 {% endkatex %} in i420, we need to skip t
 {% endkatex %}
 </p>
 
+Other YUV420 formats such as YV12, NV12 and NV21 can also be converted to YUV in similar approaches.
+
 # References
 - https://en.wikipedia.org/wiki/Chroma_subsampling#Sampling_systems_and_ratios
 - https://juejin.cn/post/7207637337572606007

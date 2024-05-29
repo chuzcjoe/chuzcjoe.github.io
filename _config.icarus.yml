@@ -112,7 +112,6 @@ navbar:
         C/C++: /categories/cpp
         CG/CV: /categories/CGV
         Interview: /categories/interview
-        Templates: /categories/templates
         Misc: /categories/misc
         Tags: /tags
         AboutMe: /about
@@ -227,7 +226,7 @@ widgets:
         # Author's current location
         location: Fremont, CA
         # URL or path to the avatar image
-        avatar: /img/profile.jpeg
+        avatar: /img/me.jpeg
         # Whether show the rounded avatar image
         avatar_rounded: false
         # Email address for the Gravatar
@@ -345,7 +344,7 @@ plugins:
         tracking_id: 
     # BuSuanZi site/page view counter
     # https://busuanzi.ibruce.info
-    busuanzi: false
+    busuanzi: true
     # CNZZ statistics
     # https://www.umeng.com/web
     cnzz:

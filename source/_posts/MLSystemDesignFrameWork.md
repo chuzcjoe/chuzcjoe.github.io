@@ -11,7 +11,7 @@ A systematic approach to crack ML system design interviews.
 
 <!-- more -->
 
-<embed src="MLSystemDesignFramework.pdf" width="700" height="800">
+<embed src="MLSystemDesignFramework.pdf" width="900" height="800">
 
 ## References
 - https://bytebytego.com/courses/machine-learning-system-design-interview/visual-search-system

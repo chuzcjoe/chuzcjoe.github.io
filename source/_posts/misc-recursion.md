@@ -75,8 +75,10 @@ void backtracking(candidate) {
 
     // Iterate all possible candidates.
     for (auto candi : candidates) {
+        // Make sure candi is valid
         if (candi) {
             // 1. Modify candi
+            modify(candi)
             // 2. Run backtracking
             backtracking(modified(candi));
             // 3. Revert the change

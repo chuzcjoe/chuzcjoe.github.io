@@ -4,7 +4,7 @@ author: Joe Chu
 date: 2024-06-07 15:17:33
 tags: [gtest]
 categories:
-- cpp
+- misc
 ---
 
 Add GoogleTest framework to any C++ projects using CMake.

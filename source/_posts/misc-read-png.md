@@ -1,5 +1,5 @@
 ---
-title: Read PNG in C++
+title: Integrate libpng in C++
 author: Joe Chu
 date: 2024-06-13 23:07:50
 tags: [png]

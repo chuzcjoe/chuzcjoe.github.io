@@ -1,5 +1,5 @@
 ---
-title: Texture Rendering Using Native OpenGL on Android
+title: Rendering Using Native OpenGL on Android - 2
 author: Joe Chu
 date: 2024-06-23 21:07:42
 tags: [opengl, android]

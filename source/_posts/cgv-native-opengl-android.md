@@ -1,5 +1,5 @@
 ---
-title: Rendering Using Native OpenGL on Android
+title: Rendering Using Native OpenGL on Android - 1
 author: Joe Chu
 date: 2024-06-19 00:35:26
 tags: [opengl, android]

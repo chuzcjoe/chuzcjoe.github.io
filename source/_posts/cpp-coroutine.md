@@ -31,6 +31,8 @@ Coroutine is a special function that suspends its execution and then resumes lat
     <img src="function_coroutine.png" title="A regular image" width="800px" height="350px">
 </p>
 
+Coroutines in C++ do not inherently run on separate threads. They are executed in the same thread as the caller, but they provide a way to suspend and resume execution at certain points, allowing other work to be done in between.
+
 | keyword   | actions | state   |
 |-----------|---------|---------|
 | co_yield  | output  | suspend |

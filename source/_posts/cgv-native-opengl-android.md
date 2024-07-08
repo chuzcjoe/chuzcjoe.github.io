@@ -5,6 +5,7 @@ date: 2024-06-19 00:35:26
 tags: [opengl, android]
 categories:
 - CGV
+cover: /2024/06/19/cgv-native-opengl-android/openglandroid.png
 ---
 
 1. Use Android SurfaceView for rendering surface.

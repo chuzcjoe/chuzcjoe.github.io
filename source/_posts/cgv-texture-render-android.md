@@ -5,6 +5,7 @@ date: 2024-06-23 21:07:42
 tags: [opengl, android]
 categories:
 - CGV
+cover: /2024/06/19/cgv-native-opengl-android/openglandroid.png
 ---
 
 We will load a jpeg file as a texture image and render it on the screen.

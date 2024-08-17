@@ -43,7 +43,6 @@ date: 2024-07-21 12:31:47
 tags: [opengles]
 categories:
 - CGV
-cover: 2024/07/21/cgv-learn-opengles1/openglesnew.png
 ---
 
 Environment setup in Android Studio and draw our first triangle.

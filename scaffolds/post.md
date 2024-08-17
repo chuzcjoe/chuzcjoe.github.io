@@ -4,6 +4,7 @@ date: {{ date }}
 author: "Joe Chu"
 tags:
 categories:
+toc: true
 widgets:
 -
     # Where should the widget be placed, left sidebar or right sidebar

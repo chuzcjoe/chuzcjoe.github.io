@@ -41,3 +41,15 @@ https://juejin.cn/post/7205908717886865469
 
 **Fourier Analysis**
 https://www.youtube.com/playlist?list=PLMrJAkhIeNNT_Xh3Oy0Y4LTj0Oxo8GqsC
+
+**Effective C++**
+https://www.bugs.frozent.pl/Effective%20Modern%20C++%20(%20PDFDrive.com%20).pdf
+
+**OpenGLES**
+https://github.com/githubhaohao/NDK_OpenGLES_3_0
+
+**OpenGL based Camera2**
+https://github.com/githubhaohao/OpenGLCamera2
+
+**FFmpeg on Android**
+https://github.com/githubhaohao/LearnFFmpeg

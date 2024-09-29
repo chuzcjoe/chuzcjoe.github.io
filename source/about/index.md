@@ -14,7 +14,8 @@ High Performance Computing, Mobile Computing, Computational Photography, Low-Lev
 
 • Developed TikTok's in-app camera stabilization feature and launched global A/B testing to select the best strategy that maximized user publishing gains.
 • Implemented in-app camera HDR capture based on the OpenGL ES rendering pipeline, handling HDR to SDR conversion and HDR color space transformation.
-• Upgraded TikTok's in-app camera to support high-definition (HD) image capture, replacing previewed frame screenshots with the system's native camera API for improved image quality.
+• Upgraded TikTok's in-app camera to support High Resolution image capture, replacing previewed frame screenshots with the system's native camera API for improved image quality.
+• Optimized camera start latency.
 
 **SenseBrain, (2022-03 to 2023-11)**
 **Senior Software Engineer**

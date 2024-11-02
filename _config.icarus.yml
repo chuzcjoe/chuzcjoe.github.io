@@ -226,7 +226,7 @@ widgets:
         # Author's current location
         location: Fremont, CA
         # URL or path to the avatar image
-        avatar: /img/me.jpeg
+        avatar: /img/me_1.png
         # Whether show the rounded avatar image
         avatar_rounded: false
         # Email address for the Gravatar

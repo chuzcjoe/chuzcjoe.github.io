@@ -1,5 +1,5 @@
 ---
-title: STL Container Cheat Sheet
+title: 一年一度的万圣节
 author: Joe Chu
 toc: true
 widgets:
@@ -40,14 +40,36 @@ widgets:
       Bulma: https://bulma.io
   - position: left
     type: categories
-date: 2024-10-19 23:56:44
-tags: [stl]
+date: 2024-11-01 21:50:17
+tags: [Halloween]
 categories:
-- interview
+- life
 ---
 
-Write error-free code for interviews.
+今年精心装扮的还是那几户人家
 
 <!-- more -->
 
-<embed src="stl.pdf" width="900" height="800">
+<p align="center">
+    <img src="1.jpg" title="A regular image" width="600px" height="1000px">
+</p>
+
+<p align="center">
+    <img src="2.jpg" title="A regular image" width="600px" height="1000px">
+</p>
+
+<p align="center">
+    <img src="3.jpg" title="A regular image" width="600px" height="1000px">
+</p>
+
+<p align="center">
+    <img src="4.jpg" title="A regular image" width="600px" height="1000px">
+</p>
+
+<p align="center">
+    <img src="5.jpg" title="A regular image" width="600px" height="1000px">
+</p>
+
+<p align="center">
+    <img src="6.jpg" title="A regular image" width="600px" height="1000px">
+</p>

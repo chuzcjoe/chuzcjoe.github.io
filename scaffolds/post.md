@@ -62,8 +62,8 @@ widgets:
         Hexo: https://hexo.io
         Bulma: https://bulma.io
 # Categories widget configurations
--
-    # Where should the widget be placed, left sidebar or right sidebar
-    position: left
-    type: categories
+# -
+#     # Where should the widget be placed, left sidebar or right sidebar
+#     position: left
+#     type: categories
 ---

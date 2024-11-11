@@ -113,6 +113,7 @@ navbar:
         CG/CV: /categories/CGV
         Interview: /categories/interview
         Misc: /categories/misc
+        Tool: /categories/tool
         Tags: /tags
         AboutMe: /about
     # Links to be shown on the right of the navigation bar
@@ -286,16 +287,16 @@ widgets:
         position: right
         type: archives
     # Tags widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: right
-        type: tags
-        # How to order tags. For example 'name' to order by name in ascending order, and '-length' to order by number of posts in each tags in descending order
-        order_by: name
-        # Amount of tags to show. Will show all if not set.
-        amount: 
-        # Whether to show tags count, i.e. number of posts in the tag.
-        show_count: true
+    # -
+    #     # Where should the widget be placed, left sidebar or right sidebar
+    #     position: right
+    #     type: tags
+    #     # How to order tags. For example 'name' to order by name in ascending order, and '-length' to order by number of posts in each tags in descending order
+    #     order_by: name
+    #     # Amount of tags to show. Will show all if not set.
+    #     amount: 
+    #     # Whether to show tags count, i.e. number of posts in the tag.
+    #     show_count: true
     # Google FeedBurner email subscription widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar

@@ -105,7 +105,7 @@ When to use `JNI_OnLoad`?
 2. You don’t want to follow the JNI naming convention and prefer more control over method registration (e.g., for flexibility or to avoid long, cumbersome method names).
 3. You have initialization code to run when the library is loaded.
 
-We are going to discuss more about the second scenario, where we aim to establish custom naming conventions for our native methods. We still kepp the same method name in Java.
+We are going to discuss more about the second scenario, where we aim to establish custom naming conventions for our native methods. We still keep the same method name in Java.
 
 ```java
 public native String getMessageFromJNI();

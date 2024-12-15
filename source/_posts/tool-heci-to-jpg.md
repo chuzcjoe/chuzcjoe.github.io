@@ -191,7 +191,8 @@ async function convertFiles() {
                     quality: 0.8
                 });
 
-                const jpegFilename = file.name.replace('.heic', '.jpg').replace('.HEIC', '.jpg');
+                // Use sequential numbering for filenames
+                const jpegFilename = `${i}.jpg`;
                 zip.file(jpegFilename, jpegBlob);
 
             } catch (error) {
@@ -235,6 +236,7 @@ async function convertFiles() {
 - Progress tracking for conversion
 - Automatic ZIP file download
 - Clean, modern interface
+- Sequential naming of converted files (0.jpg, 1.jpg, etc.)
 
 ## Notes
 
@@ -242,3 +244,4 @@ async function convertFiles() {
 - The quality of the output JPG is set to 0.8 (80%) by default
 - Original HEIC files are not modified or deleted
 - The ZIP file name includes a timestamp to prevent overwriting
+- Converted images are named sequentially starting from 0.jpg

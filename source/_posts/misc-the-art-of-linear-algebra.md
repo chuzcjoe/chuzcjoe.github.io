@@ -42,7 +42,7 @@ widgets:
 date: 2024-07-31 23:36:51
 tags: [linear algebra]
 categories:
-- misc
+- book
 ---
 
 From https://github.com/kenjihiranabe/The-Art-of-Linear-Algebra

@@ -41,7 +41,7 @@ widgets:
 date: 2024-11-14 21:07:36
 tags: [leetcode]
 categories:
-- interview
+- book
 ---
 
 source: https://github.com/changgyhub/leetcode_101

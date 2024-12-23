@@ -48,7 +48,7 @@ categories:
 
 <!-- more -->
 
-本来以为四点多到，天有点黑，会影响观感，没想到配合着夕阳的衬托，天与湖巧妙地配合出了一幅优美景象
+本来以为四点多到，天有点黑，会影响观感，没想到夕阳的衬托格外美
 
 <p align="center">
     <img src="0.jpg" title="A regular image" width="800px" height="1000px">

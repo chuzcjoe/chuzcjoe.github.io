@@ -62,15 +62,39 @@ This tool allows you to convert multiple HEIC images to JPG format directly in y
     background-color: #ffffff;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
+
+.options-container {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 6px;
+}
+
+.number-input {
+    width: 100px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .file-input-container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     margin-bottom: 1.5rem;
 }
+
 .custom-file-input {
     display: none;
 }
+
 .file-label {
     display: inline-block;
     padding: 12px 24px;
@@ -82,9 +106,11 @@ This tool allows you to convert multiple HEIC images to JPG format directly in y
     text-align: center;
     border: 2px dashed #ccc;
 }
+
 .file-label:hover {
     background-color: #e0e0e0;
 }
+
 .convert-button {
     width: 100%;
     padding: 12px 24px;
@@ -97,13 +123,16 @@ This tool allows you to convert multiple HEIC images to JPG format directly in y
     font-weight: 500;
     transition: background-color 0.3s;
 }
+
 .convert-button:hover {
     background-color: #45a049;
 }
+
 .convert-button:disabled {
     background-color: #cccccc;
     cursor: not-allowed;
 }
+
 .status {
     margin-top: 1rem;
     padding: 1rem;
@@ -111,11 +140,13 @@ This tool allows you to convert multiple HEIC images to JPG format directly in y
     background-color: #f8f9fa;
     min-height: 50px;
 }
+
 .selected-files {
     margin-top: 0.5rem;
     font-size: 0.9rem;
     color: #666;
 }
+
 .progress-bar {
     width: 100%;
     height: 4px;
@@ -124,19 +155,41 @@ This tool allows you to convert multiple HEIC images to JPG format directly in y
     margin-top: 1rem;
     overflow: hidden;
 }
+
 .progress-bar-fill {
     height: 100%;
     background-color: #4CAF50;
     width: 0%;
     transition: width 0.3s ease;
 }
+
+.drop-zone {
+    border: 2px dashed #ccc;
+    border-radius: 6px;
+    padding: 20px;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+.drop-zone.dragover {
+    border-color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.1);
+}
 </style>
 
 <div class="converter-container">
+    <div class="options-container">
+        <div class="input-group">
+            <label for="startIndex">Start numbering from:</label>
+            <input type="number" id="startIndex" class="number-input" value="1" min="0">
+        </div>
+    </div>
     <div class="file-input-container">
-        <input type="file" id="fileInput" class="custom-file-input" accept=".heic,.HEIC" multiple>
-        <label for="fileInput" class="file-label">Drop HEIC files here or click to select</label>
-        <div class="selected-files" id="selectedFiles"></div>
+        <div class="drop-zone" id="dropZone">
+            <input type="file" id="fileInput" class="custom-file-input" accept=".heic,.HEIC" multiple>
+            <label for="fileInput" class="file-label">Drop HEIC files here or click to select</label>
+            <div class="selected-files" id="selectedFiles"></div>
+        </div>
     </div>
     <button onclick="convertFiles()" class="convert-button" id="convertButton" disabled>Convert to JPG and Download ZIP</button>
     <div class="progress-bar">
@@ -148,11 +201,36 @@ This tool allows you to convert multiple HEIC images to JPG format directly in y
 <script src="https://unpkg.com/heic2any"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 <script>
-document.getElementById('fileInput').addEventListener('change', function(e) {
-    const files = e.target.files;
-    const selectedFiles = document.getElementById('selectedFiles');
-    const convertButton = document.getElementById('convertButton');
-    
+const dropZone = document.getElementById('dropZone');
+const fileInput = document.getElementById('fileInput');
+const selectedFiles = document.getElementById('selectedFiles');
+const convertButton = document.getElementById('convertButton');
+const statusDiv = document.getElementById('status');
+const progressBar = document.getElementById('progressBar');
+
+// Drag and drop handlers
+dropZone.addEventListener('dragover', (e) => {
+    e.preventDefault();
+    dropZone.classList.add('dragover');
+});
+
+dropZone.addEventListener('dragleave', () => {
+    dropZone.classList.remove('dragover');
+});
+
+dropZone.addEventListener('drop', (e) => {
+    e.preventDefault();
+    dropZone.classList.remove('dragover');
+    const files = e.dataTransfer.files;
+    fileInput.files = files;
+    updateFileSelection(files);
+});
+
+fileInput.addEventListener('change', (e) => {
+    updateFileSelection(e.target.files);
+});
+
+function updateFileSelection(files) {
     if (files.length > 0) {
         selectedFiles.textContent = `Selected ${files.length} file(s): ${Array.from(files).map(f => f.name).join(', ')}`;
         convertButton.disabled = false;
@@ -160,15 +238,12 @@ document.getElementById('fileInput').addEventListener('change', function(e) {
         selectedFiles.textContent = '';
         convertButton.disabled = true;
     }
-});
+}
 
 async function convertFiles() {
-    const fileInput = document.getElementById('fileInput');
-    const statusDiv = document.getElementById('status');
-    const progressBar = document.getElementById('progressBar');
-    const convertButton = document.getElementById('convertButton');
     const files = fileInput.files;
     const zip = new JSZip();
+    const startIndex = parseInt(document.getElementById('startIndex').value) || 1;
 
     if (files.length === 0) {
         alert('Please select HEIC files to convert');
@@ -177,12 +252,13 @@ async function convertFiles() {
 
     convertButton.disabled = true;
     statusDiv.textContent = 'Converting files...';
+    progressBar.style.width = '0%';
     
     try {
         for (let i = 0; i < files.length; i++) {
             const file = files[i];
             try {
-                statusDiv.textContent = `Converting ${file.name}...`;
+                statusDiv.textContent = `Converting ${file.name} (${i + 1}/${files.length})...`;
                 progressBar.style.width = `${(i / files.length) * 100}%`;
                 
                 const jpegBlob = await heic2any({
@@ -191,8 +267,9 @@ async function convertFiles() {
                     quality: 0.8
                 });
 
-                // Use sequential numbering for filenames
-                const jpegFilename = `${i}.jpg`;
+                // Use the starting index to name files
+                const currentIndex = startIndex + i;
+                const jpegFilename = `${currentIndex}.jpg`;
                 zip.file(jpegFilename, jpegBlob);
 
             } catch (error) {

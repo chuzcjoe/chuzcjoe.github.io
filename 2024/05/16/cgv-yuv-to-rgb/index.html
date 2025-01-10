@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>YUV and RGB Color Space Conversion - JoeChu</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="JoeChu"><meta name="msapplication-TileImage" content="/img/expert.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="JoeChu"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="YUV to RGB, RGB to YUV"><meta property="og:type" content="blog"><meta property="og:title" content="YUV and RGB Color Space Conversion"><meta property="og:url" content="http://chuzcjoe.github.io/2024/05/16/cgv-yuv-to-rgb/"><meta property="og:site_name" content="JoeChu"><meta property="og:description" content="YUV to RGB, RGB to YUV"><meta property="og:locale" content="en_US"><meta property="og:image" content="http://chuzcjoe.github.io/2024/05/16/cgv-yuv-to-rgb/cie.png"><meta property="article:published_time" content="2024-05-16T19:46:49.000Z"><meta property="article:modified_time" content="2025-01-09T19:12:49.440Z"><meta property="article:author" content="Joe Chu"><meta property="article:tag" content="yuv"><meta property="article:tag" content="rgb"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="http://chuzcjoe.github.io/2024/05/16/cgv-yuv-to-rgb/cie.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://chuzcjoe.github.io/2024/05/16/cgv-yuv-to-rgb/"},"headline":"YUV and RGB Color Space Conversion","image":["http://chuzcjoe.github.io/2024/05/16/cgv-yuv-to-rgb/cie.png"],"datePublished":"2024-05-16T19:46:49.000Z","dateModified":"2025-01-09T19:12:49.440Z","author":{"@type":"Person","name":"Joe Chu"},"publisher":{"@type":"Organization","name":"JoeChu","logo":{"@type":"ImageObject","url":"http://chuzcjoe.github.io/img/expert.png"}},"description":"YUV to RGB, RGB to YUV"}</script><link rel="canonical" href="http://chuzcjoe.github.io/2024/05/16/cgv-yuv-to-rgb/"><link rel="icon" href="/img/expert.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.1.1"></head><body class="is-3-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/expert.png" alt="JoeChu" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories">Categories</a><a class="navbar-item" href="/categories/life">Life</a><a class="navbar-item" href="/categories/cpp">C/C++</a><a class="navbar-item" href="/categories/CGV">CG/CV</a><a class="navbar-item" href="/categories/interview">Interview</a><a class="navbar-item" href="/categories/misc">Misc</a><a class="navbar-item" href="/categories/tool">Tool</a><a class="navbar-item" href="/categories/resource">Resources</a><a class="navbar-item" href="/tags">Tags</a><a class="navbar-item" href="/about">AboutMe</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/chuzcjoe"><i class="fab fa-github"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-lightbulb" id="night-icon"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2024-05-16T19:46:49.000Z" title="5/16/2024, 12:46:49 PM">2024-05-16</time></span><span class="level-item"> Joe Chu </span><span class="level-item"><a class="link-muted" href="/categories/CGV/">CGV</a></span><span class="level-item">7 minutes read (About 1090 words)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>&nbsp;visits</span></div></div><h1 class="title is-3 is-size-4-mobile">YUV and RGB Color Space Conversion</h1><div class="content"><p>YUV to RGB, RGB to YUV</p>
+<span id="more"></span>
+
+<h1 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1. Introduction"></a>1. Introduction</h1><p>In the YUV color format:</p>
+<ul>
+<li>Y (Luminance): Represents the brightness or intensity of the color. It carries the grayscale image information.</li>
+<li>U (Chrominance Blue): Represents the blue color difference, which is the difference between the blue component and the luminance (Y). It adds the blue color information to the image.</li>
+<li>V (Chrominance Red): Represents the red color difference, which is the difference between the red component and the luminance (Y). It adds the red color information to the image.</li>
+</ul>
+<h1 id="2-RGB-to-YUV"><a href="#2-RGB-to-YUV" class="headerlink" title="2. RGB to YUV"></a>2. RGB to YUV</h1><p>Based on the definition above, converting RGB to YUV involves combining the RGB channels in specific proportions.</p>
+<p align="center">
+$$
+Y = K_r * R + K_g * G + K_b * B \\
+U = \frac{1}{2} * \frac{B-Y}{1-K_b} \\
+V = \frac{1}{2} * \frac{R-Y}{1-K_r}
+$$
+</p>
+
+<p>$ K_r, K_g, K_b $ are different ratios to blend RGB channels.</p>
+<p><strong>Note</strong><br>Let’s assume the input RGB image has values ranging from 0 to 1.</p>
+<ol>
+<li>$ K_r + K_g + K_b &#x3D; 1$</li>
+<li>$ U \in [-0.5, 0.5] $</li>
+<li>$ V \in [-0.5, 0.5] $</li>
+</ol>
+<p>Several reasons for UV ranging from -0.5 to 0.5:</p>
+<table>
+<thead>
+<tr>
+<th>Benifit</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Centering Around Zero</td>
+<td>Zero represents no color difference from the luminance.</td>
+</tr>
+<tr>
+<td>Color Balance</td>
+<td>Allows for a balanced representation of color differences. This range is symmetric, ensuring equal representation for both positive and negative deviations from the luminance, which helps in accurately reconstructing the color during the conversion back to RGB.</td>
+</tr>
+<tr>
+<td>Normalization</td>
+<td>The range is normalized to fit within a compact interval, which is efficient for encoding and transmission.</td>
+</tr>
+</tbody></table>
+<h1 id="3-XYZ-Color-Space"><a href="#3-XYZ-Color-Space" class="headerlink" title="3. XYZ Color Space"></a>3. XYZ Color Space</h1><p>The XYZ color space, also known as the CIE 1931 color space, is a color space defined by the International Commission on Illumination (CIE) in 1931. It is based on human vision and is designed to be a device-independent representation of color. Here are the key components:</p>
+<p>The CIE color space has been transformed to a two-dimensional, horseshoe-shaped graph of the luminance (brightness) and chromaticity (color) values perceived by humans. The chromaticity coordinates of any point on the graph are labeled x and y (or Cx and Cy).</p>
+<p align="center">
+    <img src="cie.png" title="A regular image" width="350" height="350">
+</p>
+
+<p>XYZ and RGB color spaces can be converted interchangeably.</p>
+<p><strong>From RGB to XYZ</strong></p>
+<p>$$<br>\begin{equation}<br>\left[\begin{array}{l}<br>X \\<br>Y \\<br>Z<br>\end{array}\right]&#x3D;\left[\begin{array}{lll}<br>0.4124564 &amp; 0.3575761 &amp; 0.1804375 \\<br>0.2126729 &amp; 0.7151522 &amp; 0.0721750 \\<br>0.0193339 &amp; 0.1191920 &amp; 0.9503041<br>\end{array}\right]\left[\begin{array}{l}<br>R \\<br>G \\<br>B<br>\end{array}\right]<br>\end{equation}<br>$$</p>
+<p><strong>From XYZ to RGB</strong></p>
+<p>$$<br>\left[\begin{array}{l}<br>R \\<br>G \\<br>B<br>\end{array}\right]&#x3D;\left[\begin{array}{ccc}<br>3.2404542 &amp; -1.5371385 &amp; -0.4985314 \\<br>-0.9692660 &amp; 1.8760108 &amp; 0.0415560 \\<br>0.0556434 &amp; -0.2040259 &amp; 1.0572252<br>\end{array}\right]\left[\begin{array}{l}<br>X \\<br>Y \\<br>Z<br>\end{array}\right]<br>$$</p>
+<h1 id="4-BT709-and-BT2020"><a href="#4-BT709-and-BT2020" class="headerlink" title="4. BT709 and BT2020"></a>4. BT709 and BT2020</h1><p>BT.709 and BT.2020 are standards developed by the International Telecommunication Union (ITU) for different aspects of video technology, specifically for encoding and broadcasting high-definition television (HDTV) and ultra-high-definition television (UHDTV), respectively.</p>
+<h2 id="4-1-BT-709-Rec-709"><a href="#4-1-BT-709-Rec-709" class="headerlink" title="4.1 BT.709(Rec.709)"></a>4.1 BT.709(Rec.709)</h2><table>
+<thead>
+<tr>
+<th></th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Definition</td>
+<td>It is the standard for HDTV.</td>
+</tr>
+<tr>
+<td>Resolutio</td>
+<td>Typically used for 1080p (1920x1080 pixels) and 720p (1280x720 pixels) resolutions.</td>
+</tr>
+<tr>
+<td>Color Space</td>
+<td>Defines the color space used for HD video, specifying the RGB color primaries, white point (D65), and the transfer function (gamma curve).</td>
+</tr>
+<tr>
+<td>Color Primaries</td>
+<td>Red: (0.640, 0.330)<br>Green: (0.300, 0.600)<br>Blue: (0.150, 0.060)</td>
+</tr>
+<tr>
+<td>Transfer Function</td>
+<td>optical-electro transfer function: $$ V &#x3D; 1.099L ^{0.45} - 0.099, V &gt; 0.018 $$ $$ V &#x3D; 0.45L, V \leq 0.018 $$ where V is the digital signal and L is the luminance, and both are in the range [0,1].</td>
+</tr>
+<tr>
+<td>Bit Depth</td>
+<td>Usually 8-bit or 10-bit per channel.</td>
+</tr>
+</tbody></table>
+<h1 id="4-2-BT-2020-Rec-2020"><a href="#4-2-BT-2020-Rec-2020" class="headerlink" title="4.2 BT.2020(Rec.2020)"></a>4.2 BT.2020(Rec.2020)</h1><table>
+<thead>
+<tr>
+<th></th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Definition</td>
+<td>It is the standard for UHDTV, including 4K (3840x2160 pixels) and 8K (7680x4320 pixels) resolutions.</td>
+</tr>
+<tr>
+<td>Color Space</td>
+<td>Defines a wider color gamut compared to BT.709, aiming to cover a broader range of colors visible to the human eye.</td>
+</tr>
+<tr>
+<td>Color Primaries</td>
+<td>Red: (0.708, 0.292)<br>Green: (0.170, 0.797)<br>Blue: (0.131, 0.046)</td>
+</tr>
+<tr>
+<td>Transfer Function</td>
+<td>$$ \begin{equation} E^{\prime} &#x3D; \begin{cases} 4.5 E &amp; 0 \leq E&lt;\beta \\ \alpha E^{0.45}-(\alpha-1) &amp; \beta \leq E \leq 1 \\ \end{cases} \end{equation} $$ 1. where E is the signal proportional to camera-input light intensity and E′ is the corresponding nonlinear signal.  2. where α &#x3D; 1 + 5.5 * β ≈ 1.09929682680944 and β ≈ 0.018053968510807 (values chosen to achieve a continuous function with a continuous first derivative)</td>
+</tr>
+<tr>
+<td>Bit Depth</td>
+<td>Typically 10-bit or 12-bit per channel, allowing for higher color precision and better handling of HDR content.</td>
+</tr>
+<tr>
+<td>HDR</td>
+<td>Supports HDR, providing greater contrast and more vivid colors.</td>
+</tr>
+</tbody></table>
+<h1 id="5-YUV-and-RGB-Conversion"><a href="#5-YUV-and-RGB-Conversion" class="headerlink" title="5. YUV and RGB Conversion"></a>5. YUV and RGB Conversion</h1><h2 id="5-1-For-BT709"><a href="#5-1-For-BT709" class="headerlink" title="5.1 For BT709"></a>5.1 For BT709</h2><p>As previously mentioned, the relationship between YUV and RGB can be defined as:</p>
+<p>$$<br>Y &#x3D; K_r * R + K_g * G + K_b * B \\<br>U &#x3D; \frac{1}{2} * \frac{B-Y}{1-K_b} \\<br>V &#x3D; \frac{1}{2} * \frac{R-Y}{1-K_r}<br>$$</p>
+<p>And RGB to XYZ can be defined as:</p>
+<p>$$<br>\begin{equation}<br>\left[\begin{array}{l}<br>X \\<br>Y \\<br>Z<br>\end{array}\right]&#x3D;\left[\begin{array}{lll}<br>0.4124 &amp; 0.3576 &amp; 0.1805 \\<br>0.2126 &amp; 0.7152 &amp; 0.0722 \\<br>0.0193 &amp; 0.1192 &amp; 0.9505<br>\end{array}\right]\left[\begin{array}{l}<br>R \\<br>G \\<br>B<br>\end{array}\right]<br>\end{equation}<br>$$</p>
+<p>$Y$ in XYZ is essentially the luminance. So, $K_r&#x3D;0.2126, K_g&#x3D;0.7152, K_b&#x3D;0.0722$. And we substitue the values to RGB-YUV euqation.</p>
+<p>$$<br>\begin{aligned}<br>&amp; Y&#x3D;0.2126 \cdot R+0.7152 \cdot G+0.0722 \cdot B \\<br>&amp; U&#x3D;\frac{B-Y}{1.8556} \\<br>&amp; V&#x3D;\frac{R-Y}{1.5748}<br>\end{aligned}<br>$$</p>
+<p>By substituting $Y$ to the other two equations.</p>
+<p>$$<br>\begin{aligned}<br>&amp; Y&#x3D;0.212600 \cdot R+0.715200 \cdot G+0.072200 \cdot B \\<br>&amp; U&#x3D;-0.114572 \cdot R-0.385428 \cdot G+0.5 \cdot B \\<br>&amp; V&#x3D;0.5 \cdot R-0.454153 \cdot G-0.045847 \cdot B<br>\end{aligned}<br>$$</p>
+<p>We can get the conversion matrix $M$ rom RGB to YUV,</p>
+<p>$$<br>\left[\begin{array}{l}<br>Y \\<br>U \\<br>V<br>\end{array}\right]&#x3D;\left[\begin{array}{ccc}<br>0.212600 &amp; 0.715200 &amp; 0.072200 \\<br>-0.114572 &amp; -0.385428 &amp; 0.500000 \\<br>0.500000 &amp; -0.454153 &amp; -0.045847<br>\end{array}\right] \cdot\left[\begin{array}{l}<br>R \\<br>G \\<br>B<br>\end{array}\right]<br>$$</p>
+<p>To get the conversion matrix from YUV to RGB, we compute the inverse matrix $M^{-1}$</p>
+<p>$$<br>\left[\begin{array}{l}<br>R \\<br>G \\<br>B<br>\end{array}\right]&#x3D;\left[\begin{array}{ccc}<br>1.000000 &amp; -0.000000 &amp; 1.574800 \\<br>1.000000 &amp; -0.187324 &amp; -0.468124 \\<br>1.000000 &amp; 1.855600 &amp; -0.000000<br>\end{array}\right] *\left[\begin{array}{l}<br>Y \\<br>U \\<br>V<br>\end{array}\right]<br>$$</p>
+<h2 id="5-2-For-BT2020"><a href="#5-2-For-BT2020" class="headerlink" title="5.2 For BT2020"></a>5.2 For BT2020</h2><p>Similar to BT709, except that the conversion matrix from RGB to XYZ becomes:</p>
+<p>$$<br>\begin{equation}<br>\left[\begin{array}{l}<br>X \\<br>Y \\<br>Z<br>\end{array}\right]&#x3D;\left[\begin{array}{lll}<br>0.636958 &amp; 0.144617 &amp; 0.168881 \\<br>0.262700 &amp; 0.678000 &amp; 0.059300 \\<br>0.000000 &amp; 0.028073 &amp; 1.060985<br>\end{array}\right]\left[\begin{array}{l}<br>R \\<br>G \\<br>B<br>\end{array}\right]<br>\end{equation}<br>$$</p>
+<p>I will start a new chapter to discuss how we can compute this conversion matrix.</p>
+<p>If we repeat the previous steps, we can get:</p>
+<p>$$<br>\left[\begin{array}{l}<br>Y \\<br>U \\<br>V<br>\end{array}\right]&#x3D;\left[\begin{array}{ccc}<br>0.262700 &amp; 0.678000 &amp; 0.059300 \\<br>-0.139630 &amp; -0.360370 &amp; 0.500000 \\<br>0.500000 &amp; -0.459786 &amp; -0.040214<br>\end{array}\right] *\left[\begin{array}{l}<br>R \\<br>G \\<br>B<br>\end{array}\right]<br>$$</p>
+<p>$$<br>\left[\begin{array}{l}<br>R \\<br>G \\<br>B<br>\end{array}\right]&#x3D;\left[\begin{array}{ccc}<br>1.000000 &amp; -0.000000 &amp; 1.474600 \\<br>1.000000 &amp; -0.164553 &amp; -0.571353 \\<br>1.000000 &amp; 1.881400 &amp; -0.000000<br>\end{array}\right] *\left[\begin{array}{l}<br>Y \\<br>U \\<br>V<br>\end{array}\right]<br>$$</p>
+<h1 id="Refernce"><a href="#Refernce" class="headerlink" title="Refernce"></a>Refernce</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://luminusdevices.zendesk.com/hc/en-us/articles/4414846186253-What-is-the-CIE-Color-Space-What-s-the-difference-between-CIE-1931-and-CIE-1976">https://luminusdevices.zendesk.com/hc/en-us/articles/4414846186253-What-is-the-CIE-Color-Space-What-s-the-difference-between-CIE-1931-and-CIE-1976</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.oceanopticsbook.info/view/photometry-and-visibility/from-xyz-to-rgb">https://www.oceanopticsbook.info/view/photometry-and-visibility/from-xyz-to-rgb</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.color.org/chardata/rgb/BT709.xalter">https://www.color.org/chardata/rgb/BT709.xalter</a></li>
+<li><a target="_blank" rel="noopener" href="http://www.brucelindbloom.com/index.html?Eqn_RGB_XYZ_Matrix.html">http://www.brucelindbloom.com/index.html?Eqn_RGB_XYZ_Matrix.html</a></li>
+</ul>
+</div><div class="article-licensing box"><div class="licensing-title"><p>YUV and RGB Color Space Conversion</p><p><a href="http://chuzcjoe.github.io/2024/05/16/cgv-yuv-to-rgb/">http://chuzcjoe.github.io/2024/05/16/cgv-yuv-to-rgb/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Joe Chu</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2024-05-16</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2025-01-09</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/yuv/">yuv</a><a class="link-muted mr-2" rel="tag" href="/tags/rgb/">rgb</a></div><div class="sharethis-inline-share-buttons"></div><script src="https://chuzcjoe.github.io/" defer></script></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>Alipay</span><span class="qrcode"><img src="/" alt="Alipay"></span></a><a class="button donate" data-type="paypal" onclick="document.getElementById(&#039;paypal-donate-form&#039;).submit()"><span class="icon is-small"><i class="fab fa-paypal"></i></span><span>Paypal</span></a><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" rel="noopener" id="paypal-donate-form"><input type="hidden" name="cmd" value="_donations"><input type="hidden" name="business" value="chuzcjoe@gmail.com"><input type="hidden" name="currency_code" value="USD"></form><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>Wechat</span><span class="qrcode"><img src="/img/wechat.jpg" alt="Wechat"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/2024/05/19/cpp-fold-expressions/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">Fold Expressions in C++</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2024/05/12/cgv-yuv-format/"><span class="level-item">YUV Color Format</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'http://chuzcjoe.github.io/2024/05/16/cgv-yuv-to-rgb/';
+            this.page.identifier = '2024/05/16/cgv-yuv-to-rgb/';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'chuzcjoe-github-io' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/me_1.png" alt="Joe Chu"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Joe Chu</p><p class="is-size-6 is-block">I like to keep knowledge and memories visible and readable.</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Fremont, CA</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">154</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">8</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">118</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/chuzcjoe" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/chuzcjoe"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/in/joe-chu-1784b3179/"><i class="fab fa-linkedin"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Scholar" href="https://scholar.google.com/citations?user=DCwJ1qcAAAAJ&amp;hl=en"><i class="fab fa-google"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><!--!--><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">Subscribe for updates</h3><form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open(&#039;https://feedburner.google.com/fb/a/mailverify?uri=&#039;,&#039;popupwindow&#039;,&#039;scrollbars=yes,width=550,height=520&#039;);return true"><input type="hidden" value="" name="uri"><input type="hidden" name="loc" value="en_US"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div><div class="card widget" data-type="subscribe-email"><div class="card-content"><div class="menu"><h3 class="menu-label">follow.it</h3><form action="" method="post" target="_blank"><div class="field has-addons"><div class="control has-icons-left is-expanded"><input class="input" name="email" type="email" placeholder="Email"><span class="icon is-small is-left"><i class="fas fa-envelope"></i></span></div><div class="control"><input class="button" type="submit" value="Subscribe"></div></div></form></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3"><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">Recents</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-01-06T18:25:02.000Z">2025-01-06</time></p><p class="title"><a href="/2025/01/06/misc-ffmpeg-start/">Cross Compile FFmpeg</a></p><p class="categories"><a href="/categories/misc/">misc</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2025-01-05T05:41:04.000Z">2025-01-04</time></p><p class="title"><a href="/2025/01/04/life-oakland-zoo/">Oakland Zoo</a></p><p class="categories"><a href="/categories/life/">life</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-12-31T05:33:36.000Z">2024-12-30</time></p><p class="title"><a href="/2024/12/30/life-la-trip/">Holiday Trip - LA</a></p><p class="categories"><a href="/categories/life/">life</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-12-25T03:50:34.000Z">2024-12-24</time></p><p class="title"><a href="/2024/12/24/life-christmas-eve/">Christmas Eve</a></p><p class="categories"><a href="/categories/life/">life</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2024-12-24T03:56:40.000Z">2024-12-23</time></p><p class="title"><a href="/2024/12/23/misc-jni-multi-threading/">JNI In Multi-threading</a></p><p class="categories"><a href="/categories/misc/">misc</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">Archives</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2025/"><span class="level-start"><span class="level-item">2025</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li><li><a class="level is-mobile" href="/archives/2024/"><span class="level-start"><span class="level-item">2024</span></span><span class="level-end"><span class="level-item tag">108</span></span></a></li><li><a class="level is-mobile" href="/archives/2023/"><span class="level-start"><span class="level-item">2023</span></span><span class="level-end"><span class="level-item tag">44</span></span></a></li></ul></div></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/expert.png" alt="JoeChu" height="28"></a><p class="is-size-7"><span>&copy; 2025 Joe Chu</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">Visited by <span id="busuanzi_value_site_uv">0</span> users</span></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><script src="/js/night.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

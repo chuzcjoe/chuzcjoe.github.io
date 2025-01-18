@@ -1,0 +1,892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://chuzcjoe.github.io/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/categories/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/tags/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/about/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2025/01/16/cpp-cpp-insights-tool/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2025/01/16/life-trip-phoenix/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2025/01/09/life-sausalito-tiburon/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2025/01/06/misc-ffmpeg-start/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2025/01/04/life-oakland-zoo/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/12/30/life-la-trip/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/12/24/life-christmas-eve/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/12/23/misc-jni-multi-threading/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/12/22/life-monterey-trip/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/12/22/life-baby-8month/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/page/2/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/page/16/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/12/18/life-crippsmas-place/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/12/14/life-palo-alto-junior-museum/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/12/07/life-enchant-san-jose/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/11/30/life-alviso-marina-county-park/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/11/24/cpp-static-polymorphism/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/11/23/cpp-union-performance-gain/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/11/07/cpp-function-visibility/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/10/06/cpp-json-parser/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/09/14/cpp-null-ptr-calls/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/09/14/cpp-threadpool2/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/09/10/cpp-define-function-pointers/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/08/03/cpp-static-assert-type-trait/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/07/29/cgv-learn-opengles-4/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/08/17/cgv-color-transfer-function/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/07/26/cgv-learn-opengles3/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/07/24/cgv-learn-opengles2/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/07/21/cgv-learn-opengles1/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/23/cgv-texture-render-android/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/19/cgv-native-opengl-android/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/05/20/cgv-bt709-bt2020/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/05/16/cgv-yuv-to-rgb/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/05/12/cgv-yuv-format/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/21/misc-learn-opengl-7/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/10/20/misc-slow-fast-pointers/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/10/20/misc-sliding-window-template/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/10/19/misc-stl-container-cpp-cheatsheet/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/09/15/misc-binary-insert/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/07/06/misc-cache-algorithms/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/07/04/misc-union-find/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/05/28/misc-recursion/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/05/24/misc-bfs/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/05/22/misc-how-to-write-bug-free-binary-search/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/03/26/algorithm/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/12/13/misc-mediacodec-basics/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/10/23/misc-jni-register-native/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/08/05/misc-tech-slang/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/07/01/misc-numeric-data-representation/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/22/misc-cross-compile-libjpeg-for-android-armv8a/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/13/misc-read-png/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/10/misc-niw/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/09/misc-simd1/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/11/19/tool-heci-to-jpg/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/11/06/tool-spanish-vocabulary-app/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/12/18/misc-learn-opencl/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/12/14/misc-effective-modern-cpp/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/11/14/misc-leetcode-101/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/07/31/misc-the-art-of-linear-algebra/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/page/3/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/06/cppstlcheatsheet/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/06/smartpointer/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/06/halloween/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/06/emplace-back/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/06/pacifica-state-beach/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/06/lc281/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/06/lc225/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/page/15/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/12/29/life-christmas-in-the-park/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/12/29/life-safari-west/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/12/29/life-sf-chinatown/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/12/15/cpp-design-matrix/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/12/15/cpp-design-iterator/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/12/14/cpp-design-vector/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/12/12/cpp-vtable/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/12/10/life-christmas-lightshow/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/12/09/cpp-slicing/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/12/07/cpp-explicit/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/10/lc179/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/10/lc27/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/10/lc56/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/11/18/life-7month-baby/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/11/10/life-Lakeshore-Park-newark/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/11/01/life-2024-Halloween/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/10/23/life-tiktok-open-house/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/10/18/life-baby-6month/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/09/28/life-ardenwood-historic-farm/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/09/22/life-baby-5month/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/09/20/life-clc-tournament/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/08/19/life-baby-4months/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/08/05/life-rear-ended/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/25/life-vargas-park/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/22/life-niles-community-park/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/19/life-blackhawk-museum/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/11/life-santacruz/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/09/lumei/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/03/24/cpp-threading-pool/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/09/08/cpp-load-functions-from-shared-library/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/07/23/cpp-rtti/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/07/18/cpp-rule-of-zero-three-five/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/07/13/cpp-variable-template/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/07/11/cpp-enable-shared-from-this/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/07/04/misc-cpp-special-member-functions/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/29/cpp-static-shared-library/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/27/cpp-extern/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/13/cpp-constexpr-consteval/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/08/cpp-allocator/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/06/cpp-observer/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/07/18/life-baby-3-month/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/24/life-tea/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/22/life-baby-2month/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/05/19/cpp-fold-expressions/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/05/10/life-birthday-rewards/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/21/cpp-static/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/20/misc-learn-opengl-6/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/19/misc-learn-opengl-5/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/17/misc-learn-opengl-4/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/15/misc-learn-opengl-3/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/14/misc-learn-opengl-2/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/14/misc-learn-opengl-1/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/07/07/life-retro-game/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/07/04/life-fourth-of-july-show/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/07/04/life-baby-halfmoon-bay/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/05/29/cpp-decltype/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/05/27/cpp-initializer/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/05/24/cpp-volatile/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/05/23/life-one-month-baby/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/03/31/life-marina-park/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/09/MLSystemDesignFrameWork/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/09/behaviroalQuestions/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/12/life-super-dad/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/07/cpp-add-gtest-to-cpp-project/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/05/08/misc-fourier-analysis/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/19/misc-great-resources/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/14/misc-mojo-tutorial1/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/07/07/life-baby-2-to-3-month/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/05/26/life-baby-clips/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/05/cpp-builder/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/04/25/life-lucas-first-week/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/05/07/life-collage-lucas/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/04/30/life-lucas-cord/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/04/07/cpp-coroutine/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/05/08/cpp-enum-class/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/05/07/cpp-string-view/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/04/14/cpp-nodiscard/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/02/cpp-virtual-inheritance/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/05/25/cpp-lvalue-rvalue/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/03/cpp-scope-resolution-operator/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/29/life-team-building/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/04/cpp-singleton/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/06/life-sleep-in-park/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/06/life-tummytime/</loc>
+  <lastmod>2025-01-18T04:27:03+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/06/04/cpp-union/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2024/04/28/cpp-parameter-pack/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/page/4/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/09/cpp20span/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/12/cpp-how-to-interpret-complex-variable-definition/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/09/lambdaExpressionCPP/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/page/14/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/12/06/cpp-casting/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/17/cpp-virtual-destructor/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/17/cpp-virtual-function/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/2023/11/15/cpp-constexpr/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/page/5/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/page/13/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/page/6/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/page/12/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.33</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/page/7/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/page/11/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.26</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/page/8/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/page/10/</loc>
+  <lastmod>2025-01-18T04:27:02+00:00</lastmod>
+  <priority>0.21</priority>
+</url>
+<url>
+  <loc>https://chuzcjoe.github.io/page/9/</loc>
+  <lastmod>2025-01-18T04:27:01+00:00</lastmod>
+  <priority>0.17</priority>
+</url>
+
+
+</urlset>

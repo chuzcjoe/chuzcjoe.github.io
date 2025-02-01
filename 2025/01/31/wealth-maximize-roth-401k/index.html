@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Maximize Roth401k - JoeChu</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="JoeChu"><meta name="msapplication-TileImage" content="/img/expert.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="JoeChu"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="In this post, I will perform a thorough mathematical analysis to demonstrate how to maximize your 401(k) contributions."><meta property="og:type" content="blog"><meta property="og:title" content="Maximize Roth401k"><meta property="og:url" content="http://chuzcjoe.github.io/2025/01/31/wealth-maximize-roth-401k/"><meta property="og:site_name" content="JoeChu"><meta property="og:description" content="In this post, I will perform a thorough mathematical analysis to demonstrate how to maximize your 401(k) contributions."><meta property="og:locale" content="en_US"><meta property="og:image" content="http://chuzcjoe.github.io/img/og_image.png"><meta property="article:published_time" content="2025-01-31T18:14:24.000Z"><meta property="article:modified_time" content="2025-02-01T06:03:36.724Z"><meta property="article:author" content="Joe Chu"><meta property="article:tag" content="roth"><meta property="article:tag" content="401k"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="http://chuzcjoe.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://chuzcjoe.github.io/2025/01/31/wealth-maximize-roth-401k/"},"headline":"Maximize Roth401k","image":["http://chuzcjoe.github.io/img/og_image.png"],"datePublished":"2025-01-31T18:14:24.000Z","dateModified":"2025-02-01T06:03:36.724Z","author":{"@type":"Person","name":"Joe Chu"},"publisher":{"@type":"Organization","name":"JoeChu","logo":{"@type":"ImageObject","url":"http://chuzcjoe.github.io/img/expert.png"}},"description":"In this post, I will perform a thorough mathematical analysis to demonstrate how to maximize your 401(k) contributions."}</script><link rel="canonical" href="http://chuzcjoe.github.io/2025/01/31/wealth-maximize-roth-401k/"><link rel="icon" href="/img/expert.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.1.1"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/expert.png" alt="JoeChu" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories/life">Life</a><a class="navbar-item" href="/categories/cpp">C/C++</a><a class="navbar-item" href="/categories/CGV">CG/CV</a><a class="navbar-item" href="/categories/interview">Interview</a><a class="navbar-item" href="/categories/misc">Misc</a><a class="navbar-item" href="/categories/tool">Tool</a><a class="navbar-item" href="/categories/wealth">Wealth</a><a class="navbar-item" href="/categories/resource">Resources</a><a class="navbar-item" href="/about">AboutMe</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/chuzcjoe"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-lightbulb" id="night-icon"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-10-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2025-01-31T18:14:24.000Z" title="1/31/2025, 10:14:24 AM">2025-01-31</time></span><span class="level-item"> Joe Chu </span><span class="level-item"><a class="link-muted" href="/categories/wealth/">wealth</a></span><span class="level-item">4 minutes read (About 616 words)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>&nbsp;visits</span></div></div><h1 class="title is-3 is-size-4-mobile">Maximize Roth401k</h1><div class="content"><p>In this post, I will perform a thorough mathematical analysis to demonstrate how to maximize your 401(k) contributions.</p>
+<span id="more"></span>
+
+<p>Since the contribution limit varies in different year, I will use <code>2024</code> for demonstration purpose.</p>
+<h1 id="1-Some-Basic-Data"><a href="#1-Some-Basic-Data" class="headerlink" title="1. Some Basic Data"></a>1. Some Basic Data</h1><p>For 2024 calendar year, the contribution limits:</p>
+<p>➡️ <code>$23000</code>: pre-tax and roth employee contribution<br>➡️ <code>$69000</code>: employee + employer contribution<br>➡️ <code>$76500</code>: employee + employer contribution if 50 or older</p>
+<p>source from <a target="_blank" rel="noopener" href="https://www.irs.gov/newsroom/401k-limit-increases-to-23000-for-2024-ira-limit-rises-to-7000#:~:text=401(k)%20limit%20increases%20to,Internal%20Revenue%20Service">IRS</a></p>
+<p>We have some basic assumptions as follows:</p>
+<p>➡️ Jack (27 years old) with annual base salary of <code>A</code>, he chooses to contribute <code>B%</code> to Roth 401k in each paycheck.<br>➡️ Jack’s employer matches <code>C%</code> of Jack’s contribution<br>➡️ Assume that his employer offers the option of after-tax contribution (but no matching), and Jack chooses to contribute <code>D%</code>.<br>➡️ Jack’s employer offers annual target bonus, which is <code>E%</code> of the base salary.</p>
+<p>In our assumptions, some numbers are fixed such as <code>A</code>, <code>C</code> and <code>E</code>.</p>
+<h1 id="2-Maximize-Employee-Contribution"><a href="#2-Maximize-Employee-Contribution" class="headerlink" title="2. Maximize Employee Contribution"></a>2. Maximize Employee Contribution</h1><p>it is important to note that your Roth 401(k) contributions are calculated based on your before-tax (gross) income, even though they are made with after-tax dollars.</p>
+<p>$$<br>\begin{equation}<br>Bonus &#x3D; \frac{E}{100} \times A<br>\end{equation}<br>$$</p>
+<p>To maximize the personal contribution:</p>
+<p>$$<br>\begin{equation}<br>B\% \times A + B\% \times (\frac{E}{100} \times A) &#x3D; 23000<br>\end{equation}<br>$$</p>
+<p>We can get <code>B</code> as:</p>
+<p>$$<br>\begin{equation}<br>B &#x3D; \frac{23000}{A \times (1 + \frac{E}{100}) } \times 100<br>\end{equation}<br>$$</p>
+<p>For example, if Jack earns <code>$200000</code> a year with target bonus of <code>25%</code>, to reach maximum contribution, he needs to set contribution percentage to be:</p>
+<p>$$<br>\begin{equation}<br>\frac{23000}{200000 \times (1 + \frac{25}{100}) } \times 100 &#x3D; 9.2<br>\end{equation}<br>$$</p>
+<h1 id="3-Maximize-Employee-Employer-Contribution"><a href="#3-Maximize-Employee-Employer-Contribution" class="headerlink" title="3. Maximize Employee + Employer Contribution"></a>3. Maximize Employee + Employer Contribution</h1><p>Reaching the maximum total contribution limit can be a bit complex, as companies have different employer matching policies. For instance, some employers may cap their match at a specific amount or percentage. Common examples include phrases like, “<strong>The company will match 50% of your contribution, up to a maximum of 5% of your eligible pay</strong>,” or “<strong>The company’s match will not exceed 50% of the IRS limit</strong>,” and so on.</p>
+<p> To simplify the calculation, we assume Jack’s employer is very generous and willing to set no restriction on the employer matching limit. In order to reach the maximum of <code>$69000</code>, there is still a big gap. So, Jack has to do after-tax contribution. Then, the equation would be: </p>
+<p align="center">
+    Jack’s Contributions + Employer Match + After-Tax Contributions = 69000
+</p>
+
+<p>The employer matches <code>C%</code> of Jack’s $23000 contribution. Therefore, the employer’s match is:</p>
+<p>$$<br>\begin{equation}<br>Employer Match &#x3D; \frac{C}{100} \times 23000<br>\end{equation}<br>$$</p>
+<p>Since Jack has maximized personal contribution, the total remaining contribution required after Jack’s Roth contribution is:</p>
+<p>$$<br>\begin{equation}<br>69000−23000&#x3D;46000<br>\end{equation}<br>$$</p>
+<p>Jack will contribute <code>D%</code> of his salary <code>A</code> as after-tax contributions. Therefore:</p>
+<p>$$<br>\begin{equation}<br>D\% \times A &#x3D; 46000 − \frac{C}{100} \times 23000<br>\end{equation}<br>$$</p>
+<p>Therefore, <code>D</code> can be obtained as:</p>
+<p>$$<br>\begin{equation}<br>D &#x3D; \frac{46000 - \frac{C}{100} \times 23000}{A} \times 100<br>\end{equation}<br>$$</p>
+<p>If Jack’s employer matches <code>6%</code> of Jack’s contribution, then Jack needs to contribute additional <code>17.25%</code> to reach the limit.</p>
+<p>$$<br>\begin{equation}<br>\frac{46000 - \frac{50}{100} \times 23000}{200000} \times 100 &#x3D; 17.25<br>\end{equation}<br>$$</p>
+<h1 id="4-Conclusion"><a href="#4-Conclusion" class="headerlink" title="4. Conclusion"></a>4. Conclusion</h1><ol>
+<li><p>Reaching the personal contribution limit is relatively straightforward, but we may also need to account for other factors, such as one-time bonuses.</p>
+</li>
+<li><p>Reaching the total contribution limit can be more complicated, as different companies have varying rules for matching contributions. The analysis above is based on general assumptions, so be sure to carefully review your company’s matching policies for accurate contribution percentages.</p>
+</li>
+</ol>
+<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://www.irs.gov/newsroom/401k-limit-increases-to-23000-for-2024-ira-limit-rises-to-7000#:~:text=401(k)%20limit%20increases%20to,Internal%20Revenue%20Service">https://www.irs.gov/newsroom/401k-limit-increases-to-23000-for-2024-ira-limit-rises-to-7000#:~:text=401(k)%20limit%20increases%20to,Internal%20Revenue%20Service</a></li>
+</ul>
+</div><div class="article-licensing box"><div class="licensing-title"><p>Maximize Roth401k</p><p><a href="http://chuzcjoe.github.io/2025/01/31/wealth-maximize-roth-401k/">http://chuzcjoe.github.io/2025/01/31/wealth-maximize-roth-401k/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Joe Chu</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2025-01-31</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2025-01-31</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/roth/">roth</a><a class="link-muted mr-2" rel="tag" href="/tags/401k/">401k</a></div><div class="sharethis-inline-share-buttons"></div><script src="https://chuzcjoe.github.io/" defer></script></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>Alipay</span><span class="qrcode"><img src="/" alt="Alipay"></span></a><a class="button donate" data-type="paypal" onclick="document.getElementById(&#039;paypal-donate-form&#039;).submit()"><span class="icon is-small"><i class="fab fa-paypal"></i></span><span>Paypal</span></a><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" rel="noopener" id="paypal-donate-form"><input type="hidden" name="cmd" value="_donations"><input type="hidden" name="business" value="chuzcjoe@gmail.com"><input type="hidden" name="currency_code" value="USD"></form><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>Wechat</span><span class="qrcode"><img src="/img/wechat.jpg" alt="Wechat"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2025/01/30/wealth-medicaid-medicare-medicaid/"><span class="level-item">Medicare vs Medicaid</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'http://chuzcjoe.github.io/2025/01/31/wealth-maximize-roth-401k/';
+            this.page.identifier = '2025/01/31/wealth-maximize-roth-401k/';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'chuzcjoe-github-io' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/me.jpeg" alt="Joe Chu"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Joe Chu</p><p class="is-size-6 is-block">I like to keep knowledge and memories visible and readable.</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Fremont, CA</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">165</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">8</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">127</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/chuzcjoe" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/chuzcjoe"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/in/joe-chu-1784b3179/"><i class="fab fa-linkedin"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Scholar" href="https://scholar.google.com/citations?user=DCwJ1qcAAAAJ&amp;hl=en"><i class="fab fa-google"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#1-Some-Basic-Data"><span class="level-left"><span class="level-item">1</span><span class="level-item">1. Some Basic Data</span></span></a></li><li><a class="level is-mobile" href="#2-Maximize-Employee-Contribution"><span class="level-left"><span class="level-item">2</span><span class="level-item">2. Maximize Employee Contribution</span></span></a></li><li><a class="level is-mobile" href="#3-Maximize-Employee-Employer-Contribution"><span class="level-left"><span class="level-item">3</span><span class="level-item">3. Maximize Employee + Employer Contribution</span></span></a></li><li><a class="level is-mobile" href="#4-Conclusion"><span class="level-left"><span class="level-item">4</span><span class="level-item">4. Conclusion</span></span></a></li><li><a class="level is-mobile" href="#References"><span class="level-left"><span class="level-item">5</span><span class="level-item">References</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/expert.png" alt="JoeChu" height="28"></a><p class="is-size-7"><span>&copy; 2025 Joe Chu</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">Visited by <span id="busuanzi_value_site_uv">0</span> users</span></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><script src="/js/night.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

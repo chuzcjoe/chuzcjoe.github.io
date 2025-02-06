@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Understanding APY &amp; APR - JoeChu</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="JoeChu"><meta name="msapplication-TileImage" content="/img/expert.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="JoeChu"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="In this post, we will discuss APY &amp;amp; APR in depth."><meta property="og:type" content="blog"><meta property="og:title" content="Understanding APY &amp; APR"><meta property="og:url" content="http://chuzcjoe.github.io/2025/02/05/wealth-apy/"><meta property="og:site_name" content="JoeChu"><meta property="og:description" content="In this post, we will discuss APY &amp;amp; APR in depth."><meta property="og:locale" content="en_US"><meta property="og:image" content="http://chuzcjoe.github.io/img/og_image.png"><meta property="article:published_time" content="2025-02-06T05:03:59.000Z"><meta property="article:modified_time" content="2025-02-06T06:27:19.494Z"><meta property="article:author" content="Joe Chu"><meta property="article:tag" content="apy"><meta property="article:tag" content="apr"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="http://chuzcjoe.github.io/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://chuzcjoe.github.io/2025/02/05/wealth-apy/"},"headline":"Understanding APY & APR","image":["http://chuzcjoe.github.io/img/og_image.png"],"datePublished":"2025-02-06T05:03:59.000Z","dateModified":"2025-02-06T06:27:19.494Z","author":{"@type":"Person","name":"Joe Chu"},"publisher":{"@type":"Organization","name":"JoeChu","logo":{"@type":"ImageObject","url":"http://chuzcjoe.github.io/img/expert.png"}},"description":"In this post, we will discuss APY &amp; APR in depth."}</script><link rel="canonical" href="http://chuzcjoe.github.io/2025/02/05/wealth-apy/"><link rel="icon" href="/img/expert.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.1.1"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/expert.png" alt="JoeChu" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories/life">Life</a><a class="navbar-item" href="/categories/cpp">C/C++</a><a class="navbar-item" href="/categories/CGV">CG/CV</a><a class="navbar-item" href="/categories/interview">Interview</a><a class="navbar-item" href="/categories/misc">Misc</a><a class="navbar-item" href="/categories/tool">Tool</a><a class="navbar-item" href="/categories/wealth">Wealth</a><a class="navbar-item" href="/categories/resource">Resources</a><a class="navbar-item" href="/about">AboutMe</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/chuzcjoe"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-lightbulb" id="night-icon"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-10-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2025-02-06T05:03:59.000Z" title="2/5/2025, 9:03:59 PM">2025-02-05</time></span><span class="level-item"> Joe Chu </span><span class="level-item"><a class="link-muted" href="/categories/wealth/">wealth</a></span><span class="level-item">6 minutes read (About 950 words)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>&nbsp;visits</span></div></div><h1 class="title is-3 is-size-4-mobile">Understanding APY &amp; APR</h1><div class="content"><p>In this post, we will discuss APY &amp; APR in depth. </p>
+<span id="more"></span>
+
+<h1 id="1-APY"><a href="#1-APY" class="headerlink" title="1. APY"></a>1. APY</h1><p>APY (Annual Percentage Yield) is the actual return on an investment or savings account, including the effects of compounding over a year. Compounding means that interest is calculated and added to the principal balance once per month. This means that each month, interest is earned not only on the original deposit but also on the interest that has accumulated from previous months.</p>
+<p>To calculate APY, we can start with compounding interest. Compound interest means that interest is earned on both the initial principal and previously earned interest. The formula for compound interest is:</p>
+<p>$$<br>\begin{equation}<br>A_{1} &#x3D; P \times (1 + \frac{r}{n}) \\<br>A_{2} &#x3D; A_{1} \times (1 + \frac{r}{n}) &#x3D; P \times (1 + \frac{r}{n}) \times (1 + \frac{r}{n}) \\<br>… \\<br>A_{12} &#x3D; A_{11} \times (1 + \frac{r}{n}) &#x3D; P \times (1 + \frac{r}{n})^n<br>\end{equation}<br>$$</p>
+<p>where:</p>
+<ul>
+<li>$A$ is the final amount.</li>
+<li>$P$ is the initial principal.</li>
+<li>$r$ is the interest rate.</li>
+<li>$n$ is the number of compounding periods per year.</li>
+<li>$r&#x2F;n$ is the interest rate every month.</li>
+</ul>
+<p>For <code>APY</code>, we are interested in how much <code>$1</code> will grow after 1 year. So $P&#x3D;1$.</p>
+<p>$$<br>\begin{equation}<br>APY &#x3D; (1 + \frac{r}{n})^n - 1<br>\end{equation}<br>$$</p>
+<h1 id="2-APR"><a href="#2-APR" class="headerlink" title="2. APR"></a>2. APR</h1><p>APR (Annual Percentage Rate) is the annual cost of borrowing money, expressed as a percentage of the loan amount. It includes the interest rate plus certain fees but does not account for the effects of compounding. You probably see a lot on car dealership advertisement mentioning <strong>4.99% APR</strong>. It means you will be charged <code>4.99%</code> of the loan amount per year in interest and fees.</p>
+<p>Given total loan amount, APR and total number of payments(months), how can we estimate the monthly loan payment? Let’s derive the calculation step by step.</p>
+<p><strong>Step 1: Understanding Load Payment</strong></p>
+<p>A loan consists of principal and interest. Each month, the borrower makes a fixed payment, which covers:</p>
+<ul>
+<li>Interest on the remaining loan balance</li>
+<li>A portion that reduces the principal</li>
+</ul>
+<p>The lender applies the interest first, and the remaining part reduces the principal.</p>
+<p><strong>Step 2: Calculate Load Balance Over Time</strong></p>
+<p>At the start, you borrow $P$. After one month, the loan balance grows due to interest:<br>$$<br>\begin{equation}<br>\text{New Balance} &#x3D; P + P \times r &#x3D; P(1 + r)<br>\end{equation}<br>$$</p>
+<p>Since you make $M$ payment, the remaining balance becomes:<br>$$<br>\begin{equation}<br>\text{BalanceAfterFirstMonth} &#x3D; P(1 + r) - M<br>\end{equation}<br>$$</p>
+<p>After the second month, interest applies again and $M$ payment is made.<br>$$<br>\begin{equation}<br>\begin{aligned}<br>\text{BalanceAfterSecondMonth} &amp;&#x3D; (P(1 + r) - M)(1 + r) - M \\<br>&amp;&#x3D; P(1 + r)^{2} - M(1 + r) - M<br>\end{aligned}<br>\end{equation}<br>$$</p>
+<p>Following this pattern, after $n$ months, the loan should be fully paid off, meaning the balance reaches zero:<br>$$<br>\begin{equation}<br>P(1 + r)^{n} - M[(1 + r)^{n-1} + (1 + r)^{n-2}+…+1] &#x3D; 0<br>\end{equation}<br>$$</p>
+<p><strong>Step 3: Summing the Series</strong></p>
+<p>The bracketed term is a geometric series:<br>$$<br>\begin{equation}<br>S &#x3D; (1 + r)^{n-1} + (1 + r)^{n-2}+…+1<br>\end{equation}<br>$$</p>
+<p>The sum of a finite geometric series is:<br>$$<br>\begin{equation}<br>S &#x3D; \frac{1 - (1 + r)^{n}}{1 - (1 + r)} &#x3D; \frac{1 - (1 + r)^{n}}{-r}<br>\end{equation}<br>$$</p>
+<p>We rewrite the equation:<br>$$<br>\begin{equation}<br>P(1 + r)^{n} &#x3D; M \frac{1 - (1 + r)^{n}}{-r} &#x3D; M \frac{(1 + r)^{n} - 1}{r}<br>\end{equation}<br>$$</p>
+<p>Solving for $M$:<br>$$<br>\begin{equation}<br>M &#x3D; \frac{P(1 + r)^{n}r}{(1 + r)^{n} - 1} &#x3D; \frac{P \times r}{1 - (1 + r)^{-n}}<br>\end{equation}<br>$$</p>
+<p>where:</p>
+<ul>
+<li>$M$ is the monthly payment.</li>
+<li>$P$ is the loan amount.</li>
+<li>$r$ is the month interest (<strong>APY&#x2F;12</strong>)</li>
+<li>$n$ is the number of months.</li>
+</ul>
+<p>This is the standard <strong>amortization formula</strong> used for fixed-rate loans.</p>
+<p>For instance, if my car loan amount is <code>$19,000</code>, the dealership guarantees a fixed APR of <code>4.99%</code>, and I choose a repayment term of <code>60</code> months, then my monthly payment is:</p>
+<p>$$<br>\begin{equation}<br>M &#x3D; \frac{P \times r}{1 - (1 + r)^{-n}} &#x3D; \frac{19000 \times \frac{0.0499}{12}}{(1 - (1 + \frac{0.0499}{12})^{-60})} \approx 358.466<br>\end{equation}<br>$$</p>
+<p>One key feature of amortized loans is that most of your payment goes toward interest at the beginning of the loan. This happens because of how loan interest is calculated and how principal payments are structured in the early stages of the loan.</p>
+<ol>
+<li>Interest is Calculated on the Remaining Balance:</li>
+</ol>
+<ul>
+<li>In an amortized loan, each payment is split into two parts: one portion pays off the interest and the other pays down the principal (the amount you originally borrowed).</li>
+<li>The interest portion is calculated on the remaining balance of the loan, so when you first take out the loan, the remaining balance is the full amount you borrowed (e.g., $20,000).</li>
+</ul>
+<ol start="2">
+<li>Larger Interest Payment at the Start:</li>
+</ol>
+<ul>
+<li>The amount of interest you owe each month is based on the remaining balance of the loan. At the beginning, when your loan balance is high, the interest portion is larger.</li>
+<li>For example, if you borrow <code>$20,000</code> at <code>5%</code> APR, the interest charged for the first month is calculated on the full <code>$20,000</code>.</li>
+</ul>
+<p>$$<br>\begin{equation}<br>\text{Interest for 1st month} &#x3D; 20000 \times 0.05 &#x2F; 12 &#x3D; 83.33<br>\end{equation}<br>$$</p>
+<ul>
+<li>As you make payments, the loan balance decreases, so the interest portion decreases over time.</li>
+</ul>
+<ol start="3">
+<li>Smaller Principal Payment Initially:</li>
+</ol>
+<ul>
+<li>Since the interest portion is higher at the start, the portion of your monthly payment that goes toward the principal is relatively small at first.</li>
+<li>Over time, as you pay down the loan balance, the interest amount reduces, allowing a larger portion of your payment to go toward the principal.</li>
+</ul>
+<ol start="4">
+<li>Amortization Schedule:</li>
+</ol>
+<ul>
+<li>This is why lenders often create an amortization schedule, showing how each payment is split into principal and interest. In the early months, most of your payment goes to interest, and as the loan balance decreases, more of your payment goes toward reducing the principal.</li>
+</ul>
+<p>Let’s say you have a <code>$20,000</code> loan at <code>5%</code> APR, with a <code>60-month</code> term. Your first few payments might look like this:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Payment #</strong></th>
+<th><strong>Payment Amount</strong></th>
+<th><strong>Interest Payment</strong></th>
+<th><strong>Principal Payment</strong></th>
+<th><strong>Remaining Balance</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>$377.42</td>
+<td>$83.33</td>
+<td>$294.09</td>
+<td>$19,705.91</td>
+</tr>
+<tr>
+<td>2</td>
+<td>$377.42</td>
+<td>$82.60</td>
+<td>$294.82</td>
+<td>$19,411.09</td>
+</tr>
+<tr>
+<td>3</td>
+<td>$377.42</td>
+<td>$81.53</td>
+<td>$295.89</td>
+<td>$19,115.20</td>
+</tr>
+</tbody></table>
+<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://www.investopedia.com/terms/a/apy.asp">https://www.investopedia.com/terms/a/apy.asp</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.investopedia.com/terms/a/amortization.asp">https://www.investopedia.com/terms/a/amortization.asp</a></li>
+</ul>
+</div><div class="article-licensing box"><div class="licensing-title"><p>Understanding APY &amp; APR</p><p><a href="http://chuzcjoe.github.io/2025/02/05/wealth-apy/">http://chuzcjoe.github.io/2025/02/05/wealth-apy/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Joe Chu</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2025-02-05</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2025-02-05</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/apy/">apy</a><a class="link-muted mr-2" rel="tag" href="/tags/apr/">apr</a></div><div class="sharethis-inline-share-buttons"></div><script src="https://chuzcjoe.github.io/" defer></script></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>Alipay</span><span class="qrcode"><img src="/" alt="Alipay"></span></a><a class="button donate" data-type="paypal" onclick="document.getElementById(&#039;paypal-donate-form&#039;).submit()"><span class="icon is-small"><i class="fab fa-paypal"></i></span><span>Paypal</span></a><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" rel="noopener" id="paypal-donate-form"><input type="hidden" name="cmd" value="_donations"><input type="hidden" name="business" value="chuzcjoe@gmail.com"><input type="hidden" name="currency_code" value="USD"></form><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>Wechat</span><span class="qrcode"><img src="/img/wechat.jpg" alt="Wechat"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/2025/02/04/cgv-mu-transform/"><span class="level-item">Mu Transform</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'http://chuzcjoe.github.io/2025/02/05/wealth-apy/';
+            this.page.identifier = '2025/02/05/wealth-apy/';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'chuzcjoe-github-io' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/me.jpeg" alt="Joe Chu"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Joe Chu</p><p class="is-size-6 is-block">I like to keep knowledge and memories visible and readable.</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Fremont, CA</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">169</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">8</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">132</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/chuzcjoe" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/chuzcjoe"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/in/joe-chu-1784b3179/"><i class="fab fa-linkedin"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Scholar" href="https://scholar.google.com/citations?user=DCwJ1qcAAAAJ&amp;hl=en"><i class="fab fa-google"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#1-APY"><span class="level-left"><span class="level-item">1</span><span class="level-item">1. APY</span></span></a></li><li><a class="level is-mobile" href="#2-APR"><span class="level-left"><span class="level-item">2</span><span class="level-item">2. APR</span></span></a></li><li><a class="level is-mobile" href="#References"><span class="level-left"><span class="level-item">3</span><span class="level-item">References</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/expert.png" alt="JoeChu" height="28"></a><p class="is-size-7"><span>&copy; 2025 Joe Chu</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">Visited by <span id="busuanzi_value_site_uv">0</span> users</span></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><script src="/js/night.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

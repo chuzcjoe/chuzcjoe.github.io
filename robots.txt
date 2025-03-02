@@ -9,4 +9,5 @@ Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
 Disallow: /fancybox/
-Sitemap: https://chuzcjoe.github.io/sitemap_index.xml
+Disallow: /sitemap_new.xml
+Sitemap: https://chuzcjoe.github.io/sitemap.xml

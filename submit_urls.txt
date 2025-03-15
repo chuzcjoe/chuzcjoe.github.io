@@ -8,13 +8,3 @@ http://chuzcjoe.github.io/life/life-flower-bloom/
 http://chuzcjoe.github.io/misc/misc-some-random-thoughts/
 http://chuzcjoe.github.io/life/life-lake-chabot-regional-park/
 http://chuzcjoe.github.io/CGV/cgv-opengl-context-state-resource/
-http://chuzcjoe.github.io/cpp/cpp-vtable-hack/
-http://chuzcjoe.github.io/life/life-vasona-lake-county-park/
-http://chuzcjoe.github.io/life/life-shinn-historical-park/
-http://chuzcjoe.github.io/cpp/cpp-dependent-name/
-http://chuzcjoe.github.io/cpp/cpp-load-functions-from-shared-library/
-http://chuzcjoe.github.io/misc/misc-mcdonald-coke-tastes-better/
-http://chuzcjoe.github.io/cpp/cpp-most-vexing-parse/
-http://chuzcjoe.github.io/life/life-coyote-point-recreation-area/
-http://chuzcjoe.github.io/CGV/cgv-exposure-value/
-http://chuzcjoe.github.io/misc/misc-hexo-icarus-add-page-view/

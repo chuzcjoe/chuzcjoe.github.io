@@ -1,3 +1,4 @@
+https://chuzcjoe.github.io/life/life-spring-is-here/
 https://chuzcjoe.github.io/cpp/cpp-crtp/
 https://chuzcjoe.github.io/life/baby-11-month/
 https://chuzcjoe.github.io/CGV/cgv-define-shaders/
@@ -7,4 +8,3 @@ https://chuzcjoe.github.io/misc/misc-hexo-inline-code-style/
 https://chuzcjoe.github.io/CGV/cgv-vulkan-setup-macos/
 https://chuzcjoe.github.io/tool/tool-useful-scripts/
 https://chuzcjoe.github.io/life/life-rapeseed-at-fremont/
-https://chuzcjoe.github.io/cpp/cpp-class-size/

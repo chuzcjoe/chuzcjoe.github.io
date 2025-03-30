@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Memory Layout in C/C++ - JoeChu</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="JoeChu&#039;s Blog"><meta name="msapplication-TileImage" content="/img/expert.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="JoeChu&#039;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Memory layout of a process."><meta property="og:type" content="blog"><meta property="og:title" content="Memory Layout in C/C++"><meta property="og:url" content="http://chuzcjoe.github.io/misc/misc-memory-layout-in-process/"><meta property="og:site_name" content="JoeChu"><meta property="og:description" content="Memory layout of a process."><meta property="og:locale" content="en_US"><meta property="og:image" content="https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/memory-layout/from-program-to-process.png"><meta property="og:image" content="https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/memory-layout/memory.png"><meta property="article:published_time" content="2025-03-27T16:10:01.000Z"><meta property="article:modified_time" content="2025-03-30T04:43:15.298Z"><meta property="article:author" content="Joe Chu"><meta property="article:tag" content="memory layout"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/memory-layout/from-program-to-process.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://chuzcjoe.github.io/misc/misc-memory-layout-in-process/"},"headline":"Memory Layout in C/C++","image":["https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/memory-layout/from-program-to-process.png","https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/memory-layout/memory.png"],"datePublished":"2025-03-27T16:10:01.000Z","dateModified":"2025-03-30T04:43:15.298Z","author":{"@type":"Person","name":"Joe Chu"},"publisher":{"@type":"Organization","name":"JoeChu","logo":{"@type":"ImageObject","url":"http://chuzcjoe.github.io/img/expert.png"}},"description":"Memory layout of a process."}</script><link rel="canonical" href="http://chuzcjoe.github.io/misc/misc-memory-layout-in-process/"><link rel="icon" href="/img/expert.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><script data-ad-client="ca-pub-1486482663275315" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.1.1"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/expert.png" alt="JoeChu" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories/life">Life</a><a class="navbar-item" href="/categories/cpp">C/C++</a><a class="navbar-item" href="/categories/CGV">CG/CV</a><a class="navbar-item" href="/categories/interview">Interview</a><a class="navbar-item" href="/categories/misc">Misc</a><a class="navbar-item" href="/categories/tool">Tool</a><a class="navbar-item" href="/categories/wealth">Wealth</a><a class="navbar-item" href="/categories/resource">Resources</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/chuzcjoe"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-lightbulb" id="night-icon"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-10-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2025-03-27T16:10:01.000Z" title="3/27/2025, 9:10:01 AM">2025-03-27</time></span><span class="level-item"> Joe Chu </span><span class="level-item"><a class="link-muted" href="/categories/misc/">misc</a></span><span class="level-item">4 minutes read (About 627 words)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>&nbsp;visits</span></div></div><h1 class="title is-3 is-size-4-mobile">Memory Layout in C/C++</h1><div class="content"><p>Memory layout of a process.</p>
+<span id="more"></span>
+
+<h1 id="1-Process-vs-Program"><a href="#1-Process-vs-Program" class="headerlink" title="1. Process vs Program"></a>1. Process vs Program</h1><p>When we talk about <strong>memory layout</strong>, we are referring to a <strong>process</strong>, not a program. So, what is the difference between these two?</p>
+<table>
+<thead>
+<tr>
+<th>Term</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Program</td>
+<td>A static entity — a file on disk (ELF, PE, Mach-O, etc.). It contains code, data, metadata, but no allocated memory yet. It contains all the needed information and data to describe how to construct a process at runtime.</td>
+</tr>
+<tr>
+<td>Process</td>
+<td>A dynamic instance of a program that is loaded into memory and being executed by the OS. It has an address space, threads, open file descriptors, etc.</td>
+</tr>
+</tbody></table>
+<p>The memory layout essentially describes how the OS maps a <strong>program’s</strong> components(code, data, etc.) into a <strong>process’s</strong> virtual address space. The following diagram shows the full lifecycle of how a program creates a process concrete memory layout.</p>
+<p align="center">
+    <img src="https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/memory-layout/from-program-to-process.png" title="Image 1" width="800px" height="600px">
+</p>
+
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Step1</td>
+<td>Program files are stored as bytes, nothing is loaded into the memory yet.</td>
+</tr>
+<tr>
+<td>Step2</td>
+<td>The OS creates virtual address space and maps the executable to different segments, as well as dynamic linker and shared libraries.</td>
+</tr>
+<tr>
+<td>Step3</td>
+<td>Different segments are loaded into memory.</td>
+</tr>
+<tr>
+<td>Step4</td>
+<td>main() is used as execution entry point. Stack grows downwards while Heap grows upwards.</td>
+</tr>
+<tr>
+<td>Step5</td>
+<td>The process exits by calling either eixt() or returning from main(). Allocated memory is released.</td>
+</tr>
+</tbody></table>
+<h1 id="2-Memory-Layout"><a href="#2-Memory-Layout" class="headerlink" title="2. Memory Layout"></a>2. Memory Layout</h1><p align="center">
+    <img src="https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/memory-layout/memory.png" title="Image 1" width="800px" height="600px">
+</p>
+
+<p>Let’s discuss each segment from bottom to up.</p>
+<p><strong>Text&#x2F;Code Segment</strong></p>
+<p>This segments contains the compiled machine instructions which are loaded from the <code>.text</code> section of the ELF&#x2F;PE&#x2F;Mach-O file. Text&#x2F;Code segment has read-only permission to prevent accidental modification. If we try to write to text&#x2F;code segment, you will get a <code>Segmentation Fault</code>.</p>
+<p><strong>Initialized Data Segment</strong></p>
+<p>This segments holds all <code>external</code>, <code>global</code>, <code>static</code> and <code>const</code> variables whose values are explicitly initialized at the time when they are defined. We can further classify these variable into two categories: <code>read-write</code> and <code>read-only</code>. Since <code>const</code> variables can not be changed, they fall under <code>read-only</code> section. The rest types belong to <code>read-write</code> section, which means they can be modified during the execution.</p>
+<p>For example, all the variables will be stored in this segment.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">int</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="type">char</span>* b = <span class="string">&quot;Hello World&quot;</span>;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> c = <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="type">static</span> <span class="type">int</span> d = <span class="number">10</span>; </span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Uninitialized Data Segment (BSS)</strong></p>
+<p>An uninitialized data segment is also known as bss (b​lock started by symbol). It stores <code>global</code> and <code>static</code> variables that are not initialized. Data in <code>BSS</code> will be set to be <code>0</code>(or <code>nullptr</code> for pointer types) by default. Because the values of these variables can be modified, so this is a read-write area.</p>
+<p><strong>Heap</strong></p>
+<p>Heap is used for dynamic memory allocation such as <code>malloc()</code>, <code>new</code>, etc. It grows and shrinks in the opposite direction of Stack. This is a <code>read-write</code> area.</p>
+<p><strong>Stack</strong></p>
+<p>Stack stores a variety of data types including <code>stack frame</code>, <code>local variables</code>, <code>arguments</code> and <code>return values</code>. A stack frame is a block of memory on the stack that is allocated for each function call. Each time you call a function, a new stack frame is pushed onto the stack.</p>
+<p>Stack grows downwards and is a <code>read-write</code> area. Stack has a fixed maximum size, exceeding its max capacity will lead to <code>Stack Overflow</code>. The maximum stack size is usually configurable. Here is a summary of default stack size on different OS.</p>
+<p>Linux (x86_64)	8 MB<br>Linux (arm)	256 KB ~ 1 MB<br>macOS	8 MB<br>Windows	1 MB<br>POSIX Thread (Linux pthread_create)	8 MB</p>
+<p>We can check the default Stack size on Linux&#x2F;Mac using command:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ulimit</span> -s        <span class="comment"># show stack size in KB</span></span><br><span class="line"><span class="built_in">ulimit</span> -s 16384  <span class="comment"># set stack size to 16 MB (in KB)</span></span><br></pre></td></tr></table></figure>
+
+
+<h1 id="References"><a href="#References" class="headerlink" title="References"></a>References</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/62556670/why-using-memory-layout-for-running-a-c-program">https://stackoverflow.com/questions/62556670/why-using-memory-layout-for-running-a-c-program</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.scaler.com/topics/c/memory-layout-in-c/">https://www.scaler.com/topics/c/memory-layout-in-c/</a></li>
+</ul>
+</div><div class="article-licensing box"><div class="licensing-title"><p>Memory Layout in C/C++</p><p><a href="http://chuzcjoe.github.io/misc/misc-memory-layout-in-process/">http://chuzcjoe.github.io/misc/misc-memory-layout-in-process/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Joe Chu</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2025-03-27</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2025-03-29</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/memory-layout/">memory layout</a></div><div class="sharethis-inline-share-buttons"></div><script src="https://chuzcjoe.github.io/" defer></script></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>Alipay</span><span class="qrcode"><img src="/" alt="Alipay"></span></a><a class="button donate" data-type="paypal" onclick="document.getElementById(&#039;paypal-donate-form&#039;).submit()"><span class="icon is-small"><i class="fab fa-paypal"></i></span><span>Paypal</span></a><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" rel="noopener" id="paypal-donate-form"><input type="hidden" name="cmd" value="_donations"><input type="hidden" name="business" value="chuzcjoe@gmail.com"><input type="hidden" name="currency_code" value="USD"></form><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>Wechat</span><span class="qrcode"><img src="/img/wechat.jpg" alt="Wechat"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/life/life-rv-show-newark/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">RV Show Newark</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/life/life-spring-is-here/"><span class="level-item">春天具像化</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'http://chuzcjoe.github.io/misc/misc-memory-layout-in-process/';
+            this.page.identifier = 'misc/misc-memory-layout-in-process/';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'chuzcjoe-github-io' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/me.jpeg" alt="Joe Chu"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Joe Chu</p><p class="is-size-6 is-block">I like to keep knowledge and memories visible and readable.</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Fremont, CA</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">200</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">8</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">154</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/chuzcjoe" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/chuzcjoe"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/in/joe-chu-1784b3179/"><i class="fab fa-linkedin"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Scholar" href="https://scholar.google.com/citations?user=DCwJ1qcAAAAJ&amp;hl=en"><i class="fab fa-google"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#1-Process-vs-Program"><span class="level-left"><span class="level-item">1</span><span class="level-item">1. Process vs Program</span></span></a></li><li><a class="level is-mobile" href="#2-Memory-Layout"><span class="level-left"><span class="level-item">2</span><span class="level-item">2. Memory Layout</span></span></a></li><li><a class="level is-mobile" href="#References"><span class="level-left"><span class="level-item">3</span><span class="level-item">References</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="adsense"><div class="card-content"><div class="menu"><h3 class="menu-label">Advertisement</h3><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1486482663275315" data-ad-slot="5727003811" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/expert.png" alt="JoeChu" height="28"></a><p class="is-size-7"><span>&copy; 2025 Joe Chu</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">uv <span id="busuanzi_value_site_uv">0</span></span><br><span id="busuanzi_container_site_pv">pv <span id="busuanzi_value_site_pv">0</span></span></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><script src="/js/night.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

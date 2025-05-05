@@ -1,3 +1,5 @@
+https://chuzcjoe.github.io/life/life-one-week-in-seattle/
+https://chuzcjoe.github.io/uncategorized/cpp-virtual-function-in-constructor-and-destructor/
 https://chuzcjoe.github.io/life/life-easter-activity/
 https://chuzcjoe.github.io/life/life-baby-first-birthday/
 https://chuzcjoe.github.io/misc/misc-display-correct-aspect-ratio-camera-preview/
@@ -6,5 +8,3 @@ https://chuzcjoe.github.io/cpp/cpp-memory-layout-in-process/
 https://chuzcjoe.github.io/life/life-rv-show-newark/
 https://chuzcjoe.github.io/life/life-spring-is-here/
 https://chuzcjoe.github.io/cpp/cpp-crtp/
-https://chuzcjoe.github.io/life/baby-11-month/
-https://chuzcjoe.github.io/CGV/cgv-define-shaders/

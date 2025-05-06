@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://chuzcjoe.github.io/life/life-one-week-in-seattle/</loc>
+    <loc>http://chuzcjoe.github.io/cpp/cpp-virtual-function-in-constructor-and-destructor/</loc>
     
-    <lastmod>2025-05-05</lastmod>
+    <lastmod>2025-05-06</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/uncategorized/cpp-virtual-function-in-constructor-and-destructor/</loc>
+    <loc>http://chuzcjoe.github.io/life/life-one-week-in-seattle/</loc>
     
-    <lastmod>2025-04-26</lastmod>
+    <lastmod>2025-05-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -1867,7 +1867,7 @@
 
   <url>
     <loc>http://chuzcjoe.github.io/</loc>
-    <lastmod>2025-05-05</lastmod>
+    <lastmod>2025-05-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>

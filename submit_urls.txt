@@ -1,3 +1,4 @@
+https://chuzcjoe.github.io/life/life-venardos-circus/
 https://chuzcjoe.github.io/life/life-birthday-rewards/
 https://chuzcjoe.github.io/life/life-xray-film/
 https://chuzcjoe.github.io/cpp/cpp-virtual-function-in-constructor-and-destructor/
@@ -7,4 +8,3 @@ https://chuzcjoe.github.io/life/life-baby-first-birthday/
 https://chuzcjoe.github.io/misc/misc-display-correct-aspect-ratio-camera-preview/
 https://chuzcjoe.github.io/cpp/cpp-obtain-commit-id/
 https://chuzcjoe.github.io/cpp/cpp-memory-layout-in-process/
-https://chuzcjoe.github.io/life/life-rv-show-newark/

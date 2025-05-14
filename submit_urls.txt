@@ -1,6 +1,6 @@
-https://chuzcjoe.github.io/cpp/cpp-type-punning/
 https://chuzcjoe.github.io/life/life-2025-birthday/
 https://chuzcjoe.github.io/life/life-venardos-circus/
+https://chuzcjoe.github.io/cpp/cpp-type-punning/
 https://chuzcjoe.github.io/life/life-birthday-rewards/
 https://chuzcjoe.github.io/life/life-xray-film/
 https://chuzcjoe.github.io/cpp/cpp-virtual-function-in-constructor-and-destructor/

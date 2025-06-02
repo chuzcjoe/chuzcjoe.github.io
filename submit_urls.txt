@@ -1,3 +1,4 @@
+https://chuzcjoe.github.io/misc/misc-fixed-point/
 https://chuzcjoe.github.io/life/life-sealion-fisherman-wharf/
 https://chuzcjoe.github.io/life/life-rv-show-newark/
 https://chuzcjoe.github.io/cpp/cpp-bitfields/
@@ -7,4 +8,3 @@ https://chuzcjoe.github.io/life/life-free-hotpot/
 https://chuzcjoe.github.io/life/life-2025-birthday/
 https://chuzcjoe.github.io/life/life-venardos-circus/
 https://chuzcjoe.github.io/cpp/cpp-type-punning/
-https://chuzcjoe.github.io/life/life-birthday-rewards/

@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta><title>Fixed Point Computation - JoeChu</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="JoeChu&#039;s Blog"><meta name="msapplication-TileImage" content="/img/expert.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="JoeChu&#039;s Blog"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="Introducing fixed point for efficiency, predictability and low cost, which are essential in many real-time and embedded DSP applications."><meta property="og:type" content="blog"><meta property="og:title" content="Fixed Point Computation"><meta property="og:url" content="http://chuzcjoe.github.io/misc/misc-fixed-point/"><meta property="og:site_name" content="JoeChu"><meta property="og:description" content="Introducing fixed point for efficiency, predictability and low cost, which are essential in many real-time and embedded DSP applications."><meta property="og:locale" content="en_US"><meta property="og:image" content="https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/fixedpoint/valuerange.png"><meta property="og:image" content="https://chuzcjoe.github.io/misc/misc-numeric-data-representation/fp16.png"><meta property="article:published_time" content="2025-05-30T06:05:39.000Z"><meta property="article:modified_time" content="2025-06-02T07:13:28.618Z"><meta property="article:author" content="Joe Chu"><meta property="article:tag" content="fixed point"><meta property="twitter:card" content="summary"><meta property="twitter:image:src" content="https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/fixedpoint/valuerange.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://chuzcjoe.github.io/misc/misc-fixed-point/"},"headline":"Fixed Point Computation","image":["https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/fixedpoint/valuerange.png","https://chuzcjoe.github.io/misc/misc-numeric-data-representation/fp16.png"],"datePublished":"2025-05-30T06:05:39.000Z","dateModified":"2025-06-02T07:13:28.618Z","author":{"@type":"Person","name":"Joe Chu"},"publisher":{"@type":"Organization","name":"JoeChu","logo":{"@type":"ImageObject","url":"http://chuzcjoe.github.io/img/expert.png"}},"description":"Introducing fixed point for efficiency, predictability and low cost, which are essential in many real-time and embedded DSP applications."}</script><link rel="canonical" href="http://chuzcjoe.github.io/misc/misc-fixed-point/"><link rel="icon" href="/img/expert.png"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><script data-ad-client="ca-pub-1486482663275315" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script><!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+
+          const id = '#' + CSS.escape(location.hash.substring(1));
+          const $tabMenu = document.querySelector(`.tabs a[href="${id}"]`);
+          if (!$tabMenu) {
+            return;
+          }
+
+          const $tabMenuContainer = $tabMenu.parentElement.parentElement;
+          Array.from($tabMenuContainer.children).forEach($menu => $menu.classList.remove('is-active'));
+          Array.from($tabMenuContainer.querySelectorAll('a'))
+              .map($menu => document.getElementById($menu.getAttribute("href").substring(1)))
+              .forEach($content => $content.classList.add('is-hidden'));
+
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+          const $activeTab = document.querySelector(id);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.1.1"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/expert.png" alt="JoeChu" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">Home</a><a class="navbar-item" href="/archives">Archives</a><a class="navbar-item" href="/categories/life">Life</a><a class="navbar-item" href="/categories/cpp">C/C++</a><a class="navbar-item" href="/categories/CGV">CG/CV</a><a class="navbar-item" href="/categories/interview">Interview</a><a class="navbar-item" href="/categories/misc">Misc</a><a class="navbar-item" href="/categories/tool">Tool</a><a class="navbar-item" href="/categories/wealth">Wealth</a><a class="navbar-item" href="/categories/resource">Resources</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/chuzcjoe"><i class="fab fa-github"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="Search" href="javascript:;"><i class="fas fa-search"></i></a><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-lightbulb" id="night-icon"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-10-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2025-05-30T06:05:39.000Z" title="5/29/2025, 11:05:39 PM">2025-05-29</time></span><span class="level-item"> Joe Chu </span><span class="level-item"><a class="link-muted" href="/categories/misc/">misc</a></span><span class="level-item">12 minutes read (About 1833 words)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>&nbsp;visits</span></div></div><h1 class="title is-3 is-size-4-mobile">Fixed Point Computation</h1><div class="content"><p>Introducing fixed point for efficiency, predictability and low cost, which are essential in many real-time and embedded DSP applications.</p>
+<span id="more"></span>
+
+<h1 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h1><ul>
+<li><span style="color:#1E90FF; font-size:18px; font-weight:bold;"> Fundamentals </span></li>
+<li><span style="color:#1E90FF; font-size:18px; font-weight:bold;"> Arithmetic </span></li>
+<li><span style="color:#1E90FF; font-size:18px; font-weight:bold;"> Precision </span></li>
+<li><span style="color:#1E90FF; font-size:18px; font-weight:bold;"> Overflow </span></li>
+<li><span style="color:#1E90FF; font-size:18px; font-weight:bold;"> Compare to Floating Point </span></li>
+<li><span style="color:#1E90FF; font-size:18px; font-weight:bold;"> Demo </span></li>
+</ul>
+<h1 id="1-Fundamentals"><a href="#1-Fundamentals" class="headerlink" title="1. Fundamentals"></a>1. Fundamentals</h1><p>Fixed-point representation is a way to represent real numbers (i.e., numbers with fractions&#x2F;decimals) using integers, by fixing the position of the binary point (similar to the decimal point, but in binary).</p>
+<p><strong>Representation</strong></p>
+<p>Fixed point numbers are typically represented as <strong>Qm.n</strong> where:</p>
+<ul>
+<li>$m$ is the number of integer bits</li>
+<li>$n$ is the number of fractional bits.</li>
+</ul>
+<p>For example, <strong>Q1.15</strong> means 1 integer bit(signed bit), 15 fractional bits. Other common formats include <strong>Q1.31, Q8.8, Q16.16 etc</strong>.</p>
+<p><strong>Conversion</strong></p>
+<p>Assume the fixed point format is <strong>Qm.n</strong>, to convert a real number(R) to a fixed point(F):<br>$$<br>\begin{equation}<br>F &#x3D; R \times 2^{n}<br>\end{equation}<br>$$</p>
+<p>to convert a fixed point(F) to a real number(R):<br>$$<br>\begin{equation}<br>R &#x3D; \frac{F}{2^{n}}<br>\end{equation}<br>$$</p>
+<p>To demonstrate this, let’s use format <strong>Q1.3</strong> (1 bit for sign bit, 3 bits for fractional part) as an example.</p>
+<p>Let’s try <code>0101</code>:</p>
+<ul>
+<li>Sign bit is <code>0</code> -&gt; it’s positive</li>
+<li>Binary <code>0101</code> &#x3D; decimal <code>5</code></li>
+<li>Convert to real number:<br>$$<br>\begin{equation}<br>\frac{5}{2^{3}} &#x3D; 0.625<br>\end{equation}<br>$$</li>
+</ul>
+<p>So, <code>0101</code> in Q1.3 &#x3D; <code>0.625</code></p>
+<p>What if it is negative? Let’s try binary <code>1101</code>.</p>
+<ul>
+<li>The MSB is <code>1</code>, so it is a negative.</li>
+<li>Take the two’s complement to find the magnitude and add 1: <code>1101 -&gt; 0010 -&gt; 0011</code>.</li>
+<li>Convert <code>0011</code> to decimal: <code>3</code>.</li>
+<li>Add the sign back: <code>-3</code></li>
+<li>Convert to real number:<br>$$<br>\begin{equation}<br>\frac{-3}{2^{3}} &#x3D; -0.375<br>\end{equation}<br>$$</li>
+</ul>
+<p><strong>Two’s Complement</strong></p>
+<p>Since we used two’s complement above, it is worth mentioning about what it is and why it is useful. It is a special representation of signed integers that can make addition, subtraction, and other arithmetic to work correctly for both positive and negative numbers.</p>
+<p>For Q1.2, all the possible values from min to max.</p>
+<table>
+<thead>
+<tr>
+<th>Binary</th>
+<th>Signed Int</th>
+<th>Real Value (&#x3D; int &#x2F; 4)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>100</code></td>
+<td>−4</td>
+<td><strong>−1.00</strong></td>
+</tr>
+<tr>
+<td><code>101</code></td>
+<td>−3</td>
+<td><strong>−0.75</strong></td>
+</tr>
+<tr>
+<td><code>110</code></td>
+<td>−2</td>
+<td><strong>−0.50</strong></td>
+</tr>
+<tr>
+<td><code>111</code></td>
+<td>−1</td>
+<td><strong>−0.25</strong></td>
+</tr>
+<tr>
+<td><code>000</code></td>
+<td>0</td>
+<td><strong>0.00</strong></td>
+</tr>
+<tr>
+<td><code>001</code></td>
+<td>1</td>
+<td><strong>0.25</strong></td>
+</tr>
+<tr>
+<td><code>010</code></td>
+<td>2</td>
+<td><strong>0.50</strong></td>
+</tr>
+<tr>
+<td><code>011</code></td>
+<td>3</td>
+<td><strong>0.75</strong></td>
+</tr>
+</tbody></table>
+<p>Each step &#x3D; $\frac{1}{2^2} &#x3D; 0.25$</p>
+<p><strong>Range(minimum &amp; maximum)</strong></p>
+<p>From the table above, we can easily find the pattern that, for a Qm.n format fixed point.</p>
+<p align="center">
+    <img src="https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/fixedpoint/valuerange.png" title="Image 1" width="700px" height="600px">
+</p>
+
+<p>Therefore, for minimum (invert and add 1):<br>$$<br>\begin{equation}<br>\frac{2^{m+n-1}}{2^{n}} &#x3D; -2^{m-1}<br>\end{equation}<br>$$</p>
+<p>For maximum:<br>$$<br>\begin{equation}<br>\frac{2^{m+n-1} - 1}{2^{n}} &#x3D; 2^{m-1} - 2^{-n}<br>\end{equation}<br>$$</p>
+<h1 id="2-Arithmetic"><a href="#2-Arithmetic" class="headerlink" title="2. Arithmetic"></a>2. Arithmetic</h1><p>Before we dive into the fixed point arithmetic, let’s assume that we are using format: <strong>Q4.4</strong>.</p>
+<p>For <strong>Q4.4</strong>, its representation range is:</p>
+<p>$$<br>\begin{equation}<br>min &#x3D; -2^{m-1} &#x3D; -\frac{2^7}{2^4} &#x3D; -8 \\<br>max &#x3D; 2^{m-1} - 2^{-n} &#x3D; 2^3 - 2^{-4} &#x3D; 7.9375<br>\end{equation}<br>$$</p>
+<p>Recap: the conversion between fixed point and its floating point value<br>$$<br>\begin{equation}<br>result_{fix} &#x3D; result_{real} \times 2^{n}<br>\end{equation}<br>$$</p>
+<p><strong>Addition</strong><br>$$<br>\begin{equation}<br>a_{real} &#x3D; \frac{a_{fix}}{2^n} \\<br>b_{real} &#x3D; \frac{b_{fix}}{2^n} \\<br>a + b &#x3D; \frac{a_{fix}+b_{fix}}{2^n}<br>\end{equation}<br>$$</p>
+<p>If we want to add <code>2.5</code> and <code>1.25</code>.</p>
+<p>$$<br>\begin{equation}<br>a_{fix} &#x3D; 2.5 \times 2^{4} &#x3D; 40 \\<br>b_{fix} &#x3D; 1.25 \times 2^{4} &#x3D; 20 \\<br>\\<br>result_{fix} &#x3D; a_{fix} + b_{fix} &#x3D; 60 \\<br>result_{real} &#x3D; \frac{60}{2^{4}} &#x3D; 3.75, \text{which equals to } 2.5 + 1.25 &#x3D; 3.75<br>\end{equation}<br>$$</p>
+<p><strong>Subtraction</strong></p>
+<p>Similar to addition<br>$$<br>\begin{equation}<br>a_{real} &#x3D; \frac{a_{fix}}{2^n} \\<br>b_{real} &#x3D; \frac{b_{fix}}{2^n} \\<br>a - b &#x3D; \frac{a_{fix}-b_{fix}}{2^n}<br>\end{equation}<br>$$</p>
+<p>$$<br>\begin{equation}<br>a_{fix} &#x3D; 2.5 \times 2^{4} &#x3D; 40 \\<br>b_{fix} &#x3D; 1.25 \times 2^{4} &#x3D; 20 \\<br>\\<br>result_{fix} &#x3D; a_{fix} - b_{fix} &#x3D; 20 \\<br>result_{real} &#x3D; \frac{20}{2^{4}} &#x3D; 1.25, \text{which equals to } 2.5 - 1.25 &#x3D; 1.25<br>\end{equation}<br>$$</p>
+<p><strong>Multiplication</strong></p>
+<p>Integer multiplication will cause overflow, for example, $6 \times 5 &#x3D; 30$, <code>30</code> exceeds the maximum value <strong>Q4.4</strong> can represent. Therefore, for multiplication, we need to scale down the value. The rule is:<br>$$<br>\begin{equation}<br>result_{fix} &#x3D; \frac{a_{fix} \times b_{fix}}{2^n}<br>\end{equation}<br>$$</p>
+<p>Example: $2.5 \times 1.5$</p>
+<p>$$<br>\begin{equation}<br>a_{fix} &#x3D; 2.5 \times 2^{4} &#x3D; 40 \\<br>b_{fix} &#x3D; 1.5 \times 2^{4} &#x3D; 24 \\<br>\\<br>result_{fix} &#x3D; a_{fix} \times b_{fix} &#x3D; 960 \\<br>result_{scaled} &#x3D; \frac{960}{2^4} &#x3D; 60 \\<br>result_{real} &#x3D; \frac{60}{2^4} &#x3D; 3.75<br>\end{equation}<br>$$</p>
+<p><strong>Devision</strong></p>
+<p>To divide without losing precision, upscale numerator before division:<br>$$<br>\begin{equation}<br>result_{fix} &#x3D; \frac{a_{fix} \times 2^{n}}{b_{fix}}<br>\end{equation}<br>$$</p>
+<p>Example: $2.5 \div 1.25$</p>
+<p>$$<br>\begin{equation}<br>a_{fix} &#x3D; 2.5 \times 2^{4} &#x3D; 40 \\<br>b_{fix} &#x3D; 1.25 \times 2^{4} &#x3D; 20 \\<br>\\<br>a_{fix-upscaled} &#x3D; 40 \times 2^{4} &#x3D; 640 \\<br>result_{fix} &#x3D; \frac{640}{20} &#x3D; 32 \\<br>result_{real} &#x3D; \frac{32}{2^4} &#x3D; 2<br>\end{equation}<br>$$</p>
+<h1 id="3-Precision"><a href="#3-Precision" class="headerlink" title="3. Precision"></a>3. Precision</h1><p><strong>Qm.n</strong></p>
+<p>We use the term “resolution” to represent the smallest step(or precision step) of a fixed point format.<br>$$<br>\begin{equation}<br>\text{resolution} &#x3D; \frac{1}{2^n}<br>\end{equation}<br>$$</p>
+<p>For example:</p>
+<ul>
+<li>Q1.7 has resolution of $\frac{1}{2^7} &#x3D; 0.0078125$</li>
+<li>Q4.4 has resolution of $\frac{1}{2^4} &#x3D; 0.0.0625$</li>
+</ul>
+<p>More fractional bits mean better precision, but smaller range(suppose we have fixed total bits).</p>
+<p><strong>Truncation error</strong></p>
+<p>Example: convert <code>0.1</code> to Q4.4 fixed point<br>$$<br>\begin{equation}<br>result_{fix} &#x3D; 0.1 \times 2^{4} &#x3D; 1.6 \\<br>\text{Truncation discards fractional bits without rounding: } result_{trunc} &#x3D; floor(1.6) &#x3D; 1 \\<br>result_{real} &#x3D; \frac{1}{2^4} &#x3D; 0.0625 \neq 0.1<br>\end{equation}<br>$$</p>
+<p><strong>Rounding error</strong></p>
+<p>Same example: convert <code>0.1</code> to Q4.4 fixed point<br>$$<br>\begin{equation}<br>result_{fix} &#x3D; 0.1 \times 2^{4} &#x3D; 1.6 \\<br>\text{Rounding to nearest is better, but still introduces error: } result_{round} &#x3D; round(1.6) &#x3D; 2 \\<br>result_{real} &#x3D; \frac{2}{2^4} &#x3D; 0.125 \neq 0.1<br>\end{equation}<br>$$</p>
+<p>Compare the two results above:<br>$$<br>\begin{equation}<br>\text{rounding_error} &#x3D; |0.125 - 0.1| &#x3D; 0.025 \\<br>\text{truncation_error} &#x3D; |0.0625 - 0.1| &#x3D; 0.0375<br>\end{equation}<br>$$</p>
+<p>Rounding to the nearest can be a better strategy to reduce precision loss. There is one trick which is to <strong>add a rounding offset</strong> before scaling.<br>$$<br>\begin{equation}<br>result_{fix} &#x3D; ((a_{fix} \times b_{fix}) + (1 \ll (n - 1))) \gg n<br>\end{equation}<br>$$</p>
+<p>For example, in fixed point multiplication, $0.5 \times 0.3 &#x3D; 0.15$</p>
+<p>Without rounding:<br>$$<br>\begin{equation}<br>a_{fix} &#x3D; 0.5 \times 2^4 &#x3D; 8 \\<br>b_{fix} &#x3D; 0.3 \times 2^4 &#x3D; round(4.8) &#x3D; 5 \\<br>result_{fix} &#x3D; (8 \times 5) \gg 4 &#x3D; 2 \text{truncated}\\<br>result_{real} &#x3D; \frac{2}{2^4} &#x3D; 0.125 \\<br>\text{error: } 0.125 - 0.15 &#x3D; -0.025<br>\end{equation}<br>$$</p>
+<p>With rounding:<br>$$<br>\begin{equation}<br>a_{fix} &#x3D; 0.5 \times 2^4 &#x3D; 8 \\<br>b_{fix} &#x3D; 0.3 \times 2^4 &#x3D; round(4.8) &#x3D; 5 \\<br>result_{fix-rounding} &#x3D; ((a_{fix} \times b_{fix}) + (1 \ll (n - 1))) \gg n &#x3D; (8 \times 5 + (1 \ll 3)) \gg 4 &#x3D; (40 + 8) \gg 4 &#x3D; 3 \\<br>result_{real} &#x3D; \frac{3}{2^4} &#x3D; 0.1875 \\<br>\text{error: } |0.1875 - 0.15| &#x3D; 0.0375<br>\end{equation}<br>$$</p>
+<p>At first glance, <code>+0.0375</code> seems worse than <code>−0.025</code>, because it’s a larger absolute error. So why do we still say that rounding is better?</p>
+<p>The reason rounding is preferred is not always because it produces the smallest possible error for each operation — but because it produces statistically unbiased results on average across many operations.</p>
+<p><strong>Truncation</strong> always drops the fractional part, rounding down toward zero. This introduces a consistent negative bias. Over many computations:</p>
+<ol>
+<li>You might repeatedly lose small bits of precision</li>
+<li>The result accumulates a consistent downward error</li>
+<li>This is called systematic error</li>
+</ol>
+<p><strong>Rounding</strong> to nearest:</p>
+<ol>
+<li>Sometimes you round up</li>
+<li>Sometimes you round down</li>
+<li>On average, the errors cancel out</li>
+</ol>
+<p>This leads to a smaller total error over time and more accurate aggregate results.</p>
+<h1 id="4-Overflow"><a href="#4-Overflow" class="headerlink" title="4. Overflow"></a>4. Overflow</h1><p>In fixed-point systems, overflow occurs when the result of an operation exceeds the representable range of the format (e.g., Q4.4 can represent only from <strong>−8.0 to +7.9375)</strong>.</p>
+<p>Let’s use fixed point multiplication as an example. If we are calculating $3.5(a) \times 1.5(b)$, the fixed point representations for $a$ and $b$ are:<br>$$<br>\begin{equation}<br>a_{fix} &#x3D; 3.5 * 2^4 &#x3D; 56 \\<br>b_{fix} &#x3D; 1.5 * 2^4 &#x3D; 24<br>\end{equation}<br>$$</p>
+<p>Then, the multiplication result is:<br>$$<br>\begin{equation}<br>56 * 24 &#x3D; 1344<br>\end{equation}<br>$$</p>
+<p>Since $1344$ exceeds the maximum(127) of 8-bit signed integer, if we still use <code>int8</code> data type to catch the result, we will get:</p>
+<ul>
+<li><code>1344</code> in binary: <code>0000 0101 0100 0000</code> (16-bit)</li>
+<li>The lower 8 bits are <code>01000000</code>, which equals <code>64</code> in decimal.</li>
+</ul>
+<p>The final result(after we convert it to the floating point representation) will be:<br>$$<br>\begin{equation}<br>result_{real} &#x3D; \frac{64}{2^4} &#x3D; 4 \neq (3.5 * 1.5 &#x3D; 5.25)<br>\end{equation}<br>$$</p>
+<p>The most common techniques we use to handle arithmetic overflow is to use wider intermediate types. We use <code>16-bit</code> for <code>8-bit</code> math. Let’s redo the math for the multiplication above.</p>
+<p>$$<br>\begin{equation}<br>a_{fix} &#x3D; 3.5 * 2^4 &#x3D; 56 \\<br>b_{fix} &#x3D; 1.5 * 2^4 &#x3D; 24 \\<br>a_{fix} * b_{fix} &#x3D; 1344 \text{ (use 16-bit to hold the result)} \\<br>result_{fix} &#x3D; (1344 + 2^{3}) &#x2F; 2^{4} &#x3D; 84 \text{ (add rounding offset)} \\<br>result_{real} &#x3D; \frac{84}{2^4} &#x3D; 5.25 &#x3D; 3.5 * 1.5<br>\end{equation}<br>$$</p>
+<p><strong>Clamping</strong><br>Sometimes, even if we use wider intermediate types, after we scale the result down to the smaller range, it is still out of the range. This is when we need clamping to ensure the final result is within the range.</p>
+<p>For multiplication $7.5 \times 1.5$ using Q4.4 format:</p>
+<p>$$<br>\begin{equation}<br>a_{fix} &#x3D; 7.5 * 2^4 &#x3D; 120 \\<br>b_{fix} &#x3D; 1.5 * 2^4 &#x3D; 24 \\<br>a_{fix} * b_{fix} &#x3D; 2880 \text{ (use 16-bit to hold the result)} \\<br>result_{fix} &#x3D; (2880 + 2^{3}) &#x2F; 2^{4} &#x3D; 180 \text{ (add rounding offset)} \\<br>\end{equation}<br>$$</p>
+<p>The valid range for Q4.4 is: $-128$ to $127$. Obviously, $180$ exceeds $127$. We need to clamp to maximum Q4.4 value:<br>$$<br>\begin{equation}<br>result_{fix} &#x3D; min(180, 127) &#x3D; 127 \\<br>result_{real} &#x3D; \frac{127}{2^4} &#x3D; 7.9375 \neq (7.5 * 1.5 &#x3D; 11.25) \text{ precision loss}<br>\end{equation}<br>$$</p>
+<p>The code example below demonstrates the Q4.4 multiplication process.</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">int8_t</span> <span class="title">fixed_mul_q4_4</span><span class="params">(<span class="type">int8_t</span> a, <span class="type">int8_t</span> b)</span> </span>&#123;</span><br><span class="line">    <span class="type">int16_t</span> temp = (<span class="type">int16_t</span>)a * (<span class="type">int16_t</span>)b;      <span class="comment">// intermediate is wider</span></span><br><span class="line">    temp = (temp + <span class="number">8</span>) &gt;&gt; <span class="number">4</span>;                      <span class="comment">// rounding</span></span><br><span class="line">    <span class="keyword">if</span> (temp &gt; <span class="number">127</span>) temp = <span class="number">127</span>;                  <span class="comment">// clmap/saturation</span></span><br><span class="line">    <span class="keyword">if</span> (temp &lt; <span class="number">-128</span>) temp = <span class="number">-128</span>;</span><br><span class="line">    <span class="keyword">return</span> (<span class="type">int8_t</span>)temp;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="5-Compare-to-Floating-Point"><a href="#5-Compare-to-Floating-Point" class="headerlink" title="5. Compare to Floating Point"></a>5. Compare to Floating Point</h1><p>We have beeing talking so much about the basics of fixed point computation, but so far, we haven’t touched the most important part, which is why we prefer fixed point arithmetic over floating point, especially in embedded systems, DSP, mobile devices, or hardware where performance, power, and cost matter.</p>
+<p>You might wonder about an alternative approach: why not simply use <strong>FP16</strong> instead of FP32 for floating-point operations? This would allow us to match the bit width of typical fixed point implementations (16 bits) while retaining floating-point capabilities. But are they really the same? To answer this question, we need to understand how fixed point and floating point work differently at a low level perspective.</p>
+<p><strong>Floating point</strong><br>IEEE 754 Half-Precision </p>
+<p align="center">
+    <img src="https://chuzcjoe.github.io/misc/misc-numeric-data-representation/fp16.png" title="Image 1" width="700px" height="600px">
+</p>
+
+<p>$$<br>(-1)^{sign} \times (1 + mantissa) \times 2^{exponent-15}<br>$$</p>
+<p>Floating point arithmetic(addition) by steps from low level perspective</p>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1. Unpack</td>
+<td>Extract sign, exponent, mantissa</td>
+</tr>
+<tr>
+<td>2. Align exponents</td>
+<td>Shift smaller mantissa to match the larger exponent</td>
+</tr>
+<tr>
+<td>3. Add mantissas</td>
+<td>Perform integer addition of aligned mantissas</td>
+</tr>
+<tr>
+<td>4. Normalize</td>
+<td>Shift result to maintain <code>1.xxx</code> format, adjust exponent accordingly</td>
+</tr>
+<tr>
+<td>5. Round</td>
+<td>Round result to fit in mantissa bits</td>
+</tr>
+<tr>
+<td>6. Repack</td>
+<td>Combine sign, new exponent, and rounded mantissa into 16-bit float format</td>
+</tr>
+</tbody></table>
+<p><strong>Fixed point</strong></p>
+<p>As we discussed in section 2, fixed point arithmetics are just simple integer operations as long as both numbers are in the same format (Qm.n). Compared to floating point, there is no extra <strong>alignment</strong>, <strong>rounding</strong>, <strong>normalizing</strong>, and <strong>handling special cases</strong>. Less CPU cycles needed for fixed point operations.</p>
+<p>Hardware differences:</p>
+<blockquote>
+<ol>
+<li>Fixed point can be implemented on tiny MCUs without an FPU, using only arithmetic logic unit(ALU) — less silicon, less power, less cost.</li>
+<li>Floating point requires dedicated hardware(FPU) or software emulation — more cycles, more power, larger chip.</li>
+</ol>
+</blockquote>
+<h1 id="6-Demo"><a href="#6-Demo" class="headerlink" title="6. Demo"></a>6. Demo</h1><blockquote>
+<p>Converting a Gaussian blur implementation from floating point to fixed point</p>
+</blockquote>
+<p><strong>Floating Point Gaussian Blur (1D)</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">gaussianBlurFloat</span><span class="params">(<span class="type">const</span> <span class="type">float</span>* input, <span class="type">float</span>* output, <span class="type">int</span> size)</span> </span>&#123;</span><br><span class="line">    <span class="type">const</span> <span class="type">float</span> kernel[<span class="number">5</span>] = &#123; <span class="number">0.0625</span>, <span class="number">0.25</span>, <span class="number">0.375</span>, <span class="number">0.25</span>, <span class="number">0.0625</span> &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">2</span>; i &lt; size - <span class="number">2</span>; ++i) &#123;</span><br><span class="line">        output[i] = <span class="number">0.0f</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">-2</span>; j &lt;= <span class="number">2</span>; ++j) &#123;</span><br><span class="line">            output[i] += input[i + j] * kernel[j + <span class="number">2</span>];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Choose a Fixed Point Format</strong><br>Assume:</p>
+<ol>
+<li>Input &amp; output are in <code>int16_t</code> using <code>Q8.8</code> format (8 integer bits, 8 fractional bits).</li>
+<li>We’ll convert kernel coefficients to <code>Q1.15</code> format (pure fractional, for more precision).</li>
+<li>Multiply <code>Q8.8 × Q1.15</code> → result is <code>Q9.23</code> → shift by 15 bits to get back to Q8.8.</li>
+</ol>
+<p><strong>Convert Kernel to Fixed Point</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Multiply each float coefficient by 2^15 = 32768</span></span><br><span class="line"><span class="type">const</span> <span class="type">int16_t</span> kernel[<span class="number">5</span>] = &#123;</span><br><span class="line">    <span class="number">0.0625</span>  * <span class="number">32768</span>,  <span class="comment">// ≈ 2048</span></span><br><span class="line">    <span class="number">0.25</span>    * <span class="number">32768</span>,  <span class="comment">// ≈ 8192</span></span><br><span class="line">    <span class="number">0.375</span>   * <span class="number">32768</span>,  <span class="comment">// ≈ 12288</span></span><br><span class="line">    <span class="number">0.25</span>    * <span class="number">32768</span>,  <span class="comment">// ≈ 8192</span></span><br><span class="line">    <span class="number">0.0625</span>  * <span class="number">32768</span>   <span class="comment">// ≈ 2048</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p><strong>Implementation Details</strong></p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="type">void</span> <span class="title">gaussianBlurFixed</span><span class="params">(<span class="type">const</span> <span class="type">int16_t</span>* input, <span class="type">int16_t</span>* output, <span class="type">int</span> size)</span> </span>&#123;</span><br><span class="line">    <span class="type">const</span> <span class="type">int16_t</span> kernel[<span class="number">5</span>] = &#123; <span class="number">2048</span>, <span class="number">8192</span>, <span class="number">12288</span>, <span class="number">8192</span>, <span class="number">2048</span> &#125;; <span class="comment">// Q1.15</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">2</span>; i &lt; size - <span class="number">2</span>; ++i) &#123;</span><br><span class="line">        <span class="type">int32_t</span> acc = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">-2</span>; j &lt;= <span class="number">2</span>; ++j) &#123;</span><br><span class="line">            <span class="type">int32_t</span> sample = (<span class="type">int32_t</span>)input[i + j];        <span class="comment">// Q8.8</span></span><br><span class="line">            <span class="type">int32_t</span> k = (<span class="type">int32_t</span>)kernel[j + <span class="number">2</span>];             <span class="comment">// Q1.15</span></span><br><span class="line">            acc += (sample * k);                            <span class="comment">// Q8.8 × Q1.15 = Q9.23</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// Round and shift to bring Q9.23 → Q8.8</span></span><br><span class="line">        acc = (acc + (<span class="number">1</span> &lt;&lt; <span class="number">14</span>)) &gt;&gt; <span class="number">15</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// Optional: clip to int16_t range</span></span><br><span class="line">        <span class="keyword">if</span> (acc &gt; <span class="number">32767</span>) acc = <span class="number">32767</span>;</span><br><span class="line">        <span class="keyword">if</span> (acc &lt; <span class="number">-32768</span>) acc = <span class="number">-32768</span>;</span><br><span class="line"></span><br><span class="line">        output[i] = (<span class="type">int16_t</span>)acc;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div><div class="article-licensing box"><div class="licensing-title"><p>Fixed Point Computation</p><p><a href="http://chuzcjoe.github.io/misc/misc-fixed-point/">http://chuzcjoe.github.io/misc/misc-fixed-point/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>Author</h6><p>Joe Chu</p></div></div><div class="level-item is-narrow"><div><h6>Posted on</h6><p>2025-05-29</p></div></div><div class="level-item is-narrow"><div><h6>Updated on</h6><p>2025-06-02</p></div></div><div class="level-item is-narrow"><div><h6>Licensed under</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="icons" rel="noopener" target="_blank" title="Attribution" href="https://creativecommons.org/licenses/by/4.0/"><i class="icon fab fa-creative-commons-by"></i></a><a class="icons" rel="noopener" target="_blank" title="Noncommercial" href="https://creativecommons.org/licenses/by-nc/4.0/"><i class="icon fab fa-creative-commons-nc"></i></a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/fixed-point/">fixed point</a></div><div class="sharethis-inline-share-buttons"></div><script src="https://chuzcjoe.github.io/" defer></script></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">Like this article? Support the author with</h3><div class="buttons is-centered"><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>Alipay</span><span class="qrcode"><img src="/" alt="Alipay"></span></a><a class="button donate" data-type="paypal" onclick="document.getElementById(&#039;paypal-donate-form&#039;).submit()"><span class="icon is-small"><i class="fab fa-paypal"></i></span><span>Paypal</span></a><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" rel="noopener" id="paypal-donate-form"><input type="hidden" name="cmd" value="_donations"><input type="hidden" name="business" value="chuzcjoe@gmail.com"><input type="hidden" name="currency_code" value="USD"></form><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>Wechat</span><span class="qrcode"><img src="/img/wechat.jpg" alt="Wechat"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/life/life-sealion-fisherman-wharf/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">Sealions at Fisherman&#039;s Wharf</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/life/life-ardenwood-farm-train/"><span class="level-item">Ardenwood Farm</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">Comments</h3><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'http://chuzcjoe.github.io/misc/misc-fixed-point/';
+            this.page.identifier = 'misc/misc-fixed-point/';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'chuzcjoe-github-io' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="/img/baby.png" alt="Joe Chu"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">Joe Chu</p><p class="is-size-6 is-block">I like to keep knowledge and memories visible and readable.</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Fremont, CA</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">Posts</p><a href="/archives"><p class="title">216</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Categories</p><a href="/categories"><p class="title">8</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">Tags</p><a href="/tags"><p class="title">168</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/chuzcjoe" target="_blank" rel="noopener">Follow</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/chuzcjoe"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Linkedin" href="https://www.linkedin.com/in/joe-chu-1784b3179/"><i class="fab fa-linkedin"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Scholar" href="https://scholar.google.com/citations?user=DCwJ1qcAAAAJ&amp;hl=en"><i class="fab fa-google"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Dribbble" href="https://dribbble.com"><i class="fab fa-dribbble"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="RSS" href="/"><i class="fas fa-rss"></i></a></div></div></div><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">Catalogue</h3><ul class="menu-list"><li><a class="level is-mobile" href="#Table-of-Contents"><span class="level-left"><span class="level-item">1</span><span class="level-item">Table of Contents</span></span></a></li><li><a class="level is-mobile" href="#1-Fundamentals"><span class="level-left"><span class="level-item">2</span><span class="level-item">1. Fundamentals</span></span></a></li><li><a class="level is-mobile" href="#2-Arithmetic"><span class="level-left"><span class="level-item">3</span><span class="level-item">2. Arithmetic</span></span></a></li><li><a class="level is-mobile" href="#3-Precision"><span class="level-left"><span class="level-item">4</span><span class="level-item">3. Precision</span></span></a></li><li><a class="level is-mobile" href="#4-Overflow"><span class="level-left"><span class="level-item">5</span><span class="level-item">4. Overflow</span></span></a></li><li><a class="level is-mobile" href="#5-Compare-to-Floating-Point"><span class="level-left"><span class="level-item">6</span><span class="level-item">5. Compare to Floating Point</span></span></a></li><li><a class="level is-mobile" href="#6-Demo"><span class="level-left"><span class="level-item">7</span><span class="level-item">6. Demo</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="adsense"><div class="card-content"><div class="menu"><h3 class="menu-label">Advertisement</h3><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1486482663275315" data-ad-slot="5727003811" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/expert.png" alt="JoeChu" height="28"></a><p class="is-size-7"><span>&copy; 2025 Joe Chu</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">uv <span id="busuanzi_value_site_uv">0</span></span><br><span id="busuanzi_container_site_pv">pv <span id="busuanzi_value_site_pv">0</span></span></p><p class="is-size-7">© 2019</p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("en");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "This website uses cookies to improve your experience.",
+          dismiss: "Got it!",
+          allow: "Allow cookies",
+          deny: "Decline",
+          link: "Learn more",
+          policy: "Cookie Policy",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.9/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><script src="/js/night.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"Type something...","untitled":"(Untitled)","posts":"Posts","pages":"Pages","categories":"Categories","tags":"Tags"});
+        });</script></body></html>

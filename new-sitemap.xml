@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chuzcjoe.github.io/life/life-centerville-library-petting-zoo/</loc>
+    
+    <lastmod>2025-07-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://chuzcjoe.github.io/life/life-uss-hornet/</loc>
     
     <lastmod>2025-07-13</lastmod>
@@ -2038,7 +2047,7 @@
 
   <url>
     <loc>http://chuzcjoe.github.io/</loc>
-    <lastmod>2025-07-13</lastmod>
+    <lastmod>2025-07-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://chuzcjoe.github.io/life/life-random-thinking/</loc>
+    <loc>http://chuzcjoe.github.io/CGV/cgv-make-atomic-op-faster-vulkan/</loc>
     
     <lastmod>2025-08-25</lastmod>
     
@@ -11,9 +11,9 @@
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/CGV/cgv-make-atomic-op-faster-vulkan/</loc>
+    <loc>http://chuzcjoe.github.io/life/life-random-thinking/</loc>
     
-    <lastmod>2025-08-22</lastmod>
+    <lastmod>2025-08-25</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

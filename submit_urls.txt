@@ -1,3 +1,4 @@
+https://chuzcjoe.github.io/cpp/cpp-the-emplace-back-trap/
 https://chuzcjoe.github.io/life/life-random-thinking/
 https://chuzcjoe.github.io/life/life-traffic-court-trial-experience/
 https://chuzcjoe.github.io/CGV/cgv-make-atomic-op-faster-vulkan/
@@ -7,4 +8,3 @@ https://chuzcjoe.github.io/CGV/cgv-vulkan-data-transfer/
 https://chuzcjoe.github.io/CGV/cgv-vulkan-visualization/
 https://chuzcjoe.github.io/life/life-fremont-art-festival/
 https://chuzcjoe.github.io/life/life-waygu-all-you-can-eat-experience/
-https://chuzcjoe.github.io/life/life-california-great-america/

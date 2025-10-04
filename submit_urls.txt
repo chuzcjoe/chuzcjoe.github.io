@@ -1,3 +1,4 @@
+https://chuzcjoe.github.io/cpp/cpp-user-defined-types-as-hash-key/
 https://chuzcjoe.github.io/life/life-newark-day/
 https://chuzcjoe.github.io/life/life-tiktok-open-house-2025/
 https://chuzcjoe.github.io/life/life-table-tennis-practice/
@@ -7,4 +8,3 @@ https://chuzcjoe.github.io/life/life-random-thinking/
 https://chuzcjoe.github.io/uncategorized/life-san-francisco-zoo/
 https://chuzcjoe.github.io/cpp/cpp-the-emplace-back-trap/
 https://chuzcjoe.github.io/life/life-traffic-court-trial-experience/
-https://chuzcjoe.github.io/CGV/cgv-make-atomic-op-faster-vulkan/

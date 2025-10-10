@@ -1,3 +1,4 @@
+https://chuzcjoe.github.io/CGV/cgv-barycentric-rasterization/
 https://chuzcjoe.github.io/life/life-lemos-farm/
 https://chuzcjoe.github.io/cpp/cpp-user-defined-types-as-hash-key/
 https://chuzcjoe.github.io/life/life-newark-day/
@@ -7,4 +8,3 @@ https://chuzcjoe.github.io/life/life-california-academy-of-sciences/
 https://chuzcjoe.github.io/cpp/cpp-asan/
 https://chuzcjoe.github.io/life/life-random-thinking/
 https://chuzcjoe.github.io/uncategorized/life-san-francisco-zoo/
-https://chuzcjoe.github.io/cpp/cpp-the-emplace-back-trap/

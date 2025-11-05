@@ -11,15 +11,6 @@
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/CGV/cgv-uniform-alignment-in-vulkan/</loc>
-    
-    <lastmod>2025-10-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://chuzcjoe.github.io/CGV/cgv-barycentric-rasterization/</loc>
     
     <lastmod>2025-10-12</lastmod>

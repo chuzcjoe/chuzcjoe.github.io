@@ -1,5 +1,4 @@
 https://chuzcjoe.github.io/CGV/cgv-camera-intrinsic-extrinsic/
-https://chuzcjoe.github.io/CGV/cgv-uniform-alignment-in-vulkan/
 https://chuzcjoe.github.io/CGV/cgv-barycentric-rasterization/
 https://chuzcjoe.github.io/life/life-lemos-farm/
 https://chuzcjoe.github.io/cpp/cpp-user-defined-types-as-hash-key/
@@ -8,3 +7,4 @@ https://chuzcjoe.github.io/life/life-tiktok-open-house-2025/
 https://chuzcjoe.github.io/life/life-table-tennis-practice/
 https://chuzcjoe.github.io/life/life-california-academy-of-sciences/
 https://chuzcjoe.github.io/cpp/cpp-asan/
+https://chuzcjoe.github.io/life/life-random-thinking/

@@ -1,3 +1,4 @@
+https://chuzcjoe.github.io/life/life-2025-christmas-trip/
 https://chuzcjoe.github.io/life/life-taishan-cuisine/
 https://chuzcjoe.github.io/life/life-san-francisco-zoo/
 https://chuzcjoe.github.io/CGV/cgv-projection-matrix-in-graphics/
@@ -7,4 +8,3 @@ https://chuzcjoe.github.io/life/life-2025-hallowen/
 https://chuzcjoe.github.io/CGV/cgv-camera-intrinsic-extrinsic/
 https://chuzcjoe.github.io/CGV/cgv-barycentric-rasterization/
 https://chuzcjoe.github.io/life/life-lemos-farm/
-https://chuzcjoe.github.io/cpp/cpp-user-defined-types-as-hash-key/

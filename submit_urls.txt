@@ -1,3 +1,4 @@
+https://chuzcjoe.github.io/life/life-last-day-of-2025/
 https://chuzcjoe.github.io/CGV/cgv-missing-vkCmdBeginRendering-vkCmdEndRendering-on-macos/
 https://chuzcjoe.github.io/life/life-2025-christmas-trip/
 https://chuzcjoe.github.io/life/life-taishan-cuisine/
@@ -7,4 +8,3 @@ https://chuzcjoe.github.io/life/life-sonoma-trip/
 https://chuzcjoe.github.io/life/life-natural-bridges-state-beach/
 https://chuzcjoe.github.io/life/life-2025-hallowen/
 https://chuzcjoe.github.io/CGV/cgv-camera-intrinsic-extrinsic/
-https://chuzcjoe.github.io/CGV/cgv-barycentric-rasterization/

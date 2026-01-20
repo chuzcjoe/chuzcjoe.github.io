@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chuzcjoe.github.io/cpp/cpp-include-cycle/</loc>
+    
+    <lastmod>2026-01-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://chuzcjoe.github.io/life/life-last-day-of-2025/</loc>
     
     <lastmod>2026-01-01</lastmod>
@@ -2308,7 +2317,7 @@
 
   <url>
     <loc>http://chuzcjoe.github.io/</loc>
-    <lastmod>2026-01-01</lastmod>
+    <lastmod>2026-01-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>

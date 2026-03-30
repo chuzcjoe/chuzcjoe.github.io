@@ -10812,10 +10812,6 @@ article.article .article-meta {
   overflow-x: auto;
   margin-bottom: 0.5rem;
 }
-article.article .title {
-  color: #3a76d6;
-  font-weight: bold;
-}
 article.article .content {
   word-wrap: break-word;
   font-size: 1.1rem;
@@ -10842,12 +10838,6 @@ article.article .content code {
   padding: 0;
   background: transparent;
   overflow-wrap: break-word;
-}
-article.article .content code:not(pre > code) {
-  background-color: #f0f0f0;
-  color: #333;
-  padding: 3px 4px;
-  border-radius: 5px;
 }
 article.article .content blockquote.pullquote {
   float: right;

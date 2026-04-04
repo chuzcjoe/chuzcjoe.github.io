@@ -1,3 +1,4 @@
+https://chuzcjoe.github.io/life/life-table-tennis-practice/
 https://chuzcjoe.github.io/tool/tool-study-music/
 https://chuzcjoe.github.io/life/life-sf-ferry/
 https://chuzcjoe.github.io/life/life-dragon-mountain-milpitas/
@@ -7,4 +8,3 @@ https://chuzcjoe.github.io/life/life-tilden-little-farm/
 https://chuzcjoe.github.io/CGV/cgv-projection-matrix-in-graphics/
 https://chuzcjoe.github.io/life/life-del-valle-regional-park/
 https://chuzcjoe.github.io/tool/tool-heci-to-jpg/
-https://chuzcjoe.github.io/CGV/cgv-glad-add-extensions/

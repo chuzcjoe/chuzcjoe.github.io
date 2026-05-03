@@ -2,6 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chuzcjoe.github.io/life/life-very-mulberry/</loc>
+    
+    <lastmod>2026-05-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://chuzcjoe.github.io/CGV/cgv-neural-network-quantization-overview/</loc>
+    
+    <lastmod>2026-05-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://chuzcjoe.github.io/life/life-tiktok-open-house/</loc>
+    
+    <lastmod>2026-04-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://chuzcjoe.github.io/life/life-tummytime/</loc>
+    
+    <lastmod>2026-04-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://chuzcjoe.github.io/life/life-sf-discovery-museum/</loc>
     
     <lastmod>2026-04-13</lastmod>
@@ -1577,24 +1613,6 @@
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/life/life-tummytime/</loc>
-    
-    <lastmod>2025-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://chuzcjoe.github.io/life/life-tiktok-open-house/</loc>
-    
-    <lastmod>2025-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://chuzcjoe.github.io/life/life-team-building/</loc>
     
     <lastmod>2025-01-09</lastmod>
@@ -2416,7 +2434,7 @@
 
   <url>
     <loc>http://chuzcjoe.github.io/</loc>
-    <lastmod>2026-04-13</lastmod>
+    <lastmod>2026-05-03</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>

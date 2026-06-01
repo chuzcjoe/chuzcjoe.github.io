@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://chuzcjoe.github.io/CGV/cgv-neural-network-quantization-overview/</loc>
+    
+    <lastmod>2026-06-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://chuzcjoe.github.io/life/life-california-botanical-garden/</loc>
     
     <lastmod>2026-05-24</lastmod>
@@ -30,15 +39,6 @@
   
   <url>
     <loc>http://chuzcjoe.github.io/life/life-very-mulberry/</loc>
-    
-    <lastmod>2026-05-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://chuzcjoe.github.io/CGV/cgv-neural-network-quantization-overview/</loc>
     
     <lastmod>2026-05-03</lastmod>
     
@@ -1388,7 +1388,7 @@
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/interview/misc-sliding-window-template/</loc>
+    <loc>http://chuzcjoe.github.io/interview/misc-slow-fast-pointers/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -1397,7 +1397,7 @@
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/interview/misc-slow-fast-pointers/</loc>
+    <loc>http://chuzcjoe.github.io/interview/misc-sliding-window-template/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -1514,7 +1514,7 @@
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/CGV/misc-learn-opengl-2/</loc>
+    <loc>http://chuzcjoe.github.io/CGV/misc-learn-opengl-1/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -1523,7 +1523,7 @@
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/CGV/misc-learn-opengl-1/</loc>
+    <loc>http://chuzcjoe.github.io/CGV/misc-learn-opengl-2/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -1892,6 +1892,15 @@
   </url>
   
   <url>
+    <loc>http://chuzcjoe.github.io/cpp/cpp20span/</loc>
+    
+    <lastmod>2025-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://chuzcjoe.github.io/cpp/cpp-volatile/</loc>
     
     <lastmod>2025-01-09</lastmod>
@@ -1910,7 +1919,7 @@
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/cpp/cpp20span/</loc>
+    <loc>http://chuzcjoe.github.io/cpp/emplace-back/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -1928,34 +1937,7 @@
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/cpp/emplace-back/</loc>
-    
-    <lastmod>2025-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://chuzcjoe.github.io/life/halloween/</loc>
-    
-    <lastmod>2025-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://chuzcjoe.github.io/cpp/cpp-static/</loc>
-    
-    <lastmod>2025-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://chuzcjoe.github.io/cpp/cpp-string-view/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -1973,6 +1955,24 @@
   </url>
   
   <url>
+    <loc>http://chuzcjoe.github.io/cpp/cpp-string-view/</loc>
+    
+    <lastmod>2025-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://chuzcjoe.github.io/cpp/cpp-static/</loc>
+    
+    <lastmod>2025-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://chuzcjoe.github.io/cpp/cpp-threading-pool/</loc>
     
     <lastmod>2025-01-09</lastmod>
@@ -1982,7 +1982,7 @@
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/cpp/cpp-threadpool2/</loc>
+    <loc>http://chuzcjoe.github.io/cpp/cpp-union-performance-gain/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -1991,7 +1991,7 @@
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/cpp/cpp-union-performance-gain/</loc>
+    <loc>http://chuzcjoe.github.io/cpp/cpp-threadpool2/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2063,15 +2063,6 @@
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/cpp/cpp-parameter-pack/</loc>
-    
-    <lastmod>2025-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://chuzcjoe.github.io/cpp/cpp-scope-resolution-operator/</loc>
     
     <lastmod>2025-01-09</lastmod>
@@ -2109,6 +2100,15 @@
   
   <url>
     <loc>http://chuzcjoe.github.io/cpp/cpp-static-polymorphism/</loc>
+    
+    <lastmod>2025-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://chuzcjoe.github.io/cpp/cpp-parameter-pack/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2180,7 +2180,7 @@
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/cpp/cpp-function-visibility/</loc>
+    <loc>http://chuzcjoe.github.io/cpp/cpp-fold-expressions/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2189,7 +2189,7 @@
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/cpp/cpp-fold-expressions/</loc>
+    <loc>http://chuzcjoe.github.io/cpp/cpp-function-visibility/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2288,7 +2288,7 @@
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/cpp/cpp-constexpr/</loc>
+    <loc>http://chuzcjoe.github.io/cpp/cpp-constexpr-consteval/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2297,7 +2297,7 @@
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/cpp/cpp-constexpr-consteval/</loc>
+    <loc>http://chuzcjoe.github.io/cpp/cpp-constexpr/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2405,7 +2405,7 @@
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/CGV/cgv-color-transfer-function/</loc>
+    <loc>http://chuzcjoe.github.io/cpp/cgv-learn-opengles-4/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2414,7 +2414,7 @@
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/cpp/cgv-learn-opengles-4/</loc>
+    <loc>http://chuzcjoe.github.io/CGV/cgv-color-transfer-function/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2432,7 +2432,7 @@
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/interview/MLSystemDesignFrameWork/</loc>
+    <loc>http://chuzcjoe.github.io/interview/algorithm/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2441,7 +2441,7 @@
   </url>
   
   <url>
-    <loc>http://chuzcjoe.github.io/interview/algorithm/</loc>
+    <loc>http://chuzcjoe.github.io/interview/MLSystemDesignFrameWork/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2461,7 +2461,7 @@
 
   <url>
     <loc>http://chuzcjoe.github.io/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <lastmod>2026-06-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>

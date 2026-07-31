@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chuzcjoe.github.io/about/</loc>
+    
+    <lastmod>2026-07-31</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://chuzcjoe.github.io/life/life-independence-day-2026/</loc>
     
     <lastmod>2026-07-06</lastmod>
@@ -120,15 +129,6 @@
   
   <url>
     <loc>https://chuzcjoe.github.io/life/life-table-tennis-practice/</loc>
-    
-    <lastmod>2026-04-04</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://chuzcjoe.github.io/tool/tool-study-music/</loc>
     
     <lastmod>2026-04-04</lastmod>
     
@@ -1352,15 +1352,6 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/about/</loc>
-    
-    <lastmod>2025-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://chuzcjoe.github.io/cpp/smartpointer/</loc>
     
     <lastmod>2025-01-09</lastmod>
@@ -2479,7 +2470,7 @@
 
   <url>
     <loc>https://chuzcjoe.github.io/</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-07-31</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>

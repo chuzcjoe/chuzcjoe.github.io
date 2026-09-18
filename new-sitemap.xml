@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://chuzcjoe.github.io/about/</loc>
+    
+    <lastmod>2026-09-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://chuzcjoe.github.io/cpp/cpp-smart-pointer-meet-const-and-reference/</loc>
     
     <lastmod>2026-09-18</lastmod>
@@ -14,15 +23,6 @@
     <loc>https://chuzcjoe.github.io/life/life-hayward-airport-open-house/</loc>
     
     <lastmod>2026-09-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://chuzcjoe.github.io/about/</loc>
-    
-    <lastmod>2026-09-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

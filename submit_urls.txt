@@ -1,3 +1,4 @@
+https://chuzcjoe.github.io/cpp/cpp-smart-pointer-meet-const-and-reference/
 https://chuzcjoe.github.io/life/life-hayward-airport-open-house/
 https://chuzcjoe.github.io/life/life-labor-day-trip-2026/
 https://chuzcjoe.github.io/life/life-don-castro-area/
@@ -7,4 +8,3 @@ https://chuzcjoe.github.io/life/life-independence-day-2026/
 https://chuzcjoe.github.io/life/life-2026-juneteenth-trip/
 https://chuzcjoe.github.io/CGV/cgv-neural-network-quantization-overview/
 https://chuzcjoe.github.io/life/life-california-botanical-garden/
-https://chuzcjoe.github.io/life/life-sf-sausalito-ferry/

@@ -229,7 +229,7 @@ function loadInsight(config, translation) {
         .sort((a, b) => {
           return weights.post(b) - weights.post(a);
         })
-        .slice(0, 5),
+        .slice(0, 20),
       pages: pages
         .filter(filters.page)
         .sort((a, b) => {

@@ -1,6 +1,6 @@
 /*
- * Article body typography — matched to Apple coremltools docs
- * (pydata-sphinx-theme: system font, 16px, line-height 1.65, SF Mono code).
+ * Article body typography — matched to llm-101 docs
+ * (Inter/system font, 18px, line-height 1.8, SF Mono code).
  *
  * Loaded on every page by scripts/inject-custom-css.js.
  * The selector mirrors the theme's `article.article .content`, so these rules
@@ -10,33 +10,50 @@
 
 /* ---------- Body text ---------- */
 article.article .content {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
-               "Arial", "PingFang SC", "Microsoft YaHei", sans-serif,
-               "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 16px;        /* coremltools body = 1rem @ 16px root (Icarus root is 14px) */
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei",
+               sans-serif;
+  font-size: 18px;
   font-weight: 400;
-  line-height: 1.65;      /* coremltools body line-height */
-  color: #323232;         /* coremltools --pst-color-text-base (light mode) */
+  line-height: 1.8;
+  color: #303b4c;
 }
 
-/* Comfortable paragraph rhythm, like the docs page */
+/* Comfortable paragraph rhythm */
 article.article .content p {
   margin-bottom: 1.15em;
 }
 
-/* ---------- Headings: system font, tight leading, generous top spacing ---------- */
+/* ---------- Headings ---------- */
 article.article .content h1,
 article.article .content h2,
 article.article .content h3,
 article.article .content h4,
 article.article .content h5,
 article.article .content h6 {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue",
-               "Arial", "PingFang SC", "Microsoft YaHei", sans-serif;
-  font-weight: 600;
-  line-height: 1.25;
-  margin: 2.5rem 0 1.05rem;
-  color: #1a1a1a;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei",
+               sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #172033;
+}
+
+article.article .content h1 {
+  font-size: 29px;
+  letter-spacing: -0.048em;
+  margin: 2.5rem 0 1.1rem;
+}
+
+article.article .content h2 {
+  font-size: 20px;
+  letter-spacing: -0.035em;
+  margin: 3.4rem 0 1.05rem;
+}
+
+article.article .content h3 {
+  font-size: 16px;
+  margin: 2rem 0 1.05rem;
 }
 
 /* ---------- Code: SF Mono stack, like coremltools ---------- */

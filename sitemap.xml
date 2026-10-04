@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://chuzcjoe.github.io/life/life-weekend-snapshots/</loc>
+    <loc>https://chuzcjoe.github.io/about/</loc>
     
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-10-04</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/about/</loc>
+    <loc>https://chuzcjoe.github.io/life/life-weekend-snapshots/</loc>
     
-    <lastmod>2026-09-22</lastmod>
+    <lastmod>2026-09-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -2542,7 +2542,7 @@
 
   <url>
     <loc>https://chuzcjoe.github.io/</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>

@@ -1487,7 +1487,7 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/interview/misc-stl-container-cpp-cheatsheet/</loc>
+    <loc>https://chuzcjoe.github.io/interview/misc-sliding-window-template/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -1496,7 +1496,7 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/interview/misc-sliding-window-template/</loc>
+    <loc>https://chuzcjoe.github.io/interview/misc-stl-container-cpp-cheatsheet/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -1622,6 +1622,15 @@
   </url>
   
   <url>
+    <loc>https://chuzcjoe.github.io/misc/misc-jni-register-native/</loc>
+    
+    <lastmod>2025-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://chuzcjoe.github.io/resource/misc-learn-opencl/</loc>
     
     <lastmod>2025-01-09</lastmod>
@@ -1640,7 +1649,7 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/misc/misc-jni-register-native/</loc>
+    <loc>https://chuzcjoe.github.io/interview/misc-how-to-write-bug-free-binary-search/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -1658,15 +1667,6 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/interview/misc-how-to-write-bug-free-binary-search/</loc>
-    
-    <lastmod>2025-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://chuzcjoe.github.io/resource/misc-effective-modern-cpp/</loc>
     
     <lastmod>2025-01-09</lastmod>
@@ -1676,7 +1676,7 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/cpp/misc-cpp-special-member-functions/</loc>
+    <loc>https://chuzcjoe.github.io/misc/misc-cross-compile-libjpeg-for-android-armv8a/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -1685,7 +1685,7 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/misc/misc-cross-compile-libjpeg-for-android-armv8a/</loc>
+    <loc>https://chuzcjoe.github.io/cpp/misc-cpp-special-member-functions/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2009,6 +2009,15 @@
   </url>
   
   <url>
+    <loc>https://chuzcjoe.github.io/cpp/emplace-back/</loc>
+    
+    <lastmod>2025-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://chuzcjoe.github.io/cpp/cppstlcheatsheet/</loc>
     
     <lastmod>2025-01-09</lastmod>
@@ -2019,15 +2028,6 @@
   
   <url>
     <loc>https://chuzcjoe.github.io/life/halloween/</loc>
-    
-    <lastmod>2025-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://chuzcjoe.github.io/cpp/emplace-back/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2054,7 +2054,7 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/cpp/cpp-static-shared-library/</loc>
+    <loc>https://chuzcjoe.github.io/cpp/cpp-threading-pool/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2063,7 +2063,7 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/cpp/cpp-threading-pool/</loc>
+    <loc>https://chuzcjoe.github.io/cpp/cpp-static-shared-library/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2081,15 +2081,6 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/cpp/cpp-union-performance-gain/</loc>
-    
-    <lastmod>2025-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://chuzcjoe.github.io/cpp/cpp-union/</loc>
     
     <lastmod>2025-01-09</lastmod>
@@ -2099,25 +2090,7 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/cpp/cpp-virtual-destructor/</loc>
-    
-    <lastmod>2025-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://chuzcjoe.github.io/cpp/cpp-virtual-inheritance/</loc>
-    
-    <lastmod>2025-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://chuzcjoe.github.io/cpp/cpp-virtual-function/</loc>
+    <loc>https://chuzcjoe.github.io/cpp/cpp-union-performance-gain/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2135,7 +2108,25 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/cpp/cpp-parameter-pack/</loc>
+    <loc>https://chuzcjoe.github.io/cpp/cpp-virtual-destructor/</loc>
+    
+    <lastmod>2025-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuzcjoe.github.io/cpp/cpp-virtual-function/</loc>
+    
+    <lastmod>2025-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuzcjoe.github.io/cpp/cpp-virtual-inheritance/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2162,6 +2153,15 @@
   </url>
   
   <url>
+    <loc>https://chuzcjoe.github.io/cpp/cpp-parameter-pack/</loc>
+    
+    <lastmod>2025-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://chuzcjoe.github.io/cpp/cpp-scope-resolution-operator/</loc>
     
     <lastmod>2025-01-09</lastmod>
@@ -2171,7 +2171,7 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/cpp/cpp-singleton/</loc>
+    <loc>https://chuzcjoe.github.io/cpp/cpp-slicing/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2180,7 +2180,7 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/cpp/cpp-slicing/</loc>
+    <loc>https://chuzcjoe.github.io/cpp/cpp-singleton/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2216,15 +2216,6 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/cpp/cpp-lvalue-rvalue/</loc>
-    
-    <lastmod>2025-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://chuzcjoe.github.io/cpp/cpp-json-parser/</loc>
     
     <lastmod>2025-01-09</lastmod>
@@ -2234,7 +2225,7 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/cpp/cpp-nodiscard/</loc>
+    <loc>https://chuzcjoe.github.io/cpp/cpp-observer/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2252,7 +2243,16 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/cpp/cpp-observer/</loc>
+    <loc>https://chuzcjoe.github.io/cpp/cpp-lvalue-rvalue/</loc>
+    
+    <lastmod>2025-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://chuzcjoe.github.io/cpp/cpp-nodiscard/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2306,7 +2306,7 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/cpp/cpp-design-vector/</loc>
+    <loc>https://chuzcjoe.github.io/cpp/cpp-design-iterator/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2315,7 +2315,7 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/cpp/cpp-design-iterator/</loc>
+    <loc>https://chuzcjoe.github.io/cpp/cpp-design-vector/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2333,7 +2333,7 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/cpp/cpp-enable-shared-from-this/</loc>
+    <loc>https://chuzcjoe.github.io/cpp/cpp-explicit/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2351,7 +2351,7 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/cpp/cpp-explicit/</loc>
+    <loc>https://chuzcjoe.github.io/cpp/cpp-enable-shared-from-this/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2378,7 +2378,7 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/cpp/cpp-constexpr-consteval/</loc>
+    <loc>https://chuzcjoe.github.io/cpp/cpp-constexpr/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2387,7 +2387,7 @@
   </url>
   
   <url>
-    <loc>https://chuzcjoe.github.io/cpp/cpp-constexpr/</loc>
+    <loc>https://chuzcjoe.github.io/cpp/cpp-constexpr-consteval/</loc>
     
     <lastmod>2025-01-09</lastmod>
     
@@ -2551,7 +2551,7 @@
 
   <url>
     <loc>https://chuzcjoe.github.io/</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>

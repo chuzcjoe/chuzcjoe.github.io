@@ -82,7 +82,7 @@ tags: [C++, notes]
 
 ## 第三方服务
 
-保留原有 Disqus shortname、canonical URL/identifier、Busuanzi 兼容计数、follow.it 表单及 PayPal 配置。计数使用 xcsoft 托管的不蒜子兼容 API；外部服务的实际响应仍取决于其可用性和账户设置，验证不会发送评论、订阅或付款。AdSense 保留原广告位和 Advertisement 占位，广告账号和广告单元配置目前留空；凭证为空时不会加载广告脚本。`content/ads.txt` 已按站点所有者提供的信息配置授权记录，构建后发布至 `https://chuzcjoe.github.io/ads.txt`。
+保留原有 Disqus shortname、canonical URL/identifier、Busuanzi 兼容计数、follow.it 表单及 PayPal 配置。计数使用 xcsoft 托管的不蒜子兼容 API；外部服务的实际响应仍取决于其可用性和账户设置，验证不会发送评论、订阅或付款。AdSense 保留原广告位和 Advertisement 占位，发布商账号为 `ca-pub-1486482663275315`，侧栏广告单元为 `5727003811`，首页顶部横幅广告单元为 `6708912999`。凭证为空时不会加载广告脚本。`content/ads.txt` 已按站点所有者提供的信息配置授权记录，构建后发布至 `https://chuzcjoe.github.io/ads.txt`。
 
 重新接入 AdSense 时，在 `site.config.yml` 的 `type: adsense` 项填写 `client_id` 和 `slot_id`，各文章的广告位默认继承这组配置，也可在文章的同名字段中单独覆盖。本地预览始终保留占位，不加载广告；凭证完整时线上会加载广告。需要 ads.txt 授权时，将新账户提供的记录放入 `content/ads.txt`，构建后会复制到网站根目录。
 

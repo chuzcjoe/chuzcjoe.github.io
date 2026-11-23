@@ -156,10 +156,11 @@ widgets:
     verification_code: ""
   - position: left
     type: adsense
-    client_id: ""
-    slot_id: ""
+    client_id: ca-pub-1486482663275315
+    slot_id: "5727003811"
   - position: main
     type: adsense
+    slot_id: "6708912999"
 plugins:
   animejs: true
   back_to_top: true

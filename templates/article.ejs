@@ -6,7 +6,7 @@
   <span class="level-item"><%= post.author %></span>
   <% if (post.categories.length) { %><span class="level-item"><% post.categories.forEach((name,i)=> { %><% if (i) { %><span>&nbsp;/&nbsp;</span><% } %><a class="link-muted" href="/categories/<%= routePart(name) %>/"><%= name %></a><% }) %></span><% } %>
   <span class="level-item"><%= post.readtime %> read (About <%= post.words >= 1000 ? Math.round(post.words/100)/10 + 'k' : post.words %> words)</span>
-  <% if (!index && config.plugins.busuanzi) { %><span class="level-item"><span id="busuanzi_page_pv">…</span> visits</span><% } %>
+  <% if (!index && config.plugins.busuanzi) { %><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">…</span> visits</span><% } %>
 </div></div><% } %>
 <% if (post.title && post.isPost) { %><% if (index) { %><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="<%= post.url %>"><%= post.title %></a></p><% } else { %><h1 class="title is-3 is-size-4-mobile"><%= post.title %></h1><% } %><% } %>
 <div class="content"><%- index && post.excerpt ? post.excerpt : post.content %></div>

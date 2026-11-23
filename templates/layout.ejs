@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/vendor/lightgallery/css/lightgallery.min.css"><link rel="stylesheet" href="/vendor/justifiedGallery/justifiedGallery.min.css"><link rel="stylesheet" href="/vendor/katex/katex.min.css">
   <link rel="stylesheet" href="/css/math.css"><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/night.css"><link rel="stylesheet" href="/css/site.css">
   <script src="/vendor/pace.min.js"></script>
-  <% if (config.plugins.busuanzi) { %><script src="https://busuanzi.meuicat.com/js" defer></script><% } %>
+  <% if (config.plugins.busuanzi) { %><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><% } %>
 </head>
 <body class="is-<%= columns %>-column">
 <nav class="navbar navbar-main"><div class="container navbar-container">
@@ -35,7 +35,7 @@
 </div></div></section>
 <footer class="footer"><div class="container"><div class="level"><div class="level-start">
   <a class="footer-logo is-block mb-2" href="/"><img src="<%= config.logo %>" alt="<%= config.title %>" height="28"></a>
-  <p class="is-size-7"><span>© <%= new Date().getFullYear() %> <%= config.author %></span>&nbsp;&nbsp;Powered by Markdown &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><% if (config.plugins.busuanzi) { %><span>uv <span id="busuanzi_site_uv">…</span></span><br><span>pv <span id="busuanzi_site_pv">…</span></span><% } %></p>
+  <p class="is-size-7"><span>© <%= new Date().getFullYear() %> <%= config.author %></span>&nbsp;&nbsp;Powered by Markdown &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><% if (config.plugins.busuanzi) { %><span id="busuanzi_container_site_uv">uv <span id="busuanzi_value_site_uv">…</span></span><br><span id="busuanzi_container_site_pv">pv <span id="busuanzi_value_site_pv">…</span></span><% } %></p>
   <p class="is-size-7"><%- config.footer.copyright %></p>
 </div><div class="level-end"><div class="field has-addons"><% for (const [name, link] of Object.entries(config.footer.links)) { %><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="<%= name %>" href="<%= link.url %>"><i class="<%= link.icon %>"></i></a></p><% } %></div></div></div></div></footer>
 <script src="/vendor/jquery.min.js"></script><script src="/vendor/moment.min.js"></script><script src="/vendor/clipboard.min.js" defer></script>

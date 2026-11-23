@@ -1,0 +1,22 @@
+<div class="card">
+<% if (post.cover) { %><div class="card-image"><a class="image is-7by3" href="<%= post.url %>"><img class="fill" src="<%= post.cover %>" alt="<%= post.title %>"></a></div><% } %>
+<article class="card-content article<%= post.direction ? ' '+post.direction : '' %>" role="article">
+<% if (post.isPost) { %><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left">
+  <span class="level-item">Posted&nbsp;<time datetime="<%= post.dateIso %>" title="<%= post.date %>"><%= post.date %></time></span>
+  <span class="level-item"><%= post.author %></span>
+  <% if (post.categories.length) { %><span class="level-item"><% post.categories.forEach((name,i)=> { %><% if (i) { %><span>&nbsp;/&nbsp;</span><% } %><a class="link-muted" href="/categories/<%= routePart(name) %>/"><%= name %></a><% }) %></span><% } %>
+  <span class="level-item"><%= post.readtime %> read (About <%= post.words >= 1000 ? Math.round(post.words/100)/10 + 'k' : post.words %> words)</span>
+  <% if (!index && config.plugins.busuanzi) { %><span class="level-item"><span id="busuanzi_page_pv">…</span> visits</span><% } %>
+</div></div><% } %>
+<% if (post.title && post.isPost) { %><% if (index) { %><p class="title is-3 is-size-4-mobile"><a class="link-muted" href="<%= post.url %>"><%= post.title %></a></p><% } else { %><h1 class="title is-3 is-size-4-mobile"><%= post.title %></h1><% } %><% } %>
+<div class="content"><%- index && post.excerpt ? post.excerpt : post.content %></div>
+<% if (!index) { %>
+<div class="article-licensing box"><div class="licensing-title"><% if (post.isPost) { %><p><%= post.title %></p><% } %><p><a href="<%= new URL(post.url,config.url).href %>"><%= decodeURI(new URL(post.url,config.url).href) %></a></p></div><div class="licensing-meta level is-mobile"><div class="level-left">
+<% for (const [label,value] of [['Author',post.author],['Posted on',post.date],['Updated on',post.updated]]) { %><div class="level-item is-narrow"><div><h6><%= label %></h6><p><%= value %></p></div></div><% } %>
+<div class="level-item is-narrow"><div><h6>Licensed under</h6><p><% for (const [name, license] of Object.entries(config.article.licenses)) { %><a class="icons" rel="noopener" target="_blank" title="<%= name %>" href="<%= license.url %>"><i class="icon <%= license.icon %>"></i></a><% } %></p></div></div>
+</div></div></div>
+<% if (post.tags.length) { %><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><% for (const name of post.tags) { %><a class="link-muted mr-2" rel="tag" href="<%= site.tags.find(t=>t.name===name).url %>"><%= name %></a><% } %></div><% } %>
+<div class="sharethis-inline-share-buttons"></div>
+<% } else if (post.excerpt) { %><a class="article-more button is-small is-size-7" href="<%= post.url %>#more">Read more</a><% } %>
+</article></div>
+<% if (!index) { %><%- render('extras', {post,prev,next}) %><% } %>

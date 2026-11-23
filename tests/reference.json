@@ -1,0 +1,76 @@
+{
+  "/": {
+    "title": "JoeChu",
+    "mainClass": "column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen",
+    "articleTitles": [
+      "Table Tennis Practice",
+      "2026 Winchester Mystery House Halloween",
+      "Pumpkin After Dark",
+      "Online Softmax",
+      "Weekend Snapshots",
+      "One Weekend in San Francisco",
+      "When Smart Pointer Meets Const and Reference",
+      "Hayward Airport Open House",
+      "Labor Day Trip",
+      "Don Castro Regional Recreation Area"
+    ],
+    "widgets": [
+      "profile",
+      "subscribe-email",
+      "adsense"
+    ]
+  },
+  "/archives/": {
+    "title": "Archives - JoeChu",
+    "mainClass": "column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen",
+    "articleTitles": [],
+    "widgets": [
+      "profile",
+      "subscribe-email",
+      "adsense"
+    ]
+  },
+  "/categories/cpp/": {
+    "title": "Category: cpp - JoeChu",
+    "mainClass": "column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen",
+    "articleTitles": [
+      "When Smart Pointer Meets Const and Reference",
+      "Circular Include in C++",
+      "User-defined Types as Hash Keys in C++",
+      "Runtime Memory Error Detection Using ASAN",
+      "The emplace_back() Trap",
+      "Google C++ Style Quick Reference",
+      "Concept in C++",
+      "Bitfields",
+      "Type Punning and Strict Aliasing Rule",
+      "Virtual Functions in Constructor and Descturctor"
+    ],
+    "widgets": [
+      "profile",
+      "subscribe-email",
+      "adsense"
+    ]
+  },
+  "/misc/misc-online-softmax/": {
+    "title": "Online Softmax - JoeChu",
+    "mainClass": "column order-2 column-main is-8-tablet is-8-desktop is-10-widescreen",
+    "articleTitles": [
+      "Online Softmax"
+    ],
+    "widgets": [
+      "profile",
+      "toc",
+      "adsense"
+    ]
+  },
+  "/about/": {
+    "title": "JoeChu",
+    "mainClass": "column order-2 column-main is-8-tablet is-8-desktop is-6-widescreen",
+    "articleTitles": [],
+    "widgets": [
+      "profile",
+      "subscribe-email",
+      "adsense"
+    ]
+  }
+}

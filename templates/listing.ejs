@@ -1,0 +1,10 @@
+<% if (kind === 'categories' || kind === 'tags') { %>
+<div class="card widget" data-type="<%= kind %>"><div class="card-content"><div class="menu"><h3 class="menu-label"><%= kind === 'tags' ? 'Tags' : 'Categories' %></h3>
+<% if (kind === 'tags') { %><div class="field is-grouped is-grouped-multiline"><% for (const item of items) { %><div class="control"><a class="tags has-addons" href="<%= item.url %>"><span class="tag"><%= item.name %></span><span class="tag"><%= item.posts.length %></span></a></div><% } %></div>
+<% } else { %><ul class="menu-list"><% for (const item of items) { %><li><a class="level is-mobile" href="<%= item.url %>"><span class="level-start"><span class="level-item"><%= item.name %></span></span><span class="level-end"><span class="level-item tag"><%= item.posts.length %></span></span></a></li><% } %></ul><% } %>
+</div></div></div>
+<% } else if (kind === 'breadcrumb') { %>
+<div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/<%= taxonomy %>"><%= taxonomy === 'tags' ? 'Tags' : 'Categories' %></a></li><li class="is-active"><a href="#" aria-current="page"><%= name %></a></li></ul></nav></div></div>
+<% } else if (kind === 'archive') { %>
+<% for (const group of groups) { %><div class="card"><div class="card-content"><h3 class="tag is-primary"><%= group.label %></h3><div class="timeline"><% for (const post of group.posts) { %><article class="media"><div class="media-content"><p class="date"><time datetime="<%= post.dateIso %>"><%= post.date %></time></p><p class="title"><a href="<%= post.url %>"><%= post.title %></a></p><p class="categories"><% for (const name of post.categories) { %><a href="/categories/<%= routePart(name) %>/"><%= name %></a><% } %></p></div></article><% } %></div></div></div><% } %>
+<% } %>

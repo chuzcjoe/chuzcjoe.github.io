@@ -1,0 +1,2178 @@
+[
+  {
+    "source": "content/_drafts/wealth-roth-all-in-one/2024rothlimit.png",
+    "target": "wealth/roth-all-in-one/2024rothlimit.png",
+    "originalUrl": null,
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/wealth/roth-all-in-one/2024rothlimit.png",
+    "sha256": "a0da21cbe30e8e1cf3d0a6fd26a3e999eaafbf31295034ddf62fb27816039acc",
+    "bytes": 53477
+  },
+  {
+    "source": "content/_posts/cgv-bt709-bt2020/colorrange.png",
+    "target": "cgv/bt709-bt2020/colorrange.png",
+    "originalUrl": "/CGV/cgv-bt709-bt2020/colorrange.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/bt709-bt2020/colorrange.png",
+    "sha256": "5ed98e64b4df33fe27506dd334fb7c641c5c1852585b6b90f463fafbad60e284",
+    "bytes": 1137563
+  },
+  {
+    "source": "content/_posts/cgv-bt709-bt2020/rgbtoxyz.png",
+    "target": "cgv/bt709-bt2020/rgbtoxyz.png",
+    "originalUrl": "/CGV/cgv-bt709-bt2020/rgbtoxyz.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/bt709-bt2020/rgbtoxyz.png",
+    "sha256": "c9d904bdc0cea4ef5f2d24f458cd1b6b65b39a1fcadef5e255a0d81f41af6d68",
+    "bytes": 32609
+  },
+  {
+    "source": "content/_posts/cgv-bt709-bt2020/transform.png",
+    "target": "cgv/bt709-bt2020/transform.png",
+    "originalUrl": "/CGV/cgv-bt709-bt2020/transform.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/bt709-bt2020/transform.png",
+    "sha256": "59524b2284f9abcab3a69468a1413122ffb559105b67247c47e8cc6d04325e68",
+    "bytes": 30212
+  },
+  {
+    "source": "content/_posts/cgv-bt709-bt2020/xyz3d.png",
+    "target": "cgv/bt709-bt2020/xyz3d.png",
+    "originalUrl": "/CGV/cgv-bt709-bt2020/xyz3d.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/bt709-bt2020/xyz3d.png",
+    "sha256": "869ca8bbb9fbd9056161e4e7c71864aece3ddaa0e7d0a27f9ae8396774f33cb0",
+    "bytes": 54479
+  },
+  {
+    "source": "content/_posts/cgv-color-transfer-function/colortransferfunction.png",
+    "target": "cgv/color-transfer-function/colortransferfunction.png",
+    "originalUrl": "/CGV/cgv-color-transfer-function/colortransferfunction.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/color-transfer-function/colortransferfunction.png",
+    "sha256": "9ecb4218d3f800fd892a0d5bdb467aebccd505892d53e6554b31839105b6eef5",
+    "bytes": 114938
+  },
+  {
+    "source": "content/_posts/cgv-learn-opengles-4/fbo.jpg",
+    "target": "cpp/cgv-learn-opengles-4/fbo.jpg",
+    "originalUrl": "/cpp/cgv-learn-opengles-4/fbo.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cpp/cgv-learn-opengles-4/fbo.jpg",
+    "sha256": "7834a60f34e628692249a5d06b3e9de88820cfa4defbbdd9cecc1fac8e5ed00d",
+    "bytes": 557553
+  },
+  {
+    "source": "content/_posts/cgv-learn-opengles-4/menu.jpg",
+    "target": "cpp/cgv-learn-opengles-4/menu.jpg",
+    "originalUrl": "/cpp/cgv-learn-opengles-4/menu.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cpp/cgv-learn-opengles-4/menu.jpg",
+    "sha256": "b1c1b1b909d74bd284e781437d63d8cb9e3371000f95f8a189920cadc9ef86bd",
+    "bytes": 210960
+  },
+  {
+    "source": "content/_posts/cgv-learn-opengles1/UI.png",
+    "target": "cgv/learn-opengles1/UI.png",
+    "originalUrl": "/CGV/cgv-learn-opengles1/UI.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/learn-opengles1/UI.png",
+    "sha256": "f15cd4a79c6a4deec9d233166ab1e141c318413f7be00212bf03188552071101",
+    "bytes": 140990
+  },
+  {
+    "source": "content/_posts/cgv-learn-opengles1/design.png",
+    "target": "cgv/learn-opengles1/design.png",
+    "originalUrl": "/CGV/cgv-learn-opengles1/design.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/learn-opengles1/design.png",
+    "sha256": "3c5f5cccd62a7a2f9233c745167e5f9128fc4dea6186a4467fd34b6216d3c5c1",
+    "bytes": 133798
+  },
+  {
+    "source": "content/_posts/cgv-learn-opengles1/openglesnew.png",
+    "target": "cgv/learn-opengles1/openglesnew.png",
+    "originalUrl": "/CGV/cgv-learn-opengles1/openglesnew.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/learn-opengles1/openglesnew.png",
+    "sha256": "119a0fcc79cb54943e18d0f7f486e60eb410999f38194b8ad7ed735d0e773024",
+    "bytes": 82667
+  },
+  {
+    "source": "content/_posts/cgv-learn-opengles1/triangle.png",
+    "target": "cgv/learn-opengles1/triangle.png",
+    "originalUrl": "/CGV/cgv-learn-opengles1/triangle.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/learn-opengles1/triangle.png",
+    "sha256": "01525d5063c9ad007dd6ad3a05863efa9cdcd5e0b601756e28244be3bd482800",
+    "bytes": 134754
+  },
+  {
+    "source": "content/_posts/cgv-learn-opengles2/coordinates.png",
+    "target": "cgv/learn-opengles2/coordinates.png",
+    "originalUrl": "/CGV/cgv-learn-opengles2/coordinates.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/learn-opengles2/coordinates.png",
+    "sha256": "eda80bceea0e41d0128d4338fdcbcf920a774c5908bb8365e0512143f7e8fddf",
+    "bytes": 32572
+  },
+  {
+    "source": "content/_posts/cgv-learn-opengles2/menu.jpg",
+    "target": "cgv/learn-opengles2/menu.jpg",
+    "originalUrl": "/CGV/cgv-learn-opengles2/menu.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/learn-opengles2/menu.jpg",
+    "sha256": "50eab6a8f0627cdbd4ae725649bcb8ba12562267b89863dbc5eccd59e5618cba",
+    "bytes": 116720
+  },
+  {
+    "source": "content/_posts/cgv-learn-opengles2/texture.jpg",
+    "target": "cgv/learn-opengles2/texture.jpg",
+    "originalUrl": "/CGV/cgv-learn-opengles2/texture.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/learn-opengles2/texture.jpg",
+    "sha256": "927e01f4506737b9fd8e23a11fb284eb5081c091b1dc19e4c7b5da67cd7821e2",
+    "bytes": 453121
+  },
+  {
+    "source": "content/_posts/cgv-learn-opengles3/menu.jpg",
+    "target": "cgv/learn-opengles3/menu.jpg",
+    "originalUrl": "/CGV/cgv-learn-opengles3/menu.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/learn-opengles3/menu.jpg",
+    "sha256": "2e4a3a1a4a7a5c1e9baf2362919a80514669f893a21737a727f8fa875779f8c1",
+    "bytes": 129836
+  },
+  {
+    "source": "content/_posts/cgv-learn-opengles3/vaovbo.jpg",
+    "target": "cgv/learn-opengles3/vaovbo.jpg",
+    "originalUrl": "/CGV/cgv-learn-opengles3/vaovbo.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/learn-opengles3/vaovbo.jpg",
+    "sha256": "9e6c17bd0bdc6404f9d57fa70a4b101c6e1f85202d1736d6db13abc14d204f54",
+    "bytes": 216599
+  },
+  {
+    "source": "content/_posts/cgv-mu-transform/mu_transform.png",
+    "target": "cgv/mu-transform/mu_transform.png",
+    "originalUrl": "/CGV/cgv-mu-transform/mu_transform.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/mu-transform/mu_transform.png",
+    "sha256": "325f9e4c70c6016d358d00f1143ca784edcc6018c794aa38172b79eb19bdbfcb",
+    "bytes": 1095402
+  },
+  {
+    "source": "content/_posts/cgv-native-opengl-android/openglandroid.png",
+    "target": "cgv/native-opengl-android/openglandroid.png",
+    "originalUrl": "/CGV/cgv-native-opengl-android/openglandroid.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/native-opengl-android/openglandroid.png",
+    "sha256": "64563e150269843f098c8cec1ecab235fbea6a14d290c4e6f2a64f28480dc9d2",
+    "bytes": 1050421
+  },
+  {
+    "source": "content/_posts/cgv-native-opengl-android/triangle.jpg",
+    "target": "cgv/native-opengl-android/triangle.jpg",
+    "originalUrl": "/CGV/cgv-native-opengl-android/triangle.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/native-opengl-android/triangle.jpg",
+    "sha256": "a12e57fa9f1c8a7be0b41390a5aa04358b83c3f4daec187ab506b642885a51c2",
+    "bytes": 170351
+  },
+  {
+    "source": "content/_posts/cgv-native-opengl-android/workflow.png",
+    "target": "cgv/native-opengl-android/workflow.png",
+    "originalUrl": "/CGV/cgv-native-opengl-android/workflow.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/native-opengl-android/workflow.png",
+    "sha256": "148056ea05e3a85ed894094663281010181e59e89dafebde4987d934329f6dfe",
+    "bytes": 279637
+  },
+  {
+    "source": "content/_posts/cgv-texture-render-android/demo.jpg",
+    "target": "cgv/texture-render-android/demo.jpg",
+    "originalUrl": "/CGV/cgv-texture-render-android/demo.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/texture-render-android/demo.jpg",
+    "sha256": "7c203dad4831d27dc08946bf6d65b834a2a628a82fef3ff21702e9857c20421a",
+    "bytes": 2888654
+  },
+  {
+    "source": "content/_posts/cgv-yuv-format/planar.png",
+    "target": "cgv/yuv-format/planar.png",
+    "originalUrl": "/CGV/cgv-yuv-format/planar.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/yuv-format/planar.png",
+    "sha256": "2c34275241933fc9327b4e17ce447cd525955cbaece1a32c41ab913228be2615",
+    "bytes": 77881
+  },
+  {
+    "source": "content/_posts/cgv-yuv-format/sampling.png",
+    "target": "cgv/yuv-format/sampling.png",
+    "originalUrl": "/CGV/cgv-yuv-format/sampling.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/yuv-format/sampling.png",
+    "sha256": "0b24214329673d276e6f52ba1636a2c168d39668057a9ef28117f76fd8d1834b",
+    "bytes": 104573
+  },
+  {
+    "source": "content/_posts/cgv-yuv-format/semi-planar.png",
+    "target": "cgv/yuv-format/semi-planar.png",
+    "originalUrl": "/CGV/cgv-yuv-format/semi-planar.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/yuv-format/semi-planar.png",
+    "sha256": "05302917709f34c834e952c4bd9e8567ff6e9b026d64c3afe4b0728a9bc4e8a9",
+    "bytes": 72603
+  },
+  {
+    "source": "content/_posts/cgv-yuv-format/yuv420.png",
+    "target": "cgv/yuv-format/yuv420.png",
+    "originalUrl": "/CGV/cgv-yuv-format/yuv420.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/yuv-format/yuv420.png",
+    "sha256": "d34c831b6715316c26f7ff30b807c00a7a92989d2c47f357b27ce8ccd2680ae2",
+    "bytes": 64278
+  },
+  {
+    "source": "content/_posts/cgv-yuv-format/yuv420toyuv.png",
+    "target": "cgv/yuv-format/yuv420toyuv.png",
+    "originalUrl": "/CGV/cgv-yuv-format/yuv420toyuv.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/yuv-format/yuv420toyuv.png",
+    "sha256": "b1a688146eff14adf8d121e3ed373a5830b5a1b0c6dbeed600b62ed38d4d9157",
+    "bytes": 841892
+  },
+  {
+    "source": "content/_posts/cgv-yuv-format/yuv_intro.png",
+    "target": "cgv/yuv-format/yuv_intro.png",
+    "originalUrl": "/CGV/cgv-yuv-format/yuv_intro.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/yuv-format/yuv_intro.png",
+    "sha256": "2a47965a3488901b34f99a8e9231e8f34ba6583dabe60b626e34859cfbad7139",
+    "bytes": 454070
+  },
+  {
+    "source": "content/_posts/cgv-yuv-to-rgb/cie.png",
+    "target": "cgv/yuv-to-rgb/cie.png",
+    "originalUrl": "/CGV/cgv-yuv-to-rgb/cie.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/yuv-to-rgb/cie.png",
+    "sha256": "7cd85a5ad7d7602134481c7aca9c59609ddb32f84ec43e1c1ad889b5f999bc7a",
+    "bytes": 967541
+  },
+  {
+    "source": "content/_posts/cpp-builder/builder.png",
+    "target": "cpp/builder/builder.png",
+    "originalUrl": "/cpp/cpp-builder/builder.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cpp/builder/builder.png",
+    "sha256": "00dd8eb85cd86724315ddde754cb288fc62beb56cf28da1ab61c3ec831738632",
+    "bytes": 102393
+  },
+  {
+    "source": "content/_posts/cpp-casting/buffer.png",
+    "target": "cpp/casting/buffer.png",
+    "originalUrl": "/cpp/cpp-casting/buffer.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cpp/casting/buffer.png",
+    "sha256": "18c94a7d5d74e2f6d6fee1990f10115e06290a47ee93bfb0853e3d4bead74110",
+    "bytes": 18965
+  },
+  {
+    "source": "content/_posts/cpp-casting/casting.png",
+    "target": "cpp/casting/casting.png",
+    "originalUrl": "/cpp/cpp-casting/casting.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cpp/casting/casting.png",
+    "sha256": "49d54a0649ea342062f639d270d5698d92c4aa00cfcb1fb4612089aeab73e8d2",
+    "bytes": 16297
+  },
+  {
+    "source": "content/_posts/cpp-constexpr/example1.png",
+    "target": "cpp/constexpr/example1.png",
+    "originalUrl": "/cpp/cpp-constexpr/example1.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cpp/constexpr/example1.png",
+    "sha256": "caae558d43685f8b2ea46c4ccf778e5c27a5abad3863fd625341c603ee474f48",
+    "bytes": 104723
+  },
+  {
+    "source": "content/_posts/cpp-constexpr/example2.png",
+    "target": "cpp/constexpr/example2.png",
+    "originalUrl": "/cpp/cpp-constexpr/example2.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cpp/constexpr/example2.png",
+    "sha256": "6264907db349581064df53126d5c0821d6f8f9512ba53b81e7205e935ad73ed5",
+    "bytes": 88239
+  },
+  {
+    "source": "content/_posts/cpp-coroutine/function_coroutine.png",
+    "target": "cpp/coroutine/function_coroutine.png",
+    "originalUrl": "/cpp/cpp-coroutine/function_coroutine.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cpp/coroutine/function_coroutine.png",
+    "sha256": "3ed9e3af0c64bb8f69a59affec699bc20fddbe74fffa04fb87166d7cff5b7799",
+    "bytes": 53651
+  },
+  {
+    "source": "content/_posts/cpp-coroutine/statemachinecoroutine.png",
+    "target": "cpp/coroutine/statemachinecoroutine.png",
+    "originalUrl": "/cpp/cpp-coroutine/statemachinecoroutine.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cpp/coroutine/statemachinecoroutine.png",
+    "sha256": "5328e54eaf046821fea71a1a14dee0b615c297df7905329200a1d663b9ccd786",
+    "bytes": 195762
+  },
+  {
+    "source": "content/_posts/cpp-cpp-insights-tool/tool.png",
+    "target": "cpp/cpp-insights-tool/tool.png",
+    "originalUrl": "/cpp/cpp-cpp-insights-tool/tool.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cpp/cpp-insights-tool/tool.png",
+    "sha256": "9f6bc5ee7e942a55131dcb5a157675d54008fe66828f107786ab0d829c2b226d",
+    "bytes": 104201
+  },
+  {
+    "source": "content/_posts/cpp-decltype/values.png",
+    "target": "cpp/decltype/values.png",
+    "originalUrl": "/cpp/cpp-decltype/values.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cpp/decltype/values.png",
+    "sha256": "758195f5ec246b5c9b86875e694b70d514da17d41e03381f22b6b695d2bc42fe",
+    "bytes": 2830
+  },
+  {
+    "source": "content/_posts/cpp-how-to-interpret-complex-variable-definition/example2.png",
+    "target": "cpp/how-to-interpret-complex-variable-definition/example2.png",
+    "originalUrl": "/cpp/cpp-how-to-interpret-complex-variable-definition/example2.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cpp/how-to-interpret-complex-variable-definition/example2.png",
+    "sha256": "8da8a877c8507a9b760b992b89fc4020c2517e088ba7be1de92ce2625339e55a",
+    "bytes": 4949
+  },
+  {
+    "source": "content/_posts/cpp-how-to-interpret-complex-variable-definition/example3.png",
+    "target": "cpp/how-to-interpret-complex-variable-definition/example3.png",
+    "originalUrl": "/cpp/cpp-how-to-interpret-complex-variable-definition/example3.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cpp/how-to-interpret-complex-variable-definition/example3.png",
+    "sha256": "53a93d5b34a844bd86dda238feafbfaaf9eaa6eee3eb4276e3b2720acd070ab5",
+    "bytes": 3085
+  },
+  {
+    "source": "content/_posts/cpp-how-to-interpret-complex-variable-definition/example6.png",
+    "target": "cpp/how-to-interpret-complex-variable-definition/example6.png",
+    "originalUrl": "/cpp/cpp-how-to-interpret-complex-variable-definition/example6.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cpp/how-to-interpret-complex-variable-definition/example6.png",
+    "sha256": "3fb6595a90e6b5d4fd8d110828a1e830c7d6b9547e2696360ffdc8be849c6d1c",
+    "bytes": 5960
+  },
+  {
+    "source": "content/_posts/cpp-how-to-interpret-complex-variable-definition/example7.png",
+    "target": "cpp/how-to-interpret-complex-variable-definition/example7.png",
+    "originalUrl": "/cpp/cpp-how-to-interpret-complex-variable-definition/example7.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cpp/how-to-interpret-complex-variable-definition/example7.png",
+    "sha256": "3d94db84d3919db43edcc803e6390fc835e9768341bf2f5ff6d4bb5dce8c2b78",
+    "bytes": 7093
+  },
+  {
+    "source": "content/_posts/cpp-nodiscard/nodiscard.png",
+    "target": "cpp/nodiscard/nodiscard.png",
+    "originalUrl": "/cpp/cpp-nodiscard/nodiscard.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cpp/nodiscard/nodiscard.png",
+    "sha256": "67b8759a3c785c03442a09be9f60a6c0e0d361f5254de8da40a0c4f2a6231722",
+    "bytes": 30161
+  },
+  {
+    "source": "content/_posts/cpp-observer/observer.png",
+    "target": "cpp/observer/observer.png",
+    "originalUrl": "/cpp/cpp-observer/observer.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cpp/observer/observer.png",
+    "sha256": "70e28d8179a9a6e8b184825f628d2778330e88150d749035aa41285b80c27b0a",
+    "bytes": 157040
+  },
+  {
+    "source": "content/_posts/cpp-vtable/vtable.png",
+    "target": "cpp/vtable/vtable.png",
+    "originalUrl": "/cpp/cpp-vtable/vtable.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cpp/vtable/vtable.png",
+    "sha256": "3e9576d6c10c5e5291c9041ff2fc3888066ce6b4d0f0c32d1f47da64c2ba7b7e",
+    "bytes": 94112
+  },
+  {
+    "source": "content/_posts/halloween/0.jpg",
+    "target": "life/halloween/0.jpg",
+    "originalUrl": "/life/halloween/0.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/halloween/0.jpg",
+    "sha256": "a91ad02864cd358ac9bcbbe1da5a506a5de1cb9565c4d43a5b3a51406278f678",
+    "bytes": 2133851
+  },
+  {
+    "source": "content/_posts/halloween/1.jpg",
+    "target": "life/halloween/1.jpg",
+    "originalUrl": "/life/halloween/1.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/halloween/1.jpg",
+    "sha256": "82d61780d62fc571ac0d7b805f0fe045a823ed305f99433c2a9eb7f69594a8bc",
+    "bytes": 2168071
+  },
+  {
+    "source": "content/_posts/halloween/2.jpg",
+    "target": "life/halloween/2.jpg",
+    "originalUrl": "/life/halloween/2.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/halloween/2.jpg",
+    "sha256": "b03f4ac9042eed183498ae21088f219e724dc04b7aea9fc2aaf398a5e6d2c48b",
+    "bytes": 2337878
+  },
+  {
+    "source": "content/_posts/halloween/3.jpg",
+    "target": "life/halloween/3.jpg",
+    "originalUrl": "/life/halloween/3.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/halloween/3.jpg",
+    "sha256": "712ae72f9bf015a95b385ecc40973a292c823440da42265ea3ae56579a2700d5",
+    "bytes": 2216576
+  },
+  {
+    "source": "content/_posts/halloween/4.jpg",
+    "target": "life/halloween/4.jpg",
+    "originalUrl": "/life/halloween/4.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/halloween/4.jpg",
+    "sha256": "acfe4bd308741039631c075ad31f0916615a38bfacc7406d361ff295a6971af3",
+    "bytes": 2137977
+  },
+  {
+    "source": "content/_posts/life-2024-Halloween/0.jpg",
+    "target": "life/2024-Halloween/0.jpg",
+    "originalUrl": "/life/life-2024-Halloween/0.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/2024-Halloween/0.jpg",
+    "sha256": "6d6bc5afc10ebd4e7d0c6688713ebda3a827eee870928cd35f2637ee18dd21a4",
+    "bytes": 1265153
+  },
+  {
+    "source": "content/_posts/life-2024-Halloween/1.jpg",
+    "target": "life/2024-Halloween/1.jpg",
+    "originalUrl": "/life/life-2024-Halloween/1.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/2024-Halloween/1.jpg",
+    "sha256": "78f30fafc791b4c77bb85ddbd6c7e756ff39c8c09d23d7dc17a4b2998e83d320",
+    "bytes": 1359574
+  },
+  {
+    "source": "content/_posts/life-2024-Halloween/2.jpg",
+    "target": "life/2024-Halloween/2.jpg",
+    "originalUrl": "/life/life-2024-Halloween/2.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/2024-Halloween/2.jpg",
+    "sha256": "4a0f13bafd17237650c27d9dabfb1a455915ec3d6234509d7c095c0bb20b7780",
+    "bytes": 1405589
+  },
+  {
+    "source": "content/_posts/life-2024-Halloween/3.jpg",
+    "target": "life/2024-Halloween/3.jpg",
+    "originalUrl": "/life/life-2024-Halloween/3.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/2024-Halloween/3.jpg",
+    "sha256": "a20e46eba0ebc3a750fc915a6b378d0591ea4d6f3eef9c076832079b44f16d42",
+    "bytes": 1824702
+  },
+  {
+    "source": "content/_posts/life-2024-Halloween/4.jpg",
+    "target": "life/2024-Halloween/4.jpg",
+    "originalUrl": "/life/life-2024-Halloween/4.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/2024-Halloween/4.jpg",
+    "sha256": "121e83d1d0a146df0b9018243e419aefc1a74c6a78c3a4b6d15782f2c6982df5",
+    "bytes": 966323
+  },
+  {
+    "source": "content/_posts/life-2024-Halloween/5.jpg",
+    "target": "life/2024-Halloween/5.jpg",
+    "originalUrl": "/life/life-2024-Halloween/5.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/2024-Halloween/5.jpg",
+    "sha256": "07548787815a38d43cdac3d053736e1ebb7f2276abe81f21a78361d88a5e083a",
+    "bytes": 1365403
+  },
+  {
+    "source": "content/_posts/life-2024-Halloween/6.jpg",
+    "target": "life/2024-Halloween/6.jpg",
+    "originalUrl": "/life/life-2024-Halloween/6.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/2024-Halloween/6.jpg",
+    "sha256": "18732a0d220cb3c75d3479465fa0c540f6a2e1dc7995a98faf879a417215eed0",
+    "bytes": 1305907
+  },
+  {
+    "source": "content/_posts/life-7month-baby/0.jpg",
+    "target": "life/7month-baby/0.jpg",
+    "originalUrl": "/life/life-7month-baby/0.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/7month-baby/0.jpg",
+    "sha256": "499f708d126542191556718108c131816dc46c7d6d5c93c13a8120dd0862f4c5",
+    "bytes": 957452
+  },
+  {
+    "source": "content/_posts/life-7month-baby/1.jpg",
+    "target": "life/7month-baby/1.jpg",
+    "originalUrl": "/life/life-7month-baby/1.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/7month-baby/1.jpg",
+    "sha256": "99e3393fe040d80387cd3b27e55e5baeef81ee56892b56bedb49d6aae565e12e",
+    "bytes": 962538
+  },
+  {
+    "source": "content/_posts/life-7month-baby/3.jpg",
+    "target": "life/7month-baby/3.jpg",
+    "originalUrl": "/life/life-7month-baby/3.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/7month-baby/3.jpg",
+    "sha256": "a500e48e44d9c139e6d8498f7e0215531358457e8aa49cd5ce4c9b8f475256a7",
+    "bytes": 232279
+  },
+  {
+    "source": "content/_posts/life-7month-baby/4.jpg",
+    "target": "life/7month-baby/4.jpg",
+    "originalUrl": "/life/life-7month-baby/4.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/7month-baby/4.jpg",
+    "sha256": "176a29f6846de2200d342acdfd9a88e29e02873325b12752507ef8a9df1263d1",
+    "bytes": 229712
+  },
+  {
+    "source": "content/_posts/life-baby-2-to-3-month/baby.jpg",
+    "target": "life/baby-2-to-3-month/baby.jpg",
+    "originalUrl": "/life/life-baby-2-to-3-month/baby.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-2-to-3-month/baby.jpg",
+    "sha256": "4245f5db5a93ad969f86bb9b0ae097c0e70a4a1d0f9090bec2b074acbe86bd1d",
+    "bytes": 2495862
+  },
+  {
+    "source": "content/_posts/life-baby-2month/baby2month.jpg",
+    "target": "life/baby-2month/baby2month.jpg",
+    "originalUrl": "/life/life-baby-2month/baby2month.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-2month/baby2month.jpg",
+    "sha256": "99dae402023868de793d5959b51b2130c062ff7946b7b9dac9ef199c31f961f7",
+    "bytes": 5402670
+  },
+  {
+    "source": "content/_posts/life-baby-3-month/baby3months.JPEG",
+    "target": "life/baby-3-month/baby3months.JPEG",
+    "originalUrl": "/life/life-baby-3-month/baby3months.JPEG",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-3-month/baby3months.JPEG",
+    "sha256": "cebcee08aef22a352a785d0ef94cf264125d4567e8be6959db9ee7b8e84a3873",
+    "bytes": 2782226
+  },
+  {
+    "source": "content/_posts/life-baby-4months/1.jpg",
+    "target": "life/baby-4months/1.jpg",
+    "originalUrl": "/life/life-baby-4months/1.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-4months/1.jpg",
+    "sha256": "03e91c94620b41b0d5f72e10dad71efe2a12bd692291006d909a612fd377f0ab",
+    "bytes": 4489776
+  },
+  {
+    "source": "content/_posts/life-baby-4months/2.jpg",
+    "target": "life/baby-4months/2.jpg",
+    "originalUrl": "/life/life-baby-4months/2.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-4months/2.jpg",
+    "sha256": "98d5bac034ddf2237d494beb6a102dde42d5fcd3df5c416f2fd0c24b9f6eaa8b",
+    "bytes": 3681083
+  },
+  {
+    "source": "content/_posts/life-baby-4months/3.jpg",
+    "target": "life/baby-4months/3.jpg",
+    "originalUrl": "/life/life-baby-4months/3.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-4months/3.jpg",
+    "sha256": "d6bfc0b5f997393ee096afee7c552ad391567aa7474b78a06b79cc84ab8bfa50",
+    "bytes": 6863598
+  },
+  {
+    "source": "content/_posts/life-baby-5month/1.jpg",
+    "target": "life/baby-5month/1.jpg",
+    "originalUrl": "/life/life-baby-5month/1.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-5month/1.jpg",
+    "sha256": "ad98a41e857e2ea054c93922f15033d10dd86c68b2a69ca194ee8ffe2d152d01",
+    "bytes": 6388864
+  },
+  {
+    "source": "content/_posts/life-baby-5month/2.jpg",
+    "target": "life/baby-5month/2.jpg",
+    "originalUrl": "/life/life-baby-5month/2.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-5month/2.jpg",
+    "sha256": "28751ac58ccea10417606bcafce919eaa28c25888662cf8caf76ff7d26017f16",
+    "bytes": 6934408
+  },
+  {
+    "source": "content/_posts/life-baby-5month/3.jpg",
+    "target": "life/baby-5month/3.jpg",
+    "originalUrl": "/life/life-baby-5month/3.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-5month/3.jpg",
+    "sha256": "619d35728aa570b14346e2c486adb60489d352093d1bc691db7371cbf86f1a5b",
+    "bytes": 6912167
+  },
+  {
+    "source": "content/_posts/life-baby-6month/1.jpg",
+    "target": "life/baby-6month/1.jpg",
+    "originalUrl": "/life/life-baby-6month/1.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-6month/1.jpg",
+    "sha256": "c6fe5c6b448f2af20db52ef73858e0efc70240ee87b8676245cc3a32ff1c5c4d",
+    "bytes": 6282141
+  },
+  {
+    "source": "content/_posts/life-baby-6month/2.jpg",
+    "target": "life/baby-6month/2.jpg",
+    "originalUrl": "/life/life-baby-6month/2.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-6month/2.jpg",
+    "sha256": "1acea5f621221c2b62669875d3ff838a8be617e773f82ce64370ec1bf14713a7",
+    "bytes": 6008262
+  },
+  {
+    "source": "content/_posts/life-baby-8month/0.jpg",
+    "target": "life/baby-8month/0.jpg",
+    "originalUrl": "/life/life-baby-8month/0.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-8month/0.jpg",
+    "sha256": "b134b7a81064e0248875c44b80e31594d18eef70a658de41deaebd4537cedbe3",
+    "bytes": 1324882
+  },
+  {
+    "source": "content/_posts/life-baby-8month/1.jpg",
+    "target": "life/baby-8month/1.jpg",
+    "originalUrl": "/life/life-baby-8month/1.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-8month/1.jpg",
+    "sha256": "0e1e7d60769340e4cc0ce7b8dce222dc6749929b7c62c1c48de8c4caecb1056d",
+    "bytes": 1243544
+  },
+  {
+    "source": "content/_posts/life-baby-halfmoon-bay/IMG_3448.jpg",
+    "target": "life/baby-halfmoon-bay/IMG_3448.jpg",
+    "originalUrl": "/life/life-baby-halfmoon-bay/IMG_3448.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-halfmoon-bay/IMG_3448.jpg",
+    "sha256": "e8f656be04b522bd593592430ba44c4c6b89bbe3877f58fbe31ab58f6992238a",
+    "bytes": 2438307
+  },
+  {
+    "source": "content/_posts/life-baby-halfmoon-bay/IMG_3450.jpg",
+    "target": "life/baby-halfmoon-bay/IMG_3450.jpg",
+    "originalUrl": "/life/life-baby-halfmoon-bay/IMG_3450.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-halfmoon-bay/IMG_3450.jpg",
+    "sha256": "87191fbf5d50d8ffd91594c5390cf9a224c82a8c64e5a13d80526fc1f8807e08",
+    "bytes": 1516489
+  },
+  {
+    "source": "content/_posts/life-baby-halfmoon-bay/IMG_3454.jpg",
+    "target": "life/baby-halfmoon-bay/IMG_3454.jpg",
+    "originalUrl": "/life/life-baby-halfmoon-bay/IMG_3454.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-halfmoon-bay/IMG_3454.jpg",
+    "sha256": "4d751aa8f594b757b27bc780125d6a69983575a82c131844190489949c54483f",
+    "bytes": 2973899
+  },
+  {
+    "source": "content/_posts/life-baby-halfmoon-bay/IMG_3455.jpg",
+    "target": "life/baby-halfmoon-bay/IMG_3455.jpg",
+    "originalUrl": "/life/life-baby-halfmoon-bay/IMG_3455.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-halfmoon-bay/IMG_3455.jpg",
+    "sha256": "1ad52669ba22c4f8133a1462ad2e9916b9cafb946088e1bdb48a09adcab5ea6f",
+    "bytes": 1983167
+  },
+  {
+    "source": "content/_posts/life-baby-halfmoon-bay/IMG_9143.jpg",
+    "target": "life/baby-halfmoon-bay/IMG_9143.jpg",
+    "originalUrl": "/life/life-baby-halfmoon-bay/IMG_9143.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-halfmoon-bay/IMG_9143.jpg",
+    "sha256": "8d708f23a20da4e05f53a83226652c1e18adc9e774b0d331e31c40d0cf5e6957",
+    "bytes": 2195418
+  },
+  {
+    "source": "content/_posts/life-baby-halfmoon-bay/IMG_9145.jpg",
+    "target": "life/baby-halfmoon-bay/IMG_9145.jpg",
+    "originalUrl": "/life/life-baby-halfmoon-bay/IMG_9145.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-halfmoon-bay/IMG_9145.jpg",
+    "sha256": "2d9e3f890744bd456225b69313c84ef6919339950985f8ba8ff09fc26bdecaf3",
+    "bytes": 1743851
+  },
+  {
+    "source": "content/_posts/life-baby-halfmoon-bay/IMG_9146.jpg",
+    "target": "life/baby-halfmoon-bay/IMG_9146.jpg",
+    "originalUrl": "/life/life-baby-halfmoon-bay/IMG_9146.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-halfmoon-bay/IMG_9146.jpg",
+    "sha256": "2d5afd02c36d3c9d7285ccbc67a65a8f814560c015d5f37e5ed00cfa098504d0",
+    "bytes": 1579047
+  },
+  {
+    "source": "content/_posts/life-baby-halfmoon-bay/IMG_9148.jpg",
+    "target": "life/baby-halfmoon-bay/IMG_9148.jpg",
+    "originalUrl": "/life/life-baby-halfmoon-bay/IMG_9148.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-halfmoon-bay/IMG_9148.jpg",
+    "sha256": "b7b661d24e4223a6aef4db632e4fc2cb20779b20256b83cc28c4cd74170d1667",
+    "bytes": 1729081
+  },
+  {
+    "source": "content/_posts/life-baby-halfmoon-bay/IMG_9152.jpg",
+    "target": "life/baby-halfmoon-bay/IMG_9152.jpg",
+    "originalUrl": "/life/life-baby-halfmoon-bay/IMG_9152.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-halfmoon-bay/IMG_9152.jpg",
+    "sha256": "04b4fe8e4a271aa4d92ab36b972f4e84fcc49d140de6d9e5350ea5f0f60e006f",
+    "bytes": 3442321
+  },
+  {
+    "source": "content/_posts/life-baby-halfmoon-bay/IMG_9154.jpg",
+    "target": "life/baby-halfmoon-bay/IMG_9154.jpg",
+    "originalUrl": "/life/life-baby-halfmoon-bay/IMG_9154.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby-halfmoon-bay/IMG_9154.jpg",
+    "sha256": "9a1b74a2de9c066761a5496aa760236358319268aa36475c05a1d0ae675f554f",
+    "bytes": 1851833
+  },
+  {
+    "source": "content/_posts/life-baby9month/1.jpg",
+    "target": "life/baby9month/1.jpg",
+    "originalUrl": "/life/life-baby9month/1.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby9month/1.jpg",
+    "sha256": "c8978f0797d50783eab6af5dbf084d05ff7f668332153c473c3d71bbf81d9095",
+    "bytes": 1778249
+  },
+  {
+    "source": "content/_posts/life-baby9month/2.jpg",
+    "target": "life/baby9month/2.jpg",
+    "originalUrl": "/life/life-baby9month/2.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby9month/2.jpg",
+    "sha256": "599dca10340ce6eecd9d0546b2475c4782920acf82c6f5616f7c903ea5a5accf",
+    "bytes": 1267290
+  },
+  {
+    "source": "content/_posts/life-baby9month/3.jpg",
+    "target": "life/baby9month/3.jpg",
+    "originalUrl": "/life/life-baby9month/3.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/baby9month/3.jpg",
+    "sha256": "6a32dadfb3221ae8fd7efa775a189d4ace0720149cfa382c928b6c769f67cd00",
+    "bytes": 1605461
+  },
+  {
+    "source": "content/_posts/life-birthday-rewards/birthday_rewards.jpg",
+    "target": "life/birthday-rewards/birthday_rewards.jpg",
+    "originalUrl": "/life/life-birthday-rewards/birthday_rewards.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/birthday-rewards/birthday_rewards.jpg",
+    "sha256": "b4d1c91e1afc723abdc26e67765cfa37deb9987c4a91a7636311f702a5d45700",
+    "bytes": 3915205
+  },
+  {
+    "source": "content/_posts/life-collage-lucas/collage_lucas.png",
+    "target": "life/collage-lucas/collage_lucas.png",
+    "originalUrl": "/life/life-collage-lucas/collage_lucas.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/collage-lucas/collage_lucas.png",
+    "sha256": "3da3c5ae0ac901b3d46b449e6e9cd9eaae8e460141b6f0ba8888a93ac977d711",
+    "bytes": 3294216
+  },
+  {
+    "source": "content/_posts/life-crippsmas-place/0.jpg",
+    "target": "life/crippsmas-place/0.jpg",
+    "originalUrl": "/life/life-crippsmas-place/0.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/crippsmas-place/0.jpg",
+    "sha256": "263e436f6a238673c072ffd52b3f00d46755cb28331460de7524a11fc2eb5eda",
+    "bytes": 421630
+  },
+  {
+    "source": "content/_posts/life-crippsmas-place/1.jpg",
+    "target": "life/crippsmas-place/1.jpg",
+    "originalUrl": "/life/life-crippsmas-place/1.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/crippsmas-place/1.jpg",
+    "sha256": "ecd873e504fe478cd091749de2ed44e7db8a874b791e6eb48f0eb9235b799dfb",
+    "bytes": 269775
+  },
+  {
+    "source": "content/_posts/life-crippsmas-place/2.jpg",
+    "target": "life/crippsmas-place/2.jpg",
+    "originalUrl": "/life/life-crippsmas-place/2.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/crippsmas-place/2.jpg",
+    "sha256": "1ddbf6426243060650e404d285f02d3eafaa645e218b14a1d6f99cf67836406a",
+    "bytes": 248038
+  },
+  {
+    "source": "content/_posts/life-crippsmas-place/3.jpg",
+    "target": "life/crippsmas-place/3.jpg",
+    "originalUrl": "/life/life-crippsmas-place/3.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/crippsmas-place/3.jpg",
+    "sha256": "aca5374f7a4aef5509c5842385c9d4d7fc67d3b2a427aac1044203c39bb21a70",
+    "bytes": 309354
+  },
+  {
+    "source": "content/_posts/life-crippsmas-place/4.jpg",
+    "target": "life/crippsmas-place/4.jpg",
+    "originalUrl": "/life/life-crippsmas-place/4.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/crippsmas-place/4.jpg",
+    "sha256": "94f300f623ac5e5c2e43b0042ca1c164daff631d61f134805757706d55d33f1b",
+    "bytes": 642045
+  },
+  {
+    "source": "content/_posts/life-crippsmas-place/5.jpg",
+    "target": "life/crippsmas-place/5.jpg",
+    "originalUrl": "/life/life-crippsmas-place/5.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/crippsmas-place/5.jpg",
+    "sha256": "583f6311156843a78798e60f8bf96b40c85af5f9450924b13e90c813dd61dbc1",
+    "bytes": 277147
+  },
+  {
+    "source": "content/_posts/life-detective-chinatown-1900/1900.jpg",
+    "target": "life/detective-chinatown-1900/1900.jpg",
+    "originalUrl": "/life/life-detective-chinatown-1900/1900.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/detective-chinatown-1900/1900.jpg",
+    "sha256": "a02e5efa96ecbbb25f396b56c2f5dd97999bdd31ed84b5193771b07dacfc21cf",
+    "bytes": 62570
+  },
+  {
+    "source": "content/_posts/life-lucas-cord/cord.jpg",
+    "target": "life/lucas-cord/cord.jpg",
+    "originalUrl": "/life/life-lucas-cord/cord.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lucas-cord/cord.jpg",
+    "sha256": "85b94cf1f355651a6c9c2ac8ce16a501436cf075e05305f377cb7165b0bde488",
+    "bytes": 2189538
+  },
+  {
+    "source": "content/_posts/life-one-month-baby/month1.jpg",
+    "target": "life/one-month-baby/month1.jpg",
+    "originalUrl": "/life/life-one-month-baby/month1.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/one-month-baby/month1.jpg",
+    "sha256": "e6b8506c103f69c2179b69949ea93e8cbe223c045d0f392b3fc17e765b27f566",
+    "bytes": 3192434
+  },
+  {
+    "source": "content/_posts/life-palo-alto-junior-museum/0.jpg",
+    "target": "life/palo-alto-junior-museum/0.jpg",
+    "originalUrl": "/life/life-palo-alto-junior-museum/0.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/palo-alto-junior-museum/0.jpg",
+    "sha256": "fc067076dd8e55c34649939a07b4530e17a6e8fd8572a04a49274a24141ed030",
+    "bytes": 1509639
+  },
+  {
+    "source": "content/_posts/life-palo-alto-junior-museum/1.jpg",
+    "target": "life/palo-alto-junior-museum/1.jpg",
+    "originalUrl": "/life/life-palo-alto-junior-museum/1.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/palo-alto-junior-museum/1.jpg",
+    "sha256": "f829aebed7c6d589199f69499a7a9a4df43001b928cd1ab976a515b6ca8cccd1",
+    "bytes": 1121526
+  },
+  {
+    "source": "content/_posts/life-palo-alto-junior-museum/10.jpg",
+    "target": "life/palo-alto-junior-museum/10.jpg",
+    "originalUrl": "/life/life-palo-alto-junior-museum/10.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/palo-alto-junior-museum/10.jpg",
+    "sha256": "40934b517947a1ca7ee49b2f1f7303157aa4c573312908157e679e8dc2dd9be4",
+    "bytes": 1567488
+  },
+  {
+    "source": "content/_posts/life-palo-alto-junior-museum/11.jpg",
+    "target": "life/palo-alto-junior-museum/11.jpg",
+    "originalUrl": "/life/life-palo-alto-junior-museum/11.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/palo-alto-junior-museum/11.jpg",
+    "sha256": "3af7dc6b5819fffc89e3c840ffab58106462ee93c197bf9e01e11a6c3c30d29e",
+    "bytes": 1683937
+  },
+  {
+    "source": "content/_posts/life-palo-alto-junior-museum/12.jpg",
+    "target": "life/palo-alto-junior-museum/12.jpg",
+    "originalUrl": "/life/life-palo-alto-junior-museum/12.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/palo-alto-junior-museum/12.jpg",
+    "sha256": "dc72694b23744dbf0ff9848ea12a7d016e78ec6e15b84f30c68a113c609ae341",
+    "bytes": 1479571
+  },
+  {
+    "source": "content/_posts/life-palo-alto-junior-museum/2.jpg",
+    "target": "life/palo-alto-junior-museum/2.jpg",
+    "originalUrl": "/life/life-palo-alto-junior-museum/2.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/palo-alto-junior-museum/2.jpg",
+    "sha256": "e5023418efc91768589d5f0102d4a61f025c62c97e426c85e1ca6178dfd9ecfa",
+    "bytes": 1303794
+  },
+  {
+    "source": "content/_posts/life-palo-alto-junior-museum/3.jpg",
+    "target": "life/palo-alto-junior-museum/3.jpg",
+    "originalUrl": "/life/life-palo-alto-junior-museum/3.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/palo-alto-junior-museum/3.jpg",
+    "sha256": "1db9466351f4b4112e01c10a1f966fc3a246c8a04df8254cf40df994f718f951",
+    "bytes": 1980475
+  },
+  {
+    "source": "content/_posts/life-palo-alto-junior-museum/4.jpg",
+    "target": "life/palo-alto-junior-museum/4.jpg",
+    "originalUrl": "/life/life-palo-alto-junior-museum/4.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/palo-alto-junior-museum/4.jpg",
+    "sha256": "d9044160822f085800656c39980d798b892d2e1a08b6e4f22dcd0fac6c2b7c62",
+    "bytes": 2137208
+  },
+  {
+    "source": "content/_posts/life-palo-alto-junior-museum/5.jpg",
+    "target": "life/palo-alto-junior-museum/5.jpg",
+    "originalUrl": "/life/life-palo-alto-junior-museum/5.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/palo-alto-junior-museum/5.jpg",
+    "sha256": "127fd1d3e4305d861aa45631bb526df3002a7cefe940355bba685e8a7e488d73",
+    "bytes": 1893892
+  },
+  {
+    "source": "content/_posts/life-palo-alto-junior-museum/6.jpg",
+    "target": "life/palo-alto-junior-museum/6.jpg",
+    "originalUrl": "/life/life-palo-alto-junior-museum/6.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/palo-alto-junior-museum/6.jpg",
+    "sha256": "50b1d4945ce9f92ff8e3068b5761a73bfc93a2b643663df12d8ea645ce8b1cee",
+    "bytes": 2004698
+  },
+  {
+    "source": "content/_posts/life-palo-alto-junior-museum/7.jpg",
+    "target": "life/palo-alto-junior-museum/7.jpg",
+    "originalUrl": "/life/life-palo-alto-junior-museum/7.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/palo-alto-junior-museum/7.jpg",
+    "sha256": "53abe4e1dcac504add65aadb3a3e403add1ce5ee8a4f54beb5f546baa1ac708b",
+    "bytes": 2719967
+  },
+  {
+    "source": "content/_posts/life-palo-alto-junior-museum/8.jpg",
+    "target": "life/palo-alto-junior-museum/8.jpg",
+    "originalUrl": "/life/life-palo-alto-junior-museum/8.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/palo-alto-junior-museum/8.jpg",
+    "sha256": "c11a8b783a0d71bb107bd33bc634c6728ca4cb478d66436c59dc37524a9d6215",
+    "bytes": 2265457
+  },
+  {
+    "source": "content/_posts/life-palo-alto-junior-museum/9.jpg",
+    "target": "life/palo-alto-junior-museum/9.jpg",
+    "originalUrl": "/life/life-palo-alto-junior-museum/9.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/palo-alto-junior-museum/9.jpg",
+    "sha256": "6f47dc6c6d3dd9ce18b109f572bed82a139af448eb5fe0d3dcf6f42082e4f0d2",
+    "bytes": 3669534
+  },
+  {
+    "source": "content/_posts/life-rear-ended/highway.png",
+    "target": "life/rear-ended/highway.png",
+    "originalUrl": "/life/life-rear-ended/highway.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/rear-ended/highway.png",
+    "sha256": "452053743048fd3b422f78508a91ffb40b17b32ec9304e51cbc520c2029cee2e",
+    "bytes": 4758097
+  },
+  {
+    "source": "content/_posts/life-retro-game/edit.png",
+    "target": "life/retro-game/edit.png",
+    "originalUrl": "/life/life-retro-game/edit.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/retro-game/edit.png",
+    "sha256": "502ff52e2e668831d2812f2c06f3d857566d98e10fd727d54d41465e7ff4836a",
+    "bytes": 643889
+  },
+  {
+    "source": "content/_posts/life-retro-game/openemu.png",
+    "target": "life/retro-game/openemu.png",
+    "originalUrl": "/life/life-retro-game/openemu.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/retro-game/openemu.png",
+    "sha256": "c6fdee29ac6774c1d5ace50027f031f157ba0031ced9b68fd1902dee80bd24fd",
+    "bytes": 294065
+  },
+  {
+    "source": "content/_posts/life-safari-west/Photo Dec 24 2023, 2 14 10 PM.jpg",
+    "target": "life/safari-west/Photo Dec 24 2023, 2 14 10 PM.jpg",
+    "originalUrl": "/life/life-safari-west/Photo Dec 24 2023, 2 14 10 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/safari-west/Photo%20Dec%2024%202023%2C%202%2014%2010%20PM.jpg",
+    "sha256": "5d7d7e99a82466e72f2b5297c18f70365b81b2a7288f0defdc617954d004cd57",
+    "bytes": 5976556
+  },
+  {
+    "source": "content/_posts/life-safari-west/Photo Dec 24 2023, 2 14 18 PM.jpg",
+    "target": "life/safari-west/Photo Dec 24 2023, 2 14 18 PM.jpg",
+    "originalUrl": "/life/life-safari-west/Photo Dec 24 2023, 2 14 18 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/safari-west/Photo%20Dec%2024%202023%2C%202%2014%2018%20PM.jpg",
+    "sha256": "6f1ef4aae858c89bce62fcb4ee50a8e81a0fedfbf06e04cb8115e1e09cdc51be",
+    "bytes": 3907024
+  },
+  {
+    "source": "content/_posts/life-safari-west/Photo Dec 24 2023, 2 18 03 PM.jpg",
+    "target": "life/safari-west/Photo Dec 24 2023, 2 18 03 PM.jpg",
+    "originalUrl": "/life/life-safari-west/Photo Dec 24 2023, 2 18 03 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/safari-west/Photo%20Dec%2024%202023%2C%202%2018%2003%20PM.jpg",
+    "sha256": "72fe48753314cf81c074e0298ed5545309e86aafad7496d0a3bbbcdbc3d60147",
+    "bytes": 3707131
+  },
+  {
+    "source": "content/_posts/life-safari-west/Photo Dec 24 2023, 2 18 51 PM.jpg",
+    "target": "life/safari-west/Photo Dec 24 2023, 2 18 51 PM.jpg",
+    "originalUrl": "/life/life-safari-west/Photo Dec 24 2023, 2 18 51 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/safari-west/Photo%20Dec%2024%202023%2C%202%2018%2051%20PM.jpg",
+    "sha256": "049e0e59d94e1a210ee34b045e2224fbef8309cbcc5bce26673f9b1c4c299242",
+    "bytes": 3877195
+  },
+  {
+    "source": "content/_posts/life-safari-west/Photo Dec 24 2023, 2 40 07 PM.jpg",
+    "target": "life/safari-west/Photo Dec 24 2023, 2 40 07 PM.jpg",
+    "originalUrl": "/life/life-safari-west/Photo Dec 24 2023, 2 40 07 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/safari-west/Photo%20Dec%2024%202023%2C%202%2040%2007%20PM.jpg",
+    "sha256": "7f2c8caba4c5fc1b3371454ebf54f486f5329c6d44cd6646aa9457857d112d5c",
+    "bytes": 4184225
+  },
+  {
+    "source": "content/_posts/life-safari-west/Photo Dec 24 2023, 2 40 19 PM.jpg",
+    "target": "life/safari-west/Photo Dec 24 2023, 2 40 19 PM.jpg",
+    "originalUrl": "/life/life-safari-west/Photo Dec 24 2023, 2 40 19 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/safari-west/Photo%20Dec%2024%202023%2C%202%2040%2019%20PM.jpg",
+    "sha256": "f307176b45c7e08eecd66b0eecfbaa39c305644204945468b921693904e052b2",
+    "bytes": 3752935
+  },
+  {
+    "source": "content/_posts/life-safari-west/Photo Dec 24 2023, 3 19 15 PM.jpg",
+    "target": "life/safari-west/Photo Dec 24 2023, 3 19 15 PM.jpg",
+    "originalUrl": "/life/life-safari-west/Photo Dec 24 2023, 3 19 15 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/safari-west/Photo%20Dec%2024%202023%2C%203%2019%2015%20PM.jpg",
+    "sha256": "3d1db7626c494593340d919d16f3b07641f135ee4caac1195d42844b3c63d0de",
+    "bytes": 4020156
+  },
+  {
+    "source": "content/_posts/life-safari-west/Photo Dec 24 2023, 3 20 53 PM.jpg",
+    "target": "life/safari-west/Photo Dec 24 2023, 3 20 53 PM.jpg",
+    "originalUrl": "/life/life-safari-west/Photo Dec 24 2023, 3 20 53 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/safari-west/Photo%20Dec%2024%202023%2C%203%2020%2053%20PM.jpg",
+    "sha256": "72ca65b69418a88b09a29fcba56b3ab8b601dead8c63d20f56ec893448f7f0e6",
+    "bytes": 4708429
+  },
+  {
+    "source": "content/_posts/life-safari-west/Photo Dec 24 2023, 3 32 25 PM.jpg",
+    "target": "life/safari-west/Photo Dec 24 2023, 3 32 25 PM.jpg",
+    "originalUrl": "/life/life-safari-west/Photo Dec 24 2023, 3 32 25 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/safari-west/Photo%20Dec%2024%202023%2C%203%2032%2025%20PM.jpg",
+    "sha256": "0791604e658c834df7bc345b669f710ceac7c0bd0fc570dcb919b7e741dc3050",
+    "bytes": 4385563
+  },
+  {
+    "source": "content/_posts/life-safari-west/Photo Dec 24 2023, 4 03 53 PM.jpg",
+    "target": "life/safari-west/Photo Dec 24 2023, 4 03 53 PM.jpg",
+    "originalUrl": "/life/life-safari-west/Photo Dec 24 2023, 4 03 53 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/safari-west/Photo%20Dec%2024%202023%2C%204%2003%2053%20PM.jpg",
+    "sha256": "671cf1fe176bfaa718f52df8f3c8042c3173e430e20f9a61dbbc4c818f5f48fe",
+    "bytes": 3467834
+  },
+  {
+    "source": "content/_posts/life-safari-west/Photo Dec 24 2023, 4 06 19 PM.jpg",
+    "target": "life/safari-west/Photo Dec 24 2023, 4 06 19 PM.jpg",
+    "originalUrl": "/life/life-safari-west/Photo Dec 24 2023, 4 06 19 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/safari-west/Photo%20Dec%2024%202023%2C%204%2006%2019%20PM.jpg",
+    "sha256": "6765eb8b7bf8a2402996751018d30729eec10a2d4df00566a2c969b81429ec3e",
+    "bytes": 2841356
+  },
+  {
+    "source": "content/_posts/life-safari-west/Photo Dec 24 2023, 4 06 29 PM.jpg",
+    "target": "life/safari-west/Photo Dec 24 2023, 4 06 29 PM.jpg",
+    "originalUrl": "/life/life-safari-west/Photo Dec 24 2023, 4 06 29 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/safari-west/Photo%20Dec%2024%202023%2C%204%2006%2029%20PM.jpg",
+    "sha256": "d22659f889edd31b4365d16fe5fbfbbaa562ff4becb5c52d0dd5e7b338963380",
+    "bytes": 4335886
+  },
+  {
+    "source": "content/_posts/life-safari-west/Photo Dec 24 2023, 4 07 44 PM.jpg",
+    "target": "life/safari-west/Photo Dec 24 2023, 4 07 44 PM.jpg",
+    "originalUrl": "/life/life-safari-west/Photo Dec 24 2023, 4 07 44 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/safari-west/Photo%20Dec%2024%202023%2C%204%2007%2044%20PM.jpg",
+    "sha256": "45b0ae159a0a275a68a3c0e0e6d24d23a2265721c71c6ea4fadb3e81fcacb8f7",
+    "bytes": 4004180
+  },
+  {
+    "source": "content/_posts/life-safari-west/Photo Dec 24 2023, 4 09 24 PM.jpg",
+    "target": "life/safari-west/Photo Dec 24 2023, 4 09 24 PM.jpg",
+    "originalUrl": "/life/life-safari-west/Photo Dec 24 2023, 4 09 24 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/safari-west/Photo%20Dec%2024%202023%2C%204%2009%2024%20PM.jpg",
+    "sha256": "c728180a12a8248acb1bf9cb60f465e929b1e55c55c9c05cae685c17d9ed82e3",
+    "bytes": 4161921
+  },
+  {
+    "source": "content/_posts/life-safari-west/Photo Dec 24 2023, 4 09 48 PM.jpg",
+    "target": "life/safari-west/Photo Dec 24 2023, 4 09 48 PM.jpg",
+    "originalUrl": "/life/life-safari-west/Photo Dec 24 2023, 4 09 48 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/safari-west/Photo%20Dec%2024%202023%2C%204%2009%2048%20PM.jpg",
+    "sha256": "722328395e6f091fad80062b1c0e27ff660965d78cd7665114afba34a3bc7c87",
+    "bytes": 2590203
+  },
+  {
+    "source": "content/_posts/life-safari-west/Photo Dec 24 2023, 4 21 40 PM.jpg",
+    "target": "life/safari-west/Photo Dec 24 2023, 4 21 40 PM.jpg",
+    "originalUrl": "/life/life-safari-west/Photo Dec 24 2023, 4 21 40 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/safari-west/Photo%20Dec%2024%202023%2C%204%2021%2040%20PM.jpg",
+    "sha256": "9cf7f35807c7d20a3af89dc8c4d3551eae0d1f0a82b3e878b575480d5ac091b0",
+    "bytes": 5137295
+  },
+  {
+    "source": "content/_posts/life-safari-west/Photo Dec 24 2023, 4 41 45 PM.jpg",
+    "target": "life/safari-west/Photo Dec 24 2023, 4 41 45 PM.jpg",
+    "originalUrl": "/life/life-safari-west/Photo Dec 24 2023, 4 41 45 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/safari-west/Photo%20Dec%2024%202023%2C%204%2041%2045%20PM.jpg",
+    "sha256": "db121828113e3ddb558bbc2290ce0debd218e5f85140a46f66f4f4e59a56be0d",
+    "bytes": 3995440
+  },
+  {
+    "source": "content/_posts/life-safari-west/Photo Dec 24 2023, 4 43 25 PM.jpg",
+    "target": "life/safari-west/Photo Dec 24 2023, 4 43 25 PM.jpg",
+    "originalUrl": "/life/life-safari-west/Photo Dec 24 2023, 4 43 25 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/safari-west/Photo%20Dec%2024%202023%2C%204%2043%2025%20PM.jpg",
+    "sha256": "e28f02ff32f2a114bf5800ecd13b7aa338c06752f7f6d3cb6870887abd4de114",
+    "bytes": 4542750
+  },
+  {
+    "source": "content/_posts/life-safari-west/Photo Dec 24 2023, 4 47 02 PM.jpg",
+    "target": "life/safari-west/Photo Dec 24 2023, 4 47 02 PM.jpg",
+    "originalUrl": "/life/life-safari-west/Photo Dec 24 2023, 4 47 02 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/safari-west/Photo%20Dec%2024%202023%2C%204%2047%2002%20PM.jpg",
+    "sha256": "06205b7ed7246796144ed4dc0ad867244c0f0aa26aa7f1093f30e6a444ed1d5b",
+    "bytes": 2920840
+  },
+  {
+    "source": "content/_posts/life-sf-chinatown/Photo Dec 16 2023, 1 15 54 PM.jpg",
+    "target": "life/sf-chinatown/Photo Dec 16 2023, 1 15 54 PM.jpg",
+    "originalUrl": "/life/life-sf-chinatown/Photo Dec 16 2023, 1 15 54 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/sf-chinatown/Photo%20Dec%2016%202023%2C%201%2015%2054%20PM.jpg",
+    "sha256": "eeb57f106574d14a2f075900ae7956c73e8af25e89779d170d1ffb4fdbd2d9e7",
+    "bytes": 2651381
+  },
+  {
+    "source": "content/_posts/life-sf-chinatown/Photo Dec 16 2023, 1 41 59 PM.jpg",
+    "target": "life/sf-chinatown/Photo Dec 16 2023, 1 41 59 PM.jpg",
+    "originalUrl": "/life/life-sf-chinatown/Photo Dec 16 2023, 1 41 59 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/sf-chinatown/Photo%20Dec%2016%202023%2C%201%2041%2059%20PM.jpg",
+    "sha256": "a19cb99280cd6ca5a88dfe859908b515669e33e2b0d518c312e30fa017874236",
+    "bytes": 1763464
+  },
+  {
+    "source": "content/_posts/life-sf-chinatown/Photo Dec 16 2023, 1 45 48 PM.jpg",
+    "target": "life/sf-chinatown/Photo Dec 16 2023, 1 45 48 PM.jpg",
+    "originalUrl": "/life/life-sf-chinatown/Photo Dec 16 2023, 1 45 48 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/sf-chinatown/Photo%20Dec%2016%202023%2C%201%2045%2048%20PM.jpg",
+    "sha256": "7f17f82dc2ce3365a3a10049277a67007bdb5fbd439d923a2b990a83123eaccb",
+    "bytes": 2181506
+  },
+  {
+    "source": "content/_posts/life-sf-chinatown/Photo Dec 16 2023, 1 53 26 PM.jpg",
+    "target": "life/sf-chinatown/Photo Dec 16 2023, 1 53 26 PM.jpg",
+    "originalUrl": "/life/life-sf-chinatown/Photo Dec 16 2023, 1 53 26 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/sf-chinatown/Photo%20Dec%2016%202023%2C%201%2053%2026%20PM.jpg",
+    "sha256": "d08869e961ec2024e0c9381ea70bad1653b53fc9a38e008cc3c87702c118fcb0",
+    "bytes": 3849407
+  },
+  {
+    "source": "content/_posts/life-sf-chinatown/Photo Dec 16 2023, 11 18 01 AM.jpg",
+    "target": "life/sf-chinatown/Photo Dec 16 2023, 11 18 01 AM.jpg",
+    "originalUrl": "/life/life-sf-chinatown/Photo Dec 16 2023, 11 18 01 AM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/sf-chinatown/Photo%20Dec%2016%202023%2C%2011%2018%2001%20AM.jpg",
+    "sha256": "0756dd7d95f454d3135218db33e4b77da5c3796cf8e5d071e48678a1bfd77f01",
+    "bytes": 3068483
+  },
+  {
+    "source": "content/_posts/life-sf-chinatown/Photo Dec 16 2023, 11 19 56 AM.jpg",
+    "target": "life/sf-chinatown/Photo Dec 16 2023, 11 19 56 AM.jpg",
+    "originalUrl": "/life/life-sf-chinatown/Photo Dec 16 2023, 11 19 56 AM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/sf-chinatown/Photo%20Dec%2016%202023%2C%2011%2019%2056%20AM.jpg",
+    "sha256": "d49ed9f00a7ec2761736cacc58f13d742892454a6f9a2fb0854947579462a511",
+    "bytes": 2823058
+  },
+  {
+    "source": "content/_posts/life-sf-chinatown/Photo Dec 16 2023, 11 27 55 AM.jpg",
+    "target": "life/sf-chinatown/Photo Dec 16 2023, 11 27 55 AM.jpg",
+    "originalUrl": "/life/life-sf-chinatown/Photo Dec 16 2023, 11 27 55 AM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/sf-chinatown/Photo%20Dec%2016%202023%2C%2011%2027%2055%20AM.jpg",
+    "sha256": "34a38065682c96a3d76fbd208bdd045d996399f11ecbfb03597f12f7ba9b12e9",
+    "bytes": 3464365
+  },
+  {
+    "source": "content/_posts/life-sf-chinatown/Photo Dec 16 2023, 11 28 40 AM.jpg",
+    "target": "life/sf-chinatown/Photo Dec 16 2023, 11 28 40 AM.jpg",
+    "originalUrl": "/life/life-sf-chinatown/Photo Dec 16 2023, 11 28 40 AM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/sf-chinatown/Photo%20Dec%2016%202023%2C%2011%2028%2040%20AM.jpg",
+    "sha256": "d5caa1b9a0616916a68df6cadd2a7eace315e63eb4d0bf8db0f98bdc8aa7c17f",
+    "bytes": 3809859
+  },
+  {
+    "source": "content/_posts/life-sf-chinatown/Photo Dec 16 2023, 11 31 27 AM.jpg",
+    "target": "life/sf-chinatown/Photo Dec 16 2023, 11 31 27 AM.jpg",
+    "originalUrl": "/life/life-sf-chinatown/Photo Dec 16 2023, 11 31 27 AM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/sf-chinatown/Photo%20Dec%2016%202023%2C%2011%2031%2027%20AM.jpg",
+    "sha256": "3188d3b753017b862667e2ddd2cf5277c94b5af120aec8b96c38cc5c6bc2c650",
+    "bytes": 3967351
+  },
+  {
+    "source": "content/_posts/life-sf-chinatown/Photo Dec 16 2023, 12 04 34 PM.jpg",
+    "target": "life/sf-chinatown/Photo Dec 16 2023, 12 04 34 PM.jpg",
+    "originalUrl": "/life/life-sf-chinatown/Photo Dec 16 2023, 12 04 34 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/sf-chinatown/Photo%20Dec%2016%202023%2C%2012%2004%2034%20PM.jpg",
+    "sha256": "29528aeb5bb80bdcb0ae2a6aa32595d746cf1dd49e6c5313185c4422c7b18b80",
+    "bytes": 2978222
+  },
+  {
+    "source": "content/_posts/life-sf-chinatown/Photo Dec 16 2023, 12 13 28 PM.jpg",
+    "target": "life/sf-chinatown/Photo Dec 16 2023, 12 13 28 PM.jpg",
+    "originalUrl": "/life/life-sf-chinatown/Photo Dec 16 2023, 12 13 28 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/sf-chinatown/Photo%20Dec%2016%202023%2C%2012%2013%2028%20PM.jpg",
+    "sha256": "8b3d6c455d6481af7798259a683c60dd1071c3e45912905b5277506d4bb8d391",
+    "bytes": 3402011
+  },
+  {
+    "source": "content/_posts/life-sf-chinatown/Photo Dec 16 2023, 2 08 28 PM.jpg",
+    "target": "life/sf-chinatown/Photo Dec 16 2023, 2 08 28 PM.jpg",
+    "originalUrl": "/life/life-sf-chinatown/Photo Dec 16 2023, 2 08 28 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/sf-chinatown/Photo%20Dec%2016%202023%2C%202%2008%2028%20PM.jpg",
+    "sha256": "1ddd194fbf980b645e5e401706570eb69cd6cd66436a1313a681ab58a71487f6",
+    "bytes": 3394506
+  },
+  {
+    "source": "content/_posts/life-sf-chinatown/Photo Dec 16 2023, 2 10 50 PM.jpg",
+    "target": "life/sf-chinatown/Photo Dec 16 2023, 2 10 50 PM.jpg",
+    "originalUrl": "/life/life-sf-chinatown/Photo Dec 16 2023, 2 10 50 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/sf-chinatown/Photo%20Dec%2016%202023%2C%202%2010%2050%20PM.jpg",
+    "sha256": "3d7fff340b986c2066fc850743db2bf244f555996610343708607007b6601a9b",
+    "bytes": 3780960
+  },
+  {
+    "source": "content/_posts/life-sleep-in-park/sleepinpark.jpeg",
+    "target": "life/sleep-in-park/sleepinpark.jpeg",
+    "originalUrl": "/life/life-sleep-in-park/sleepinpark.jpeg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/sleep-in-park/sleepinpark.jpeg",
+    "sha256": "4f9e61e45b9d8dace228764af9a2d2e84c7c6128e06d9ee1cc09aed53b5e05d5",
+    "bytes": 3314794
+  },
+  {
+    "source": "content/_posts/life-super-dad/dad.jpg",
+    "target": "life/super-dad/dad.jpg",
+    "originalUrl": "/life/life-super-dad/dad.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/super-dad/dad.jpg",
+    "sha256": "4cd3f1f8396918faff0605c7a3a3e8dad8803538d91f330315527bc1ffcfaa32",
+    "bytes": 3731746
+  },
+  {
+    "source": "content/_posts/life-tea/tea.png",
+    "target": "life/tea/tea.png",
+    "originalUrl": "/life/life-tea/tea.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/tea/tea.png",
+    "sha256": "1b5a21c93cd03ac368445e54d0401d64d2582185c83118cb8faf925c67e139e8",
+    "bytes": 976038
+  },
+  {
+    "source": "content/_posts/life-team-building/route.png",
+    "target": "life/team-building/route.png",
+    "originalUrl": "/life/life-team-building/route.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/team-building/route.png",
+    "sha256": "1ead94ee3eab1ed8e8a4fe48e68716d5c106ce53c3bf231be51770fb201c8307",
+    "bytes": 7200873
+  },
+  {
+    "source": "content/_posts/life-tiktok-open-house/1.jpg",
+    "target": "life/tiktok-open-house/1.jpg",
+    "originalUrl": "/life/life-tiktok-open-house/1.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/tiktok-open-house/1.jpg",
+    "sha256": "51359336cd5da65a07b873f8bd48f6365257e831fa5094bd9a43201747c4c9c5",
+    "bytes": 2204031
+  },
+  {
+    "source": "content/_posts/life-tiktok-open-house/10.jpg",
+    "target": "life/tiktok-open-house/10.jpg",
+    "originalUrl": "/life/life-tiktok-open-house/10.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/tiktok-open-house/10.jpg",
+    "sha256": "c26407cf0ab0c09066dd37dff65eab7c8730d5e24b603d58505a838163689193",
+    "bytes": 1778484
+  },
+  {
+    "source": "content/_posts/life-tiktok-open-house/11.jpg",
+    "target": "life/tiktok-open-house/11.jpg",
+    "originalUrl": "/life/life-tiktok-open-house/11.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/tiktok-open-house/11.jpg",
+    "sha256": "36b82854263a7e76d49335f46bfe16780829bd152f43146124edba4366333ccf",
+    "bytes": 2442457
+  },
+  {
+    "source": "content/_posts/life-tiktok-open-house/2.jpg",
+    "target": "life/tiktok-open-house/2.jpg",
+    "originalUrl": "/life/life-tiktok-open-house/2.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/tiktok-open-house/2.jpg",
+    "sha256": "ca266ed7f02546c1f094bba5460cd033251b38e435285dd2886559cf99c8f723",
+    "bytes": 1272180
+  },
+  {
+    "source": "content/_posts/life-tiktok-open-house/3.jpg",
+    "target": "life/tiktok-open-house/3.jpg",
+    "originalUrl": "/life/life-tiktok-open-house/3.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/tiktok-open-house/3.jpg",
+    "sha256": "64a75fd05bbf6b44934f68cfe956a4fae2d2cc822d94ab0b4f1d6207f99b6c98",
+    "bytes": 2256573
+  },
+  {
+    "source": "content/_posts/life-tiktok-open-house/4.jpg",
+    "target": "life/tiktok-open-house/4.jpg",
+    "originalUrl": "/life/life-tiktok-open-house/4.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/tiktok-open-house/4.jpg",
+    "sha256": "f2d0f2a54eb688e3b7b99b33497fe389e9e63aa24882aad84d5977d2e3d64460",
+    "bytes": 1852744
+  },
+  {
+    "source": "content/_posts/life-tiktok-open-house/5.jpg",
+    "target": "life/tiktok-open-house/5.jpg",
+    "originalUrl": "/life/life-tiktok-open-house/5.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/tiktok-open-house/5.jpg",
+    "sha256": "7cf16441dcd6a2d256a7574b0f7c37f008c0b0929df172b784fc4a5c40b71b2c",
+    "bytes": 1949769
+  },
+  {
+    "source": "content/_posts/life-tiktok-open-house/6.jpg",
+    "target": "life/tiktok-open-house/6.jpg",
+    "originalUrl": "/life/life-tiktok-open-house/6.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/tiktok-open-house/6.jpg",
+    "sha256": "1b4de38268e8fc8ca78290982f2cd15c19728fb86324cc4d121240c0bfe0b8ad",
+    "bytes": 1783202
+  },
+  {
+    "source": "content/_posts/life-tiktok-open-house/7.jpg",
+    "target": "life/tiktok-open-house/7.jpg",
+    "originalUrl": "/life/life-tiktok-open-house/7.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/tiktok-open-house/7.jpg",
+    "sha256": "78643028c02bad56cc579e265319a00887d87e32df8aa58d3bbeb4f31f2f3b73",
+    "bytes": 1701418
+  },
+  {
+    "source": "content/_posts/life-tiktok-open-house/8.jpg",
+    "target": "life/tiktok-open-house/8.jpg",
+    "originalUrl": "/life/life-tiktok-open-house/8.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/tiktok-open-house/8.jpg",
+    "sha256": "0c545c1485a7a2304d6d018f1b9c6877aa0729877f246bf95fc267affde5d546",
+    "bytes": 1108282
+  },
+  {
+    "source": "content/_posts/life-tiktok-open-house/9.jpg",
+    "target": "life/tiktok-open-house/9.jpg",
+    "originalUrl": "/life/life-tiktok-open-house/9.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/tiktok-open-house/9.jpg",
+    "sha256": "fa8b3c201839e017de104b347740a22b9703baf5ad17746254c96d4a80386881",
+    "bytes": 1820948
+  },
+  {
+    "source": "content/_posts/life-tummytime/tummytime.jpeg",
+    "target": "life/tummytime/tummytime.jpeg",
+    "originalUrl": "/life/life-tummytime/tummytime.jpeg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/tummytime/tummytime.jpeg",
+    "sha256": "2c6bd6bc744489b3213183e998b78d7b8ee4cdc02c4e923d0c5bf43de7ae7c07",
+    "bytes": 2632165
+  },
+  {
+    "source": "content/_posts/life-tummytime/tummytimesleep.jpg",
+    "target": "life/tummytime/tummytimesleep.jpg",
+    "originalUrl": "/life/life-tummytime/tummytimesleep.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/tummytime/tummytimesleep.jpg",
+    "sha256": "330eb592d9cacffdb1786f8f0f5cac5547af1a713de7d790715b70d478020538",
+    "bytes": 1548073
+  },
+  {
+    "source": "content/_posts/lumei/Photo Apr 30 2023, 10 42 52 AM.jpg",
+    "target": "life/lumei/Photo Apr 30 2023, 10 42 52 AM.jpg",
+    "originalUrl": "/life/lumei/Photo Apr 30 2023, 10 42 52 AM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Apr%2030%202023%2C%2010%2042%2052%20AM.jpg",
+    "sha256": "86f3472a3531b3143db7a10fe8a3215566c5a7e8f536e4cd86468fe6353ba309",
+    "bytes": 184822
+  },
+  {
+    "source": "content/_posts/lumei/Photo Aug 10 2023, 9 08 06 PM.jpg",
+    "target": "life/lumei/Photo Aug 10 2023, 9 08 06 PM.jpg",
+    "originalUrl": "/life/lumei/Photo Aug 10 2023, 9 08 06 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Aug%2010%202023%2C%209%2008%2006%20PM.jpg",
+    "sha256": "eec7c71a22504fd3df23acdef5d77d61301d9ebfdbb68e42366c34fd45d274e0",
+    "bytes": 1412312
+  },
+  {
+    "source": "content/_posts/lumei/Photo Aug 11 2023, 5 03 38 PM.jpg",
+    "target": "life/lumei/Photo Aug 11 2023, 5 03 38 PM.jpg",
+    "originalUrl": "/life/lumei/Photo Aug 11 2023, 5 03 38 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Aug%2011%202023%2C%205%2003%2038%20PM.jpg",
+    "sha256": "c148f8442e3b3cb5afcc1c657274b2aba1b8bbfb7056a8dc9d360d503c57987a",
+    "bytes": 2646865
+  },
+  {
+    "source": "content/_posts/lumei/Photo Aug 18 2023, 10 06 20 PM.jpg",
+    "target": "life/lumei/Photo Aug 18 2023, 10 06 20 PM.jpg",
+    "originalUrl": "/life/lumei/Photo Aug 18 2023, 10 06 20 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Aug%2018%202023%2C%2010%2006%2020%20PM.jpg",
+    "sha256": "5535e05d2addea66774fb5a08ed0096b121b263bbac7e3223b05773f525417f2",
+    "bytes": 2898719
+  },
+  {
+    "source": "content/_posts/lumei/Photo Aug 18 2023, 7 51 35 PM.jpg",
+    "target": "life/lumei/Photo Aug 18 2023, 7 51 35 PM.jpg",
+    "originalUrl": "/life/lumei/Photo Aug 18 2023, 7 51 35 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Aug%2018%202023%2C%207%2051%2035%20PM.jpg",
+    "sha256": "8b4f30da599d0a45e0fa90db6e61071094ffe5a997d86d89d451911ee05954f9",
+    "bytes": 2792771
+  },
+  {
+    "source": "content/_posts/lumei/Photo Aug 22 2023, 9 40 37 AM.jpg",
+    "target": "life/lumei/Photo Aug 22 2023, 9 40 37 AM.jpg",
+    "originalUrl": "/life/lumei/Photo Aug 22 2023, 9 40 37 AM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Aug%2022%202023%2C%209%2040%2037%20AM.jpg",
+    "sha256": "ee5a3698c9b21203a1c00cf43c4136f3e33d39076765a935f8acb2d54e37fe4b",
+    "bytes": 2316985
+  },
+  {
+    "source": "content/_posts/lumei/Photo Dec 11 2022, 10 30 16 PM.jpg",
+    "target": "life/lumei/Photo Dec 11 2022, 10 30 16 PM.jpg",
+    "originalUrl": "/life/lumei/Photo Dec 11 2022, 10 30 16 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Dec%2011%202022%2C%2010%2030%2016%20PM.jpg",
+    "sha256": "9225d2494727e3ec8dfd5e5d1f6a7a6d0192ab8f3e53338e369dcc9b84042aa2",
+    "bytes": 2872653
+  },
+  {
+    "source": "content/_posts/lumei/Photo Dec 19 2022, 7 16 54 PM.jpg",
+    "target": "life/lumei/Photo Dec 19 2022, 7 16 54 PM.jpg",
+    "originalUrl": "/life/lumei/Photo Dec 19 2022, 7 16 54 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Dec%2019%202022%2C%207%2016%2054%20PM.jpg",
+    "sha256": "d9647dfaf8b6ce0f596cef0fa26d9e2ae28577d4f53ac6622d6acbba43eb9101",
+    "bytes": 2346674
+  },
+  {
+    "source": "content/_posts/lumei/Photo Dec 19 2022, 7 19 40 PM.jpg",
+    "target": "life/lumei/Photo Dec 19 2022, 7 19 40 PM.jpg",
+    "originalUrl": "/life/lumei/Photo Dec 19 2022, 7 19 40 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Dec%2019%202022%2C%207%2019%2040%20PM.jpg",
+    "sha256": "cb842b2bb92fb620e03901aa3a71848391e9f5aa64a7e3434880f1d41d9f1132",
+    "bytes": 2124452
+  },
+  {
+    "source": "content/_posts/lumei/Photo Feb 10 2023, 8 42 38 AM.jpg",
+    "target": "life/lumei/Photo Feb 10 2023, 8 42 38 AM.jpg",
+    "originalUrl": "/life/lumei/Photo Feb 10 2023, 8 42 38 AM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Feb%2010%202023%2C%208%2042%2038%20AM.jpg",
+    "sha256": "b7215a7718f605f83966bf69a7870dbc74f3c9fd0459afc011b4b50cbb793c1f",
+    "bytes": 2238862
+  },
+  {
+    "source": "content/_posts/lumei/Photo Feb 13 2023, 9 22 37 PM.jpg",
+    "target": "life/lumei/Photo Feb 13 2023, 9 22 37 PM.jpg",
+    "originalUrl": "/life/lumei/Photo Feb 13 2023, 9 22 37 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Feb%2013%202023%2C%209%2022%2037%20PM.jpg",
+    "sha256": "7c8ae87d5333d247cc2941850025c8408d2d45cd22166523ed8faf449780679e",
+    "bytes": 2589827
+  },
+  {
+    "source": "content/_posts/lumei/Photo Feb 16 2023, 9 51 05 PM.jpg",
+    "target": "life/lumei/Photo Feb 16 2023, 9 51 05 PM.jpg",
+    "originalUrl": "/life/lumei/Photo Feb 16 2023, 9 51 05 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Feb%2016%202023%2C%209%2051%2005%20PM.jpg",
+    "sha256": "510384fe52487e32ec50c0e4b790ea13b091256127e820dd935bee18aa222ba1",
+    "bytes": 2649285
+  },
+  {
+    "source": "content/_posts/lumei/Photo Jan 08 2023, 8 03 09 PM.jpg",
+    "target": "life/lumei/Photo Jan 08 2023, 8 03 09 PM.jpg",
+    "originalUrl": "/life/lumei/Photo Jan 08 2023, 8 03 09 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Jan%2008%202023%2C%208%2003%2009%20PM.jpg",
+    "sha256": "99597aa32f368b708a34763b6eb70f898c68ae9ac62930e994e07a2bf40c7b8e",
+    "bytes": 3438315
+  },
+  {
+    "source": "content/_posts/lumei/Photo Jan 13 2023, 10 16 36 AM.jpg",
+    "target": "life/lumei/Photo Jan 13 2023, 10 16 36 AM.jpg",
+    "originalUrl": "/life/lumei/Photo Jan 13 2023, 10 16 36 AM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Jan%2013%202023%2C%2010%2016%2036%20AM.jpg",
+    "sha256": "40c5e96351e57b94a148d96926a4732707d4bc8a34be434560e9b11a64eacef5",
+    "bytes": 3309089
+  },
+  {
+    "source": "content/_posts/lumei/Photo Jan 16 2023, 4 27 53 PM.jpg",
+    "target": "life/lumei/Photo Jan 16 2023, 4 27 53 PM.jpg",
+    "originalUrl": "/life/lumei/Photo Jan 16 2023, 4 27 53 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Jan%2016%202023%2C%204%2027%2053%20PM.jpg",
+    "sha256": "b03667785b1b88800142bb7547bc25c1ccbb65c452a2c0685d96d090045e2224",
+    "bytes": 5441015
+  },
+  {
+    "source": "content/_posts/lumei/Photo Jan 21 2023, 8 49 43 PM.jpg",
+    "target": "life/lumei/Photo Jan 21 2023, 8 49 43 PM.jpg",
+    "originalUrl": "/life/lumei/Photo Jan 21 2023, 8 49 43 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Jan%2021%202023%2C%208%2049%2043%20PM.jpg",
+    "sha256": "a8d62b829b95afcc2e89111ba5defa7398973296fa72fbd4af61536b17d10489",
+    "bytes": 3095356
+  },
+  {
+    "source": "content/_posts/lumei/Photo Jun 19 2023, 11 41 12 AM.jpg",
+    "target": "life/lumei/Photo Jun 19 2023, 11 41 12 AM.jpg",
+    "originalUrl": "/life/lumei/Photo Jun 19 2023, 11 41 12 AM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Jun%2019%202023%2C%2011%2041%2012%20AM.jpg",
+    "sha256": "2b74799c5d141ee66e35b1618e027c41c2a388e426b9414cad49966b8da591ff",
+    "bytes": 2674309
+  },
+  {
+    "source": "content/_posts/lumei/Photo Oct 21 2023, 10 25 57 PM.jpg",
+    "target": "life/lumei/Photo Oct 21 2023, 10 25 57 PM.jpg",
+    "originalUrl": "/life/lumei/Photo Oct 21 2023, 10 25 57 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Oct%2021%202023%2C%2010%2025%2057%20PM.jpg",
+    "sha256": "5a4d8e79700ad47c9e101b9ec28610b2c53417a274059563219313c12e03f25b",
+    "bytes": 2758755
+  },
+  {
+    "source": "content/_posts/lumei/Photo Oct 27 2023, 11 55 28 AM.jpg",
+    "target": "life/lumei/Photo Oct 27 2023, 11 55 28 AM.jpg",
+    "originalUrl": "/life/lumei/Photo Oct 27 2023, 11 55 28 AM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Oct%2027%202023%2C%2011%2055%2028%20AM.jpg",
+    "sha256": "f10001514ac3e6e412247342ee0602e20c6ebce4fafb090c39f36063180bb50c",
+    "bytes": 419130
+  },
+  {
+    "source": "content/_posts/lumei/Photo Oct 27 2023, 11 57 04 AM.jpg",
+    "target": "life/lumei/Photo Oct 27 2023, 11 57 04 AM.jpg",
+    "originalUrl": "/life/lumei/Photo Oct 27 2023, 11 57 04 AM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Oct%2027%202023%2C%2011%2057%2004%20AM.jpg",
+    "sha256": "0e2fea4cc4adb7917406b1672ef5f0b5d97c723d4e47a1d802f62d476567133e",
+    "bytes": 302924
+  },
+  {
+    "source": "content/_posts/lumei/Photo Oct 27 2023, 11 57 08 AM.jpg",
+    "target": "life/lumei/Photo Oct 27 2023, 11 57 08 AM.jpg",
+    "originalUrl": "/life/lumei/Photo Oct 27 2023, 11 57 08 AM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Oct%2027%202023%2C%2011%2057%2008%20AM.jpg",
+    "sha256": "84ff2bc56c5ccb8b7f0260cf3630aab0f3e72ee13acf1f0b3b5bc35febc54d84",
+    "bytes": 291650
+  },
+  {
+    "source": "content/_posts/lumei/Photo Oct 27 2023, 11 57 15 AM.jpg",
+    "target": "life/lumei/Photo Oct 27 2023, 11 57 15 AM.jpg",
+    "originalUrl": "/life/lumei/Photo Oct 27 2023, 11 57 15 AM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Oct%2027%202023%2C%2011%2057%2015%20AM.jpg",
+    "sha256": "b7ade96266cc50fe4ff1b9bbd904d98c2eaa32b9710999d6138e5a0285723ef9",
+    "bytes": 498496
+  },
+  {
+    "source": "content/_posts/lumei/Photo Oct 27 2023, 11 57 23 AM.jpg",
+    "target": "life/lumei/Photo Oct 27 2023, 11 57 23 AM.jpg",
+    "originalUrl": "/life/lumei/Photo Oct 27 2023, 11 57 23 AM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Oct%2027%202023%2C%2011%2057%2023%20AM.jpg",
+    "sha256": "1fcbe1604d8ba09a2c54674219575486d666feb804a4eb527b90453677aac58e",
+    "bytes": 343603
+  },
+  {
+    "source": "content/_posts/lumei/Photo Sep 09 2023, 4 48 31 PM.jpg",
+    "target": "life/lumei/Photo Sep 09 2023, 4 48 31 PM.jpg",
+    "originalUrl": "/life/lumei/Photo Sep 09 2023, 4 48 31 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Sep%2009%202023%2C%204%2048%2031%20PM.jpg",
+    "sha256": "e081610cb07ab31768f461ca17a576a3ffb05e775d85ce323611c4d0de0b3a16",
+    "bytes": 2150630
+  },
+  {
+    "source": "content/_posts/lumei/Photo Sep 30 2023, 9 00 50 PM.jpg",
+    "target": "life/lumei/Photo Sep 30 2023, 9 00 50 PM.jpg",
+    "originalUrl": "/life/lumei/Photo Sep 30 2023, 9 00 50 PM.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/lumei/Photo%20Sep%2030%202023%2C%209%2000%2050%20PM.jpg",
+    "sha256": "d7361961baa1d717684a5ec0d56dcdf9709bb96ad7584867d3f08e49add58e12",
+    "bytes": 1922649
+  },
+  {
+    "source": "content/_posts/misc-binary-insert/v1.png",
+    "target": "interview/misc-binary-insert/v1.png",
+    "originalUrl": "/interview/misc-binary-insert/v1.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/interview/misc-binary-insert/v1.png",
+    "sha256": "e378818d6a5b025ea118b8db89e0e1809ac368e57a021633d1bf5e63c09d9877",
+    "bytes": 74764
+  },
+  {
+    "source": "content/_posts/misc-binary-insert/v2.png",
+    "target": "interview/misc-binary-insert/v2.png",
+    "originalUrl": "/interview/misc-binary-insert/v2.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/interview/misc-binary-insert/v2.png",
+    "sha256": "e1b4b595da7c7f88b902cce9c730d81768f9db9acc350d4b963f39eee55cf265",
+    "bytes": 57905
+  },
+  {
+    "source": "content/_posts/misc-binary-insert/v3.png",
+    "target": "interview/misc-binary-insert/v3.png",
+    "originalUrl": "/interview/misc-binary-insert/v3.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/interview/misc-binary-insert/v3.png",
+    "sha256": "10d8aea5a976dbdf2f8a8ad4efcd758c5ca57fdd143a40c59ee05a13ccbfe2f2",
+    "bytes": 74798
+  },
+  {
+    "source": "content/_posts/misc-binary-insert/v4.png",
+    "target": "interview/misc-binary-insert/v4.png",
+    "originalUrl": "/interview/misc-binary-insert/v4.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/interview/misc-binary-insert/v4.png",
+    "sha256": "24c341ea714196d61433b71c15935d79b4cb06a0e934ac3ebf3831a86894a96c",
+    "bytes": 57818
+  },
+  {
+    "source": "content/_posts/misc-cache-algorithms/fifo.png",
+    "target": "interview/misc-cache-algorithms/fifo.png",
+    "originalUrl": "/interview/misc-cache-algorithms/fifo.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/interview/misc-cache-algorithms/fifo.png",
+    "sha256": "f2888b925b66158d1ca71b08c3286e8b49db82b98c5cff0288bfd87882e3169c",
+    "bytes": 34575
+  },
+  {
+    "source": "content/_posts/misc-cache-algorithms/lfustructure.png",
+    "target": "interview/misc-cache-algorithms/lfustructure.png",
+    "originalUrl": "/interview/misc-cache-algorithms/lfustructure.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/interview/misc-cache-algorithms/lfustructure.png",
+    "sha256": "856dc6b8502a9da896c7d816f6a40245c83f905b04bcfb936fd960331fc7f287",
+    "bytes": 42997
+  },
+  {
+    "source": "content/_posts/misc-cache-algorithms/lru.png",
+    "target": "interview/misc-cache-algorithms/lru.png",
+    "originalUrl": "/interview/misc-cache-algorithms/lru.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/interview/misc-cache-algorithms/lru.png",
+    "sha256": "6a47015ef290efca5a1edd663588ad399bb109f78b63069390bfea293747c898",
+    "bytes": 116622
+  },
+  {
+    "source": "content/_posts/misc-cache-algorithms/lrustructure.png",
+    "target": "interview/misc-cache-algorithms/lrustructure.png",
+    "originalUrl": "/interview/misc-cache-algorithms/lrustructure.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/interview/misc-cache-algorithms/lrustructure.png",
+    "sha256": "afa5e043159e7dd7235ae9d411ba310750de960bfa4b0a9ad8c9119051c5123e",
+    "bytes": 48547
+  },
+  {
+    "source": "content/_posts/misc-cross-compile-libjpeg-for-android-armv8a/sidebyside.png",
+    "target": "misc/cross-compile-libjpeg-for-android-armv8a/sidebyside.png",
+    "originalUrl": "/misc/misc-cross-compile-libjpeg-for-android-armv8a/sidebyside.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/cross-compile-libjpeg-for-android-armv8a/sidebyside.png",
+    "sha256": "2663a35785fee155ba80d9c659868484426dd81c2db5a022c3fabfa6062ae589",
+    "bytes": 6074473
+  },
+  {
+    "source": "content/_posts/misc-ffmpeg-start/0.png",
+    "target": "misc/ffmpeg-start/0.png",
+    "originalUrl": "/misc/misc-ffmpeg-start/0.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/ffmpeg-start/0.png",
+    "sha256": "e305069e666bb41b5c0d310c8e9c0a7ad5e853a0a12203b3d116c8e318e2ca98",
+    "bytes": 125863
+  },
+  {
+    "source": "content/_posts/misc-ffmpeg-start/1.png",
+    "target": "misc/ffmpeg-start/1.png",
+    "originalUrl": "/misc/misc-ffmpeg-start/1.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/ffmpeg-start/1.png",
+    "sha256": "1437756bb17dcc7610fcf739000dfac9c36c7fe36eeb58b2e16922a74fbce69a",
+    "bytes": 82215
+  },
+  {
+    "source": "content/_posts/misc-ffmpeg-start/project.png",
+    "target": "misc/ffmpeg-start/project.png",
+    "originalUrl": "/misc/misc-ffmpeg-start/project.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/ffmpeg-start/project.png",
+    "sha256": "3a4022193deb7dde0d822ba09cc01d90ab563dce11abbcfb507945bcf8460182",
+    "bytes": 409935
+  },
+  {
+    "source": "content/_posts/misc-ffmpeg-start/result.png",
+    "target": "misc/ffmpeg-start/result.png",
+    "originalUrl": "/misc/misc-ffmpeg-start/result.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/ffmpeg-start/result.png",
+    "sha256": "76d4a4679c1f2b1bde395a0ee4c494d5be1345db07b4b8bdc270494041961507",
+    "bytes": 446352
+  },
+  {
+    "source": "content/_posts/misc-fourier-analysis/fourier_overview.png",
+    "target": "misc/fourier-analysis/fourier_overview.png",
+    "originalUrl": null,
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/fourier-analysis/fourier_overview.png",
+    "sha256": "184086375bf19c3ab0f986ca35179a610e4370a68b58bca29cdb20f858e0d5e7",
+    "bytes": 80946
+  },
+  {
+    "source": "content/_posts/misc-how-to-write-bug-free-binary-search/visual.png",
+    "target": "interview/misc-how-to-write-bug-free-binary-search/visual.png",
+    "originalUrl": "/interview/misc-how-to-write-bug-free-binary-search/visual.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/interview/misc-how-to-write-bug-free-binary-search/visual.png",
+    "sha256": "5c0c6c1ab4a147bd7f501656aeeefd0f026445b69ce07335bb5b5a473a5b53e1",
+    "bytes": 95940
+  },
+  {
+    "source": "content/_posts/misc-jni-multi-threading/demo.png",
+    "target": "misc/jni-multi-threading/demo.png",
+    "originalUrl": "/misc/misc-jni-multi-threading/demo.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/jni-multi-threading/demo.png",
+    "sha256": "575e3891814875d7fbf77e786ceca7a02201ddd7011d16b5dda73dfe6a13e5ad",
+    "bytes": 50731
+  },
+  {
+    "source": "content/_posts/misc-jni-multi-threading/jvm.png",
+    "target": "misc/jni-multi-threading/jvm.png",
+    "originalUrl": "/misc/misc-jni-multi-threading/jvm.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/jni-multi-threading/jvm.png",
+    "sha256": "6537f10614372eba4c3834264d9dfe3e33b69cfffaa518e5289382caeaf7531b",
+    "bytes": 84873
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-1/openglwindow.png",
+    "target": "cgv/misc-learn-opengl-1/openglwindow.png",
+    "originalUrl": "/CGV/misc-learn-opengl-1/openglwindow.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-1/openglwindow.png",
+    "sha256": "e1ce4c833ec05dd5340055a81c6510ab237def7776d519f3e85127d01a0f808d",
+    "bytes": 8340
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-2/f2.png",
+    "target": "cgv/misc-learn-opengl-2/f2.png",
+    "originalUrl": "/CGV/misc-learn-opengl-2/f2.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-2/f2.png",
+    "sha256": "d44d8c5679d66ad61852a1bcfab872a6307ebaad0f92418f227c2f6c649cfea3",
+    "bytes": 9948
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-3/VAO.png",
+    "target": "cgv/misc-learn-opengl-3/VAO.png",
+    "originalUrl": "/CGV/misc-learn-opengl-3/VAO.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-3/VAO.png",
+    "sha256": "116ea94dea2cdf78a4aa910078ffbb20b8310f962d7627b8011d28c874aa1304",
+    "bytes": 26854
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-3/coordinate.png",
+    "target": "cgv/misc-learn-opengl-3/coordinate.png",
+    "originalUrl": "/CGV/misc-learn-opengl-3/coordinate.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-3/coordinate.png",
+    "sha256": "8da539514f46271c1f7cb8c9ca689cb7c977aaf81ed6c482ab53e8772da59dc7",
+    "bytes": 26470
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-3/demo1.png",
+    "target": "cgv/misc-learn-opengl-3/demo1.png",
+    "originalUrl": "/CGV/misc-learn-opengl-3/demo1.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-3/demo1.png",
+    "sha256": "0935ec6087fec59192332d635cb9e2e6cf5cc29325c87b0d182849904265dfc9",
+    "bytes": 12312
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-3/demo2.png",
+    "target": "cgv/misc-learn-opengl-3/demo2.png",
+    "originalUrl": "/CGV/misc-learn-opengl-3/demo2.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-3/demo2.png",
+    "sha256": "57e3789db6e22ab8426c4c58f9ac1ff25a9b67d30a25faddbd90c81a4a2624af",
+    "bytes": 12355
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-3/graphicpipeline.png",
+    "target": "cgv/misc-learn-opengl-3/graphicpipeline.png",
+    "originalUrl": "/CGV/misc-learn-opengl-3/graphicpipeline.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-3/graphicpipeline.png",
+    "sha256": "babac9689559a4f6c14d054f22d825761639e024f128f70684a46aef74f2beb5",
+    "bytes": 48888
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-4/shader.gif",
+    "target": "cgv/misc-learn-opengl-4/shader.gif",
+    "originalUrl": "/CGV/misc-learn-opengl-4/shader.gif",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-4/shader.gif",
+    "sha256": "0b48d26f2be8f6f06e9200b7e5e3144c35f6815000f1b09c9e01868ec1439a0d",
+    "bytes": 29137
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-4/vertexattributeptr.png",
+    "target": "cgv/misc-learn-opengl-4/vertexattributeptr.png",
+    "originalUrl": "/CGV/misc-learn-opengl-4/vertexattributeptr.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-4/vertexattributeptr.png",
+    "sha256": "7c9354ba6c469d9d06fe5dd0cecc2c544730518354dec88981dc1ed3c17d2d6f",
+    "bytes": 16475
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-5/cat0.png",
+    "target": "cgv/misc-learn-opengl-5/cat0.png",
+    "originalUrl": "/CGV/misc-learn-opengl-5/cat0.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-5/cat0.png",
+    "sha256": "569248105d000aad638dcee4ef4ffc56d40e6e8624953cf9292690b8ecc94d75",
+    "bytes": 246788
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-5/cat1.png",
+    "target": "cgv/misc-learn-opengl-5/cat1.png",
+    "originalUrl": "/CGV/misc-learn-opengl-5/cat1.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-5/cat1.png",
+    "sha256": "58453f49b441d943451d52c789d7b6f08a416d29ace5ab9108fc1f4aa6670888",
+    "bytes": 249190
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-5/cat2.png",
+    "target": "cgv/misc-learn-opengl-5/cat2.png",
+    "originalUrl": "/CGV/misc-learn-opengl-5/cat2.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-5/cat2.png",
+    "sha256": "ec3f01e1419dc68892bab6f05c2c7d5a3b157b204eb8e0961999d812ef2d52b0",
+    "bytes": 248039
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-5/cat3.png",
+    "target": "cgv/misc-learn-opengl-5/cat3.png",
+    "originalUrl": "/CGV/misc-learn-opengl-5/cat3.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-5/cat3.png",
+    "sha256": "acd06fa0836366b212825245a7a6c3f74ddf19dd1b630cdd6c9fdfe86e73008e",
+    "bytes": 247158
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-5/mipmap.png",
+    "target": "cgv/misc-learn-opengl-5/mipmap.png",
+    "originalUrl": "/CGV/misc-learn-opengl-5/mipmap.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-5/mipmap.png",
+    "sha256": "1ddbc7e3d44c123f3990eb567d29e539245ecdac638f7eac53591db2e1bc847d",
+    "bytes": 116231
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-5/texcoords.png",
+    "target": "cgv/misc-learn-opengl-5/texcoords.png",
+    "originalUrl": "/CGV/misc-learn-opengl-5/texcoords.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-5/texcoords.png",
+    "sha256": "15147488a27aafeccb6fe2aa721473fce2d4f5a1d57417d2edfe0babaff30ac8",
+    "bytes": 79146
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-5/texturewrapping.png",
+    "target": "cgv/misc-learn-opengl-5/texturewrapping.png",
+    "originalUrl": "/CGV/misc-learn-opengl-5/texturewrapping.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-5/texturewrapping.png",
+    "sha256": "4595ff7fddf46ab57bca54268242499b8dacaae0dde6788ba08693333c74837a",
+    "bytes": 90064
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-5/vertexattributepointer.png",
+    "target": "cgv/misc-learn-opengl-5/vertexattributepointer.png",
+    "originalUrl": "/CGV/misc-learn-opengl-5/vertexattributepointer.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-5/vertexattributepointer.png",
+    "sha256": "338c29fc03ee8b05da6b9324a048ada9906b975637d06944b8f759bdfab66f61",
+    "bytes": 19500
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-6/transform.gif",
+    "target": "cgv/misc-learn-opengl-6/transform.gif",
+    "originalUrl": "/CGV/misc-learn-opengl-6/transform.gif",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-6/transform.gif",
+    "sha256": "3e6eed399550774639827ee8396027c55aadf113eff9b7c5165f81cb40381d84",
+    "bytes": 6227335
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-6/transform.png",
+    "target": "cgv/misc-learn-opengl-6/transform.png",
+    "originalUrl": "/CGV/misc-learn-opengl-6/transform.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-6/transform.png",
+    "sha256": "f202a187c6a6934cd6fdf5df68bc10d8ec1e3cb08097bb84a07d7d110f98a3cf",
+    "bytes": 10033
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-7/coordinatesystems.png",
+    "target": "cgv/misc-learn-opengl-7/coordinatesystems.png",
+    "originalUrl": "/CGV/misc-learn-opengl-7/coordinatesystems.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-7/coordinatesystems.png",
+    "sha256": "431fbfb43d1f1fa79017654eaf9aa53b7ec6ef4933ffc00904024583033809b7",
+    "bytes": 41397
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-7/demo.gif",
+    "target": "cgv/misc-learn-opengl-7/demo.gif",
+    "originalUrl": "/CGV/misc-learn-opengl-7/demo.gif",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-7/demo.gif",
+    "sha256": "d6ab3e7c15fd90749d2f0b63db339dae6a7c90d47c3591106c6e2345b4454912",
+    "bytes": 2816600
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-7/hg.png",
+    "target": "cgv/misc-learn-opengl-7/hg.png",
+    "originalUrl": "/CGV/misc-learn-opengl-7/hg.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-7/hg.png",
+    "sha256": "29a00834bc897a0a266f8c78c4141d1244f6530edb43776f0bbccbfc42dc8380",
+    "bytes": 5196
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-7/orthographicfrustum.png",
+    "target": "cgv/misc-learn-opengl-7/orthographicfrustum.png",
+    "originalUrl": "/CGV/misc-learn-opengl-7/orthographicfrustum.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-7/orthographicfrustum.png",
+    "sha256": "6334ddd623cc410075c58d0b135372516f05a2cfd634d328abc277757d6914c5",
+    "bytes": 20079
+  },
+  {
+    "source": "content/_posts/misc-learn-opengl-7/perspectivefrustum.png",
+    "target": "cgv/misc-learn-opengl-7/perspectivefrustum.png",
+    "originalUrl": "/CGV/misc-learn-opengl-7/perspectivefrustum.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/cgv/misc-learn-opengl-7/perspectivefrustum.png",
+    "sha256": "7e0be982e550e18f355470ae8da4d8de334979abaedb587531ac6e83b8ce7666",
+    "bytes": 27492
+  },
+  {
+    "source": "content/_posts/misc-mediacodec-basics/asynchronous_mode.png",
+    "target": "misc/mediacodec-basics/asynchronous_mode.png",
+    "originalUrl": "/misc/misc-mediacodec-basics/asynchronous_mode.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/mediacodec-basics/asynchronous_mode.png",
+    "sha256": "3a2909c0ae22ab59b54f9d5a0be586db7b5a56a917cdadd3ac35382fdd97ee10",
+    "bytes": 47173
+  },
+  {
+    "source": "content/_posts/misc-mediacodec-basics/mediacodec_intro.png",
+    "target": "misc/mediacodec-basics/mediacodec_intro.png",
+    "originalUrl": "/misc/misc-mediacodec-basics/mediacodec_intro.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/mediacodec-basics/mediacodec_intro.png",
+    "sha256": "6f594d9ffee1e499151c3c3874591435131792584f541f71a597a6296906afe9",
+    "bytes": 23995
+  },
+  {
+    "source": "content/_posts/misc-mediacodec-basics/mediacodec_state.png",
+    "target": "misc/mediacodec-basics/mediacodec_state.png",
+    "originalUrl": "/misc/misc-mediacodec-basics/mediacodec_state.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/mediacodec-basics/mediacodec_state.png",
+    "sha256": "7723e2b231707bfc335115d39982eb583a052fb4372bee9c07a9622b5ab1cecc",
+    "bytes": 46503
+  },
+  {
+    "source": "content/_posts/misc-mediacodec-basics/synchronous_mode.png",
+    "target": "misc/mediacodec-basics/synchronous_mode.png",
+    "originalUrl": "/misc/misc-mediacodec-basics/synchronous_mode.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/mediacodec-basics/synchronous_mode.png",
+    "sha256": "d3fd7757386d8c4a91bb283dd5eca50c6be317144c3e361995a06871143ab46e",
+    "bytes": 50419
+  },
+  {
+    "source": "content/_posts/misc-mojo-tutorial1/REPL.png",
+    "target": "misc/mojo-tutorial1/REPL.png",
+    "originalUrl": null,
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/mojo-tutorial1/REPL.png",
+    "sha256": "f45662228d0cb6870519a261012966b7b063d0956926bd36fad97ef8cd3799f1",
+    "bytes": 23416
+  },
+  {
+    "source": "content/_posts/misc-niw/niwatterneyencrypt.png",
+    "target": "misc/niw/niwatterneyencrypt.png",
+    "originalUrl": "/misc/misc-niw/niwatterneyencrypt.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/niw/niwatterneyencrypt.png",
+    "sha256": "8fbdaaa075bad8549f1ff643657431ccf57aefad3de1ca12b0532469a7679067",
+    "bytes": 499171
+  },
+  {
+    "source": "content/_posts/misc-numeric-data-representation/32bitfloatingpoint.png",
+    "target": "misc/numeric-data-representation/32bitfloatingpoint.png",
+    "originalUrl": "/misc/misc-numeric-data-representation/32bitfloatingpoint.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/numeric-data-representation/32bitfloatingpoint.png",
+    "sha256": "4422a9766817cd3f483da8e2ef124c1b28acc11ca74215862fa9d91912f5dc0b",
+    "bytes": 12535
+  },
+  {
+    "source": "content/_posts/misc-numeric-data-representation/32bitfloatingpointzero.png",
+    "target": "misc/numeric-data-representation/32bitfloatingpointzero.png",
+    "originalUrl": "/misc/misc-numeric-data-representation/32bitfloatingpointzero.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/numeric-data-representation/32bitfloatingpointzero.png",
+    "sha256": "d11f37bc00d857b863af3ff4a8aceda3983769d29fe4f0796df191a64f3f4e53",
+    "bytes": 13234
+  },
+  {
+    "source": "content/_posts/misc-numeric-data-representation/fixedpoint.png",
+    "target": "misc/numeric-data-representation/fixedpoint.png",
+    "originalUrl": "/misc/misc-numeric-data-representation/fixedpoint.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/numeric-data-representation/fixedpoint.png",
+    "sha256": "b1d3dde9c371b341357c6f89972c36b3e98aee58dc784e60134226927916af1f",
+    "bytes": 39001
+  },
+  {
+    "source": "content/_posts/misc-numeric-data-representation/fp16.png",
+    "target": "misc/numeric-data-representation/fp16.png",
+    "originalUrl": "/misc/misc-numeric-data-representation/fp16.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/numeric-data-representation/fp16.png",
+    "sha256": "d8d4484fecf1ba59bdc4858e43135530891d96687e093c62e5c5474bdc6b0d47",
+    "bytes": 12787
+  },
+  {
+    "source": "content/_posts/misc-numeric-data-representation/fp4.png",
+    "target": "misc/numeric-data-representation/fp4.png",
+    "originalUrl": "/misc/misc-numeric-data-representation/fp4.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/numeric-data-representation/fp4.png",
+    "sha256": "7eeb8bc5eafbbc3ac268895ecc821c9bed0f959d3833ca007d4961ab3153b556",
+    "bytes": 49962
+  },
+  {
+    "source": "content/_posts/misc-numeric-data-representation/int4.png",
+    "target": "misc/numeric-data-representation/int4.png",
+    "originalUrl": "/misc/misc-numeric-data-representation/int4.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/numeric-data-representation/int4.png",
+    "sha256": "b3e90074ca2ad134d3c0213295bd50754f940033861bae9d3ee949d521df3e45",
+    "bytes": 3008
+  },
+  {
+    "source": "content/_posts/misc-numeric-data-representation/signedinteger1.png",
+    "target": "misc/numeric-data-representation/signedinteger1.png",
+    "originalUrl": "/misc/misc-numeric-data-representation/signedinteger1.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/numeric-data-representation/signedinteger1.png",
+    "sha256": "691403791ea0a79c902e4113df966cc4136f118d3c6b46033429489fa770f5cc",
+    "bytes": 34416
+  },
+  {
+    "source": "content/_posts/misc-numeric-data-representation/twocomplement.png",
+    "target": "misc/numeric-data-representation/twocomplement.png",
+    "originalUrl": "/misc/misc-numeric-data-representation/twocomplement.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/numeric-data-representation/twocomplement.png",
+    "sha256": "067303c5c99b5ba0d82e3d110c0cfcee08dbe1f045bf328331e6b67396af1199",
+    "bytes": 11872
+  },
+  {
+    "source": "content/_posts/misc-numeric-data-representation/unsignedinteger.png",
+    "target": "misc/numeric-data-representation/unsignedinteger.png",
+    "originalUrl": "/misc/misc-numeric-data-representation/unsignedinteger.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/numeric-data-representation/unsignedinteger.png",
+    "sha256": "0bdbecd979a1dd1440cf4df857aed8d46dbcb5c7d08c3741341e992b16081dd2",
+    "bytes": 38464
+  },
+  {
+    "source": "content/_posts/misc-online-softmax/softmax-overflow.svg",
+    "target": "misc/online-softmax/softmax-overflow.svg",
+    "originalUrl": "/misc/misc-online-softmax/softmax-overflow.svg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/online-softmax/softmax-overflow.svg",
+    "sha256": "7a7debcbe5864bdcca1548c81dcd7100282b8fdc72c5e9b9369bd7063af99c23",
+    "bytes": 7999
+  },
+  {
+    "source": "content/_posts/misc-simd1/armv8.png",
+    "target": "misc/simd1/armv8.png",
+    "originalUrl": "/misc/misc-simd1/armv8.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/simd1/armv8.png",
+    "sha256": "1ed3543688803e112dc2ec2506453d6655290924a5007086dcab10e1d98e03cf",
+    "bytes": 17806
+  },
+  {
+    "source": "content/_posts/misc-simd1/lanes.png",
+    "target": "misc/simd1/lanes.png",
+    "originalUrl": "/misc/misc-simd1/lanes.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/simd1/lanes.png",
+    "sha256": "c995d36696798f87bbff5639a7abbbd454f64cd4822e91b4fbe865ffbcfed1b0",
+    "bytes": 93106
+  },
+  {
+    "source": "content/_posts/misc-union-find/unionfind.png",
+    "target": "interview/misc-union-find/unionfind.png",
+    "originalUrl": "/interview/misc-union-find/unionfind.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/interview/misc-union-find/unionfind.png",
+    "sha256": "c5d508a3656c3de7d6c73d403214b9f019f029be7bbcce2e11e7660a0a98bd8d",
+    "bytes": 115845
+  },
+  {
+    "source": "content/_posts/pacifica-state-beach/0.jpg",
+    "target": "life/pacifica-state-beach/0.jpg",
+    "originalUrl": "/life/pacifica-state-beach/0.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/pacifica-state-beach/0.jpg",
+    "sha256": "2986dde952328a385a7cdfdaaf67fa77558944cd7f20ec934b5f80a1989a65ad",
+    "bytes": 2502536
+  },
+  {
+    "source": "content/_posts/pacifica-state-beach/1.jpg",
+    "target": "life/pacifica-state-beach/1.jpg",
+    "originalUrl": "/life/pacifica-state-beach/1.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/pacifica-state-beach/1.jpg",
+    "sha256": "86e4ecf87a513c1a2089567df66de90eb7a18074615fd8f01a626e8b0788f894",
+    "bytes": 1840768
+  },
+  {
+    "source": "content/_posts/pacifica-state-beach/2.jpg",
+    "target": "life/pacifica-state-beach/2.jpg",
+    "originalUrl": "/life/pacifica-state-beach/2.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/pacifica-state-beach/2.jpg",
+    "sha256": "2986dde952328a385a7cdfdaaf67fa77558944cd7f20ec934b5f80a1989a65ad",
+    "bytes": 2502536
+  },
+  {
+    "source": "content/_posts/pacifica-state-beach/3.jpg",
+    "target": "life/pacifica-state-beach/3.jpg",
+    "originalUrl": "/life/pacifica-state-beach/3.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/pacifica-state-beach/3.jpg",
+    "sha256": "ce8159fa17cd934e8f333c7bdcbcb060d201698d3eb7a8b3bea54551045b90f5",
+    "bytes": 1586531
+  },
+  {
+    "source": "content/_posts/pacifica-state-beach/4.jpg",
+    "target": "life/pacifica-state-beach/4.jpg",
+    "originalUrl": "/life/pacifica-state-beach/4.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/pacifica-state-beach/4.jpg",
+    "sha256": "84f3ab4ab048cf09e813db1be56f41a8e026786d27aec597cd83697a1c32bac3",
+    "bytes": 2396929
+  },
+  {
+    "source": "content/_posts/pacifica-state-beach/5.jpg",
+    "target": "life/pacifica-state-beach/5.jpg",
+    "originalUrl": "/life/pacifica-state-beach/5.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/pacifica-state-beach/5.jpg",
+    "sha256": "2f667698fd9a841b00ee2fc9cf3fdefea52e1bd03180938c7efd9a914f25b89f",
+    "bytes": 1673141
+  },
+  {
+    "source": "content/_posts/pacifica-state-beach/6.jpg",
+    "target": "life/pacifica-state-beach/6.jpg",
+    "originalUrl": "/life/pacifica-state-beach/6.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/pacifica-state-beach/6.jpg",
+    "sha256": "3082df9a61a57c0ab5da3daf02d1524641df7434f16e2326fe0bf79d129488ed",
+    "bytes": 1563000
+  },
+  {
+    "source": "content/_posts/pacifica-state-beach/7.jpg",
+    "target": "life/pacifica-state-beach/7.jpg",
+    "originalUrl": "/life/pacifica-state-beach/7.jpg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/pacifica-state-beach/7.jpg",
+    "sha256": "c42f80e6c6deca0654cbe7ac6d6383b0395babbfc1b4d99c3e198fdb7ab19218",
+    "bytes": 2372880
+  },
+  {
+    "source": "content/_posts/pacifica-state-beach/pacifica-trail.png",
+    "target": "life/pacifica-state-beach/pacifica-trail.png",
+    "originalUrl": "/life/pacifica-state-beach/pacifica-trail.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/life/pacifica-state-beach/pacifica-trail.png",
+    "sha256": "7d05c12ae4a3e0c63413f64ee6f14e6373c17bf878a9b735225bd73619c82ff0",
+    "bytes": 828913
+  },
+  {
+    "source": "content/_posts/tool-starbucks-under-5/0.png",
+    "target": "tool/starbucks-under-5/0.png",
+    "originalUrl": "/tool/tool-starbucks-under-5/0.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/tool/starbucks-under-5/0.png",
+    "sha256": "5b5eb6fc07763762f0de289a6e031112a8511e7c49a7c3888440c2f807de329c",
+    "bytes": 218522
+  },
+  {
+    "source": "content/_posts/tool-starbucks-under-5/1.png",
+    "target": "tool/starbucks-under-5/1.png",
+    "originalUrl": "/tool/tool-starbucks-under-5/1.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/tool/starbucks-under-5/1.png",
+    "sha256": "00d5fe83d7902397e97c9e94add107036af347ed2a3e5e1e4fe59e8561af614d",
+    "bytes": 213130
+  },
+  {
+    "source": "content/_posts/tool-starbucks-under-5/2.png",
+    "target": "tool/starbucks-under-5/2.png",
+    "originalUrl": "/tool/tool-starbucks-under-5/2.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/tool/starbucks-under-5/2.png",
+    "sha256": "15f37514857bcd9126ad1980f7b4ed3360a4c0c07d22b867ee15dc6fa12fe414",
+    "bytes": 418218
+  },
+  {
+    "source": "content/_posts/wealth-trump-imposes-tariff/trade.png",
+    "target": "wealth/trump-imposes-tariff/trade.png",
+    "originalUrl": "/wealth/wealth-trump-imposes-tariff/trade.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/wealth/trump-imposes-tariff/trade.png",
+    "sha256": "42fea43df94f79ce628759b7534f00c7acbe01274a6f24b8eabcc7ba255d9748",
+    "bytes": 2278199
+  },
+  {
+    "source": "content/_posts/wealth-trump-imposes-tariff/trump.png",
+    "target": "wealth/trump-imposes-tariff/trump.png",
+    "originalUrl": "/wealth/wealth-trump-imposes-tariff/trump.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/wealth/trump-imposes-tariff/trump.png",
+    "sha256": "ae8a866e7cc0cc16b23036cee5b5d42579bec77fd45afc8a1c2c1fededbcfff0",
+    "bytes": 4683291
+  },
+  {
+    "source": "static/img/baby.png",
+    "target": "misc/site/baby.png",
+    "originalUrl": "/img/baby.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/site/baby.png",
+    "sha256": "b5c1a6069a0ed99977d5bf66ac10948e67728b0b542266b7a15795a4d3b72248",
+    "bytes": 2672796
+  },
+  {
+    "source": "static/img/expert.png",
+    "target": "misc/site/expert.png",
+    "originalUrl": "/img/expert.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/site/expert.png",
+    "sha256": "7ec2ae3bcbef2fe77434d5dcb4da830fb98d02fc959d66cfcffec6c6e57cd46d",
+    "bytes": 3957
+  },
+  {
+    "source": "static/img/favicon.svg",
+    "target": "misc/site/favicon.svg",
+    "originalUrl": "/img/favicon.svg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/site/favicon.svg",
+    "sha256": "6799d4b2cf9066473351cb271e4b5ba3ea7a5ff59e7e2131193198bdb5119054",
+    "bytes": 431
+  },
+  {
+    "source": "static/img/logo.svg",
+    "target": "misc/site/logo.svg",
+    "originalUrl": "/img/logo.svg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/site/logo.svg",
+    "sha256": "3dcb474f206ae7a15c693c2a717647396ed1df520c8777eafd87b379d3b9e09f",
+    "bytes": 9478
+  },
+  {
+    "source": "static/img/me.jpeg",
+    "target": "misc/site/me.jpeg",
+    "originalUrl": "/img/me.jpeg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/site/me.jpeg",
+    "sha256": "5e72c035ffcc613eb3ba6847558eeb2079704ad49ef3770f69641d3f0c3a4030",
+    "bytes": 1671279
+  },
+  {
+    "source": "static/img/me_1.png",
+    "target": "misc/site/me_1.png",
+    "originalUrl": "/img/me_1.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/site/me_1.png",
+    "sha256": "5f7ffbbf21567a15a5413bb18725e4c24c58c8a6d824eb9bc9d7272dab0c21d4",
+    "bytes": 2287830
+  },
+  {
+    "source": "static/img/profile.jpeg",
+    "target": "misc/site/profile.jpeg",
+    "originalUrl": "/img/profile.jpeg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/site/profile.jpeg",
+    "sha256": "e210ac96ef1d1415197b3d89955331192f311a6e218358514d65d5ba16f040c9",
+    "bytes": 46390
+  },
+  {
+    "source": "static/img/razor-bottom-black.svg",
+    "target": "misc/site/razor-bottom-black.svg",
+    "originalUrl": "/img/razor-bottom-black.svg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/site/razor-bottom-black.svg",
+    "sha256": "534728f31d481f6bcae1fdb327dd5740496d120019da05a8db08f76d4b3bcc57",
+    "bytes": 2702
+  },
+  {
+    "source": "static/img/razor-top-black.svg",
+    "target": "misc/site/razor-top-black.svg",
+    "originalUrl": "/img/razor-top-black.svg",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/site/razor-top-black.svg",
+    "sha256": "8879f019b825fb6950c1a146f7068cf7a60054de5d482f330420faafe9a16867",
+    "bytes": 2729
+  },
+  {
+    "source": "static/img/renderme.png",
+    "target": "misc/site/renderme.png",
+    "originalUrl": "/img/renderme.png",
+    "url": "https://media.githubusercontent.com/media/chuzcjoe/blog_imgs/refs/heads/master/misc/site/renderme.png",
+    "sha256": "ae19e5832e56dd956219c5e67377ef87714a3c3f60795551102ff5d37ec82b04",
+    "bytes": 1079658
+  }
+]

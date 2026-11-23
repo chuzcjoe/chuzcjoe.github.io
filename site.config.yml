@@ -1,0 +1,193 @@
+title: JoeChu
+description: Technical articles by Joe Chu about C++, GPU programming, OpenGL,
+  computer graphics, image processing, and life in the San Francisco Bay Area.
+author: Joe Chu
+language: en
+url: https://chuzcjoe.github.io
+timezone: America/Los_Angeles
+perPage: 10
+feedLimit: 20
+logo: /img/site/expert.png
+head:
+  favicon: /img/site/expert.png
+  manifest:
+    name: JoeChu's Blog
+    short_name: Joe's Blog
+    start_url: https://chuzcjoe.github.io/
+    theme_color: null
+    background_color: null
+    display: standalone
+    icons:
+      - src: ""
+        sizes: ""
+        type: null
+  open_graph:
+    title: null
+    type: null
+    url: null
+    image: null
+    site_name: null
+    author: null
+    description: null
+    twitter_card: null
+    twitter_id: null
+    twitter_site: null
+    google_plus: null
+    fb_admins: null
+    fb_app_id: null
+  structured_data:
+    title: null
+    description: null
+    url: null
+    author: null
+    publisher: null
+    publisher_logo: null
+    image: null
+  meta:
+    - ""
+  rss: /atom.xml
+navbar:
+  menu:
+    Home: /
+    Archives: /archives
+    Life: /categories/life
+    C/C++: /categories/cpp
+    CG/CV: /categories/CGV
+    Misc: /categories/misc
+    Tool: /categories/tool
+    私房菜: /about
+  links:
+    Download on GitHub:
+      icon: fab fa-github
+      url: https://github.com/chuzcjoe
+footer:
+  copyright: © 2019
+  links:
+    Creative Commons:
+      icon: fab fa-creative-commons
+      url: https://creativecommons.org/
+    Attribution 4.0 International:
+      icon: fab fa-creative-commons-by
+      url: https://creativecommons.org/licenses/by/4.0/
+    Download on GitHub:
+      icon: fab fa-github
+      url: https://github.com/ppoffice/hexo-theme-icarus
+article:
+  highlight:
+    theme: atom-one-light
+    clipboard: true
+    fold: unfolded
+  readtime: true
+  update_time: false
+  licenses:
+    Creative Commons:
+      icon: fab fa-creative-commons
+      url: https://creativecommons.org/
+    Attribution:
+      icon: fab fa-creative-commons-by
+      url: https://creativecommons.org/licenses/by/4.0/
+    Noncommercial:
+      icon: fab fa-creative-commons-nc
+      url: https://creativecommons.org/licenses/by-nc/4.0/
+search:
+  type: insight
+  index_pages: true
+comment:
+  type: disqus
+  shortname: chuzcjoe-github-io
+donates:
+  - type: alipay
+    qrcode: ""
+  - type: paypal
+    business: chuzcjoe@gmail.com
+    currency_code: USD
+  # Upload a real QR image to blog_imgs and set its URL here.
+  - type: wechat
+    qrcode: ""
+share:
+  type: sharethis
+  install_url: https://chuzcjoe.github.io/
+sidebar:
+  left:
+    sticky: false
+  right:
+    sticky: false
+widgets:
+  - position: left
+    type: profile
+    author: Joe Chu
+    author_title: I like to keep knowledge and memories visible and readable.
+    location: Fremont, CA
+    avatar: /img/site/renderme.png
+    avatar_rounded: false
+    gravatar: null
+    follow_link: https://github.com/chuzcjoe
+    social_links:
+      Github:
+        icon: fab fa-github
+        url: https://github.com/chuzcjoe
+      Linkedin:
+        icon: fab fa-linkedin
+        url: https://www.linkedin.com/in/joe-chu-1784b3179/
+      Dribbble:
+        icon: fab fa-dribbble
+        url: https://dribbble.com
+      RSS:
+        icon: fas fa-rss
+        url: /
+  - position: left
+    type: toc
+    index: true
+    collapsed: true
+    depth: 3
+  - position: left
+    type: null
+    links:
+      Hexo: https://hexo.io
+      Bulma: https://bulma.io
+  - position: right
+    type: recent_posts
+  - position: right
+    type: archives
+  - position: left
+    type: followit
+    description: null
+    action_url: https://api.follow.it/subscribe
+    verification_code: ""
+  - position: left
+    type: adsense
+    client_id: ""
+    slot_id: ""
+  - position: main
+    type: adsense
+plugins:
+  animejs: true
+  back_to_top: true
+  baidu_analytics:
+    tracking_id: null
+  bing_webmaster:
+    tracking_id: null
+  busuanzi: true
+  cnzz:
+    id: null
+    web_id: null
+  cookie_consent:
+    type: info
+    theme: edgeless
+    static: false
+    position: bottom-left
+    policyLink: https://www.cookiesandyou.com/
+  gallery: true
+  google_analytics:
+    tracking_id: null
+  hotjar:
+    site_id: null
+  katex: false
+  mathjax: true
+  outdated_browser: false
+  progressbar: true
+  statcounter:
+    project: null
+    security: null
+  twitter_conversion_tracking:
+    pixel_id: null

@@ -1,0 +1,61 @@
+<html lang="<%= config.language.slice(0,2) %>">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= page.title ? page.title + ' - ' : '' %><%= config.title %></title>
+  <meta name="description" content="<%= page.article?.description || config.description %>">
+  <link rel="canonical" href="<%= canonical %>"><link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="<%= config.head.favicon %>"><link rel="alternate" href="/atom.xml" title="<%= config.title %>" type="application/atom+xml">
+  <meta property="og:type" content="<%= page.article?.isPost ? 'article' : 'website' %>"><meta property="og:title" content="<%= page.title || config.title %>"><meta property="og:url" content="<%= canonical %>"><meta property="og:site_name" content="<%= config.title %>"><meta property="og:description" content="<%= page.article?.description || config.description %>"><meta property="og:image" content="<%= new URL(page.article?.cover || config.logo, config.url).href %>">
+  <meta name="twitter:card" content="summary">
+  <% if (page.article?.isPost) { %><meta property="article:published_time" content="<%= page.article.dateIso %>"><meta property="article:modified_time" content="<%= page.article.updatedIso %>"><meta property="article:author" content="<%= page.article.author %>"><% } %>
+  <script type="application/ld+json"><%- JSON.stringify({ '@context':'https://schema.org', '@type':page.article?.isPost ? 'BlogPosting' : 'WebSite', headline:page.title || config.title, url:canonical, description:page.article?.description || config.description, author:{'@type':'Person',name:page.article?.author || config.author}, ...(page.article?.isPost ? {datePublished:page.article.dateIso,dateModified:page.article.updatedIso} : {}) }).replace(/</g,'\\u003c') %></script>
+  <link rel="stylesheet" href="/vendor/fontawesome/css/all.min.css"><link rel="stylesheet" href="/vendor/highlight/atom-one-light.css">
+  <link rel="stylesheet" href="/css/default.css"><link rel="stylesheet" href="/vendor/cookieconsent/cookieconsent.min.css">
+  <link rel="stylesheet" href="/vendor/lightgallery/css/lightgallery.min.css"><link rel="stylesheet" href="/vendor/justifiedGallery/justifiedGallery.min.css"><link rel="stylesheet" href="/vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="/css/math.css"><link rel="stylesheet" href="/css/custom.css"><link rel="stylesheet" href="/css/night.css"><link rel="stylesheet" href="/css/site.css">
+  <script src="/vendor/pace.min.js"></script>
+  <% if (config.plugins.busuanzi) { %><script src="https://busuanzi.meuicat.com/js" defer></script><% } %>
+</head>
+<body class="is-<%= columns %>-column">
+<nav class="navbar navbar-main"><div class="container navbar-container">
+  <div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="<%= config.logo %>" alt="<%= config.title %>" height="28"></a></div>
+  <div class="navbar-menu"><div class="navbar-start">
+    <% for (const [name, url] of Object.entries(config.navbar.menu)) { %><a class="navbar-item<%= page.url.replace(/\/$/,'') === url.replace(/\/$/,'') ? ' is-active' : '' %>" href="<%= url %>"><%= name %></a><% } %>
+  </div><div class="navbar-end">
+    <% for (const [name, link] of Object.entries(config.navbar.links)) { %><a class="navbar-item" target="_blank" rel="noopener" title="<%= name %>" href="<%= link.url %>"><i class="<%= link.icon %>"></i></a><% } %>
+    <% if (page.article?.toc && page.article.headings.length && [...left,...right].some(w=>w.type==='toc')) { %><a class="navbar-item is-hidden-tablet catalogue" title="Catalogue" aria-label="Catalogue" href="javascript:;"><i class="fas fa-list-ul"></i></a><% } %>
+    <a class="navbar-item search" title="Search" aria-label="Search" href="#insight-search"><i class="fas fa-search"></i></a>
+    <a class="navbar-item night" id="night-nav" title="Night Mode" aria-label="Night Mode" href="javascript:;"><i class="fas fa-lightbulb" id="night-icon"></i></a>
+  </div></div>
+</div></nav>
+<section class="section"><div class="container"><div class="columns">
+  <div class="column order-2 column-main <%= columns === 1 ? 'is-12' : columns === 2 ? 'is-8-tablet is-8-desktop is-10-widescreen' : 'is-8-tablet is-8-desktop is-6-widescreen' %>"><%- render('widgets', {widgets:main,page}) %><%- content %></div>
+  <% if (left.length) { %><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen order-1<%= config.sidebar.left.sticky ? ' is-sticky' : '' %>"><%- render('widgets', {widgets:left,page}) %><% if (right.length) { %><div class="column-right-shadow is-hidden-widescreen"></div><% } %></div><% } %>
+  <% if (right.length) { %><div class="column column-right is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only order-3<%= config.sidebar.right.sticky ? ' is-sticky' : '' %>"><%- render('widgets', {widgets:right,page}) %></div><% } %>
+</div></div></section>
+<footer class="footer"><div class="container"><div class="level"><div class="level-start">
+  <a class="footer-logo is-block mb-2" href="/"><img src="<%= config.logo %>" alt="<%= config.title %>" height="28"></a>
+  <p class="is-size-7"><span>© <%= new Date().getFullYear() %> <%= config.author %></span>&nbsp;&nbsp;Powered by Markdown &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><% if (config.plugins.busuanzi) { %><span>uv <span id="busuanzi_site_uv">…</span></span><br><span>pv <span id="busuanzi_site_pv">…</span></span><% } %></p>
+  <p class="is-size-7"><%- config.footer.copyright %></p>
+</div><div class="level-end"><div class="field has-addons"><% for (const [name, link] of Object.entries(config.footer.links)) { %><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="<%= name %>" href="<%= link.url %>"><i class="<%= link.icon %>"></i></a></p><% } %></div></div></div></div></footer>
+<script src="/vendor/jquery.min.js"></script><script src="/vendor/moment.min.js"></script><script src="/vendor/clipboard.min.js" defer></script>
+<script>moment.locale('en');var IcarusThemeSettings=<%- JSON.stringify({article:config.article}).replace(/</g,'\\u003c') %>;</script>
+<script src="/js/column.js"></script><% if (config.plugins.animejs) { %><script src="/js/animation.js"></script><% } %>
+<% if (config.plugins.back_to_top) { %><a id="back-to-top" title="Back to top" aria-label="Back to top" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><% } %>
+<script src="/vendor/cookieconsent/cookieconsent.min.js" defer></script><script src="/vendor/lightgallery/js/lightgallery.min.js" defer></script><script src="/vendor/justifiedGallery/jquery.justifiedGallery.min.js" defer></script>
+<% if (config.plugins.mathjax !== false) { %>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  'HTML-CSS': { matchFontHeight: false },
+  SVG: { matchFontHeight: false },
+  CommonHTML: { matchFontHeight: false },
+  tex2jax: { inlineMath: [['$','$'], ['\\(','\\)']] }
+});
+</script>
+<script src="/vendor/mathjax/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<% } %>
+<script src="/js/main.js" defer></script><script src="/js/night.js" defer></script><script src="/js/site.js" defer></script>
+<div class="searchbox" role="dialog" aria-label="Search" aria-modal="true"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="Type something..." aria-label="Search posts"></div><a class="searchbox-close" href="javascript:;" aria-label="Close search">×</a></div><div class="searchbox-body"></div></div></div>
+<script src="/js/search.js" defer></script>
+<% if (live) { %><script>new EventSource('/__events').onmessage=function(e){if(e.data==='reload')location.reload();};</script><% } %>
+</body></html>

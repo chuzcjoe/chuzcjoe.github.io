@@ -147,7 +147,7 @@ test('SEO canonical links, feed, robots and sitemap use the production domain', 
   assert.ok(!urls.includes(config.url + '/404.html'));
   const robots = await fs.readFile('dist/robots.txt', 'utf8');
   assert.ok(robots.includes(`Sitemap: ${config.url}/sitemap.xml`));
-  assert.ok(!robots.includes('chuzcjoe.com'));
+  assert.ok(!robots.includes('chuzcjoe.github.io'));
   const feed = load(await fs.readFile('dist/atom.xml', 'utf8'), { xmlMode: true });
   assert.ok(feed('entry > link').toArray().every(e => feed(e).attr('href').startsWith(config.url + '/')));
 });

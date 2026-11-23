@@ -3,7 +3,7 @@ description: Technical articles by Joe Chu about C++, GPU programming, OpenGL,
   computer graphics, image processing, and life in the San Francisco Bay Area.
 author: Joe Chu
 language: en
-url: https://chuzcjoe.github.io
+url: https://www.chuzcjoe.com
 timezone: America/Los_Angeles
 perPage: 10
 feedLimit: 20
@@ -13,7 +13,7 @@ head:
   manifest:
     name: JoeChu's Blog
     short_name: Joe's Blog
-    start_url: https://chuzcjoe.github.io/
+    start_url: https://www.chuzcjoe.com/
     theme_color: null
     background_color: null
     display: standalone
@@ -106,7 +106,7 @@ donates:
     qrcode: ""
 share:
   type: sharethis
-  install_url: https://chuzcjoe.github.io/
+  install_url: https://www.chuzcjoe.com/
 sidebar:
   left:
     sticky: false

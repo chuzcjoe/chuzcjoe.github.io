@@ -82,7 +82,7 @@ tags: [C++, notes]
 
 ## 第三方服务
 
-保留原有 Disqus shortname、canonical URL/identifier、Busuanzi 兼容计数、follow.it 表单及 PayPal 配置。计数沿用旧站的 `busuanzi.ibruce.info` 服务及 `busuanzi_value_*` 标签，继续读取原域名和页面路径的历史累计数据；外部服务的实际响应仍取决于其可用性和账户设置，验证不会发送评论、订阅或付款。AdSense 保留原广告位和 Advertisement 占位，发布商账号为 `ca-pub-1486482663275315`，侧栏广告单元为 `5727003811`，首页顶部横幅广告单元为 `6708912999`。凭证为空时不会加载广告脚本。`content/ads.txt` 已按站点所有者提供的信息配置授权记录，构建后发布至 `https://chuzcjoe.github.io/ads.txt`。
+保留原有 Disqus shortname、canonical URL/identifier、Busuanzi 兼容计数、follow.it 表单及 PayPal 配置。计数沿用旧站的 `busuanzi.ibruce.info` 服务及 `busuanzi_value_*` 标签，继续读取原域名和页面路径的历史累计数据；外部服务的实际响应仍取决于其可用性和账户设置，验证不会发送评论、订阅或付款。AdSense 保留原广告位和 Advertisement 占位，发布商账号为 `ca-pub-1486482663275315`，侧栏广告单元为 `5727003811`，首页顶部横幅广告单元为 `6708912999`。凭证为空时不会加载广告脚本。`content/ads.txt` 已按站点所有者提供的信息配置授权记录，构建后发布至 `https://www.chuzcjoe.com/ads.txt`。
 
 重新接入 AdSense 时，在 `site.config.yml` 的 `type: adsense` 项填写 `client_id` 和 `slot_id`，各文章的广告位默认继承这组配置，也可在文章的同名字段中单独覆盖。本地预览始终保留占位，不加载广告；凭证完整时线上会加载广告。需要 ads.txt 授权时，将新账户提供的记录放入 `content/ads.txt`，构建后会复制到网站根目录。
 
@@ -109,7 +109,7 @@ npm run preview
 
 ## GitHub Pages 自动部署
 
-正式地址为 https://chuzcjoe.github.io/，源码仓库为 `chuzcjoe/chuzcjoe.github.io`，默认分支为 `main`。
+正式地址为 https://www.chuzcjoe.com/，源码仓库为 `chuzcjoe/chuzcjoe.github.io`，默认分支为 `main`。
 
 日常发布只需提交源码并推送：
 
@@ -123,6 +123,6 @@ git push origin main
 
 GitHub 仓库 Settings → Pages 的 Source 应为 **GitHub Actions**；`github-pages` environment 的部署分支规则允许 `main`。工作流使用仓库内置的 `GITHUB_TOKEN` 和 OIDC，无需添加部署密钥或个人 token。`dist/` 不提交到 Git，旧的 `joe` 和 `master` 分支保留作为历史记录，不再用于发布。已移除会覆盖旧发布分支的 `npm run deploy` 脚本。
 
-`site.config.yml` 的 `url` 和 `static/robots.txt` 均指向 GitHub Pages 地址；没有 CNAME 或自定义域名跳转。构建自动生成 sitemap、Atom、canonical 和 Open Graph 地址。新增或删除文章后，下次推送会同步更新。可在 Google Search Console 对应资源中提交 `https://chuzcjoe.github.io/sitemap.xml`。
+`site.config.yml` 的 `url` 和 `static/robots.txt` 均指向正式域名 `https://www.chuzcjoe.com`。GitHub Pages 的 Custom domain 设置为 `www.chuzcjoe.com`；Cloudflare 的根域名和 `www` 均指向 `chuzcjoe.github.io`，使用 DNS only。Actions 部署不需要 CNAME 文件。旧 GitHub Pages 地址及根域名由 GitHub 跳转至正式域名。构建自动生成 sitemap、Atom、canonical 和 Open Graph 地址。新增或删除文章后，下次推送会同步更新。可在 Google Search Console 对应资源中提交 `https://www.chuzcjoe.com/sitemap.xml`。
 
 Icarus 样式与浏览器交互的 MIT 授权保存在 `licenses/`。

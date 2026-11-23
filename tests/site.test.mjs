@@ -161,6 +161,28 @@ test('production output contains no live-reload client or Hexo runtime dependenc
   await assert.rejects(fs.access('dist/vendor/mathjax/test'));
 });
 
+test('historical statistics cover all migrated content and are embedded in the corresponding pages', async () => {
+  const history = JSON.parse(await fs.readFile('content/visit-history.json', 'utf8'));
+  assert.equal(history.sourceOrigin, 'https://chuzcjoe.github.io');
+  assert.equal(history.targetOrigin, config.url);
+  const posts = [...result.site.posts, ...result.site.pages];
+  assert.equal(Object.keys(history.pages).length, posts.length);
+  assert.ok(history.siteUv > 24000 && history.sitePv > 31000);
+  for (const post of posts) {
+    assert.ok(Number.isSafeInteger(history.pages[post.url]) && history.pages[post.url] >= 0, post.url);
+    if (post.isPost) {
+      const $ = await html(post.url);
+      assert.equal($('#busuanzi_value_page_pv').attr('data-history-value'), String(history.pages[post.url]), post.url);
+    }
+  }
+  const $ = await html('/');
+  assert.equal($('#busuanzi_value_site_uv').attr('data-history-value'), String(history.siteUv));
+  assert.equal($('#busuanzi_value_site_pv').attr('data-history-value'), String(history.sitePv));
+  assert.match($('#busuanzi_container_site_uv').attr('title'), /not deduplicated/);
+  assert.equal($('script[src="/js/visits.js"]').length, 1);
+  assert.equal($('script[src*="busuanzi.ibruce.info"]').length, 0);
+});
+
 async function withFixture(fn) {
   const temp = await fs.mkdtemp(path.join(os.tmpdir(), 'joechu-blog-test-'));
   try { await fs.mkdir(path.join(temp, 'content/_posts'), { recursive: true }); await fs.copyFile(path.join(root, 'site.config.yml'), path.join(temp, 'site.config.yml')); await fs.cp(path.join(root, 'templates'), path.join(temp, 'templates'), { recursive: true }); await fn(temp); }

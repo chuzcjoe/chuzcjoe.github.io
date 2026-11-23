@@ -82,7 +82,7 @@ tags: [C++, notes]
 
 ## 第三方服务
 
-保留原有 Disqus shortname、canonical URL/identifier、Busuanzi 兼容计数、follow.it 表单及 PayPal 配置。计数沿用旧站的 `busuanzi.ibruce.info` 服务及 `busuanzi_value_*` 标签，继续读取原域名和页面路径的历史累计数据；外部服务的实际响应仍取决于其可用性和账户设置，验证不会发送评论、订阅或付款。AdSense 保留原广告位和 Advertisement 占位，发布商账号为 `ca-pub-1486482663275315`，侧栏广告单元为 `5727003811`，首页顶部横幅广告单元为 `6708912999`。凭证为空时不会加载广告脚本。`content/ads.txt` 已按站点所有者提供的信息配置授权记录，构建后发布至 `https://www.chuzcjoe.com/ads.txt`。
+保留原有 Disqus shortname、canonical URL/identifier、Busuanzi 兼容计数、follow.it 表单及 PayPal 配置。计数沿用旧站的 `busuanzi.ibruce.info` 服务及 `busuanzi_value_*` 标签，通过 `/js/visits.js` 读取当前域名的新增计数，再加上 `content/visit-history.json` 保存的旧域名历史基数。快照包含站点 UV/PV 和迁移时全部文章及独立页面的浏览量；站点 PV 在采集各页面前保存，各页面基数扣除了本次采集请求自身的一次 PV。新文章基数自动为零。UV 是两域名的累计值，未跨域去重，页脚悬停说明已注明。统计服务失败时显示历史基数及 `+`，表示尚未包含实时计数。本地预览不发送统计请求。历史快照应保留，不要每次构建重新采集；外部服务的实际响应仍取决于其可用性和账户设置，验证不会发送评论、订阅或付款。AdSense 保留原广告位和 Advertisement 占位，发布商账号为 `ca-pub-1486482663275315`，侧栏广告单元为 `5727003811`，首页顶部横幅广告单元为 `6708912999`。凭证为空时不会加载广告脚本。`content/ads.txt` 已按站点所有者提供的信息配置授权记录，构建后发布至 `https://www.chuzcjoe.com/ads.txt`。
 
 重新接入 AdSense 时，在 `site.config.yml` 的 `type: adsense` 项填写 `client_id` 和 `slot_id`，各文章的广告位默认继承这组配置，也可在文章的同名字段中单独覆盖。本地预览始终保留占位，不加载广告；凭证完整时线上会加载广告。需要 ads.txt 授权时，将新账户提供的记录放入 `content/ads.txt`，构建后会复制到网站根目录。
 
